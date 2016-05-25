@@ -11,7 +11,8 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
-| Intro to Akka.NET (title TBD) | July 26, 2016 | Capital Area .NET Users Group (Vienna, VA) | A revised update of a previous Akka.NET introductory presentation. I'll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I'm hoping I'll be able to add some more code samples.
+| Attack-a the Akka! | June 15, 2016 | [TechTalk DC (Arlington, VA)](http://www.meetup.com/TechTalkDC/events/231392513/) | A revised update of a previous Akka.NET introductory presentation. I'll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I'm hoping I'll be able to add some more code samples.
+| Attack-a the Akka! | July 26, 2016 | [Capital Area .NET Users Group (Vienna, VA)](http://www.meetup.com/CapArea-Net/events/231217207/) | A revised update of a previous Akka.NET introductory presentation. I'll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I'm hoping I'll be able to add some more code samples.
 
 # Catalog of Past Presentations
 Most recent shown first.
