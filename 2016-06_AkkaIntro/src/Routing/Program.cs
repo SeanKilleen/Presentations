@@ -33,9 +33,6 @@ namespace Routing
             // Router from configuration
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
 
-            //var scope = new RemoteScope(new Address("akka.tcp", "BlankSlate", "localhost", 9001));
-            //var deploy = new Deploy(scope);
-
             var randomNumberActor = actorSystem.ActorOf(props, "workers");
 
             Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
