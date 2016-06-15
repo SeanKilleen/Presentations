@@ -10,9 +10,8 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             var system = ActorSystem.Create("HelloWorldSystem");
-            var props = Props.Create<HelloWorldActor>();
 
-            var helloWorldActor = system.ActorOf(props);
+            var helloWorldActor = system.ActorOf(Props.Create<HelloWorldActor>(), "helloWorldActor");
 
             // NOTE: Could also use the Scheduler to send messages
             // It is done quickly this way for demo purposes.
