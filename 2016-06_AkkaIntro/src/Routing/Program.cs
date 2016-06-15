@@ -24,14 +24,14 @@ namespace Routing
             Props props;
 
             // Single actor
-            //props = Props.Create<RandomNumberAfterRandomTimeWorker>();
+            props = Props.Create<RandomNumberAfterRandomTimeWorker>();
 
             // Router from code
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(1));
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(5));
 
             // Router from configuration
-            props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
+            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
 
             //var scope = new RemoteScope(new Address("akka.tcp", "BlankSlate", "localhost", 9001));
             //var deploy = new Deploy(scope);
