@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankSlate", "src\BlankSlate\BlankSlate.csproj", "{0ECBA0D4-41A3-4DDB-AEF0-BA808047B2BD}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "src\Routing\Rout
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{D532EAAF-7F20-4B50-9810-3F7B71388F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervision", "src\Supervision\Supervision.csproj", "{7484BBD0-449B-4AA9-A7EF-5CB147B9B59A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervision", "src\Supervision\Supervision.csproj", "{1F480A73-8139-405A-AA8E-F0F45600AF5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7484BBD0-449B-4AA9-A7EF-5CB147B9B59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7484BBD0-449B-4AA9-A7EF-5CB147B9B59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7484BBD0-449B-4AA9-A7EF-5CB147B9B59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7484BBD0-449B-4AA9-A7EF-5CB147B9B59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
