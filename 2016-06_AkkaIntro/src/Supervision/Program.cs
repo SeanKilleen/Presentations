@@ -94,6 +94,46 @@ namespace Supervision
             });
         }
     }
+    public class MonkeyChild : ReceiveActor
+    {
+        private readonly IActorRef _consoleLogger;
+        private readonly string _name;
+        public MonkeyChild()
+        {
+            _name = Self.Path.Name;
+            _consoleLogger = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriterActor");
+
+            _consoleLogger.Tell($"{_name} created!");
+
+            Receive<BumpedHeadMessage>(message =>
+            {
+                BumpHead();
+            });
+
+            Receive<Jump>(msg =>
+            {
+                _consoleLogger.Tell(new WriteSomethingMessage("Jumping!"));
+            });
+        }
+        private void BumpHead()
+        {
+            _consoleLogger.Tell(new WriteSomethingMessage("OW! Bumped my head!"));
+            throw new BumpedHeadException(Self);
+        }
+
+    }
+    public class MonkeyDoctor : ReceiveActor
+    {
+        public MonkeyDoctor()
+        {
+            var consoleWriter = Context.ActorOf(Props.Create<ConsoleWriterActor>());
+
+            Receive<BumpedHeadMessage>(msg =>
+            {
+                consoleWriter.Tell(new WriteSomethingMessage("Doctor says: NO MORE MONKEYS JUMPING ON THE BED!"));
+            });
+        }
+    }
 
     public class AMonkeyGotBumped
     {
@@ -118,48 +158,6 @@ namespace Supervision
 
     public class CallTheDoctor { }
 
-    public class MonkeyDoctor : ReceiveActor
-    {
-        public MonkeyDoctor()
-        {
-            var consoleWriter = Context.ActorOf(Props.Create<ConsoleWriterActor>());
-
-            Receive<BumpedHeadMessage>(msg =>
-            {
-                consoleWriter.Tell(new WriteSomethingMessage("Doctor says: NO MORE MONKEYS JUMPING ON THE BED!"));
-            });
-        }
-    }
-
-    public class MonkeyChild : ReceiveActor
-    {
-        private readonly IActorRef _consoleLogger;
-        private readonly string _name;
-        public MonkeyChild()
-        {
-            _name = Self.Path.Name;
-            _consoleLogger = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriterActor");
-
-            _consoleLogger.Tell($"{_name} created!");
-
-            Receive<BumpedHeadMessage>(message => 
-            {
-                BumpHead();
-            });
-
-            Receive<Jump>(msg =>
-            {
-                _consoleLogger.Tell(new WriteSomethingMessage("Jumping!"));
-            });
-        }
-        private void BumpHead()
-        {
-            _consoleLogger.Tell(new WriteSomethingMessage("OW! Bumped my head!"));
-            throw new BumpedHeadException(Self);
-        }
-
-    }
-    
     public class Jump { }
     public class BumpedHeadMessage { }
 
