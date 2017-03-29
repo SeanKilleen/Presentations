@@ -1,4 +1,4 @@
-namespace Shared
+namespace Shared.Messages
 {
     public class HelloWorldMessage
     {

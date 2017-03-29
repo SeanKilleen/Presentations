@@ -2,6 +2,7 @@ using System;
 using Akka;
 using Akka.Actor;
 using Shared;
+using Shared.Messages;
 
 namespace HelloWorld
 {

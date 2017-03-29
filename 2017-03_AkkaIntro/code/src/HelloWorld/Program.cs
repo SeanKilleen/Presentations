@@ -1,5 +1,6 @@
 ﻿using System;
 using Akka.Actor;
+using Shared.Messages;
 
 namespace HelloWorld
 {

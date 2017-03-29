@@ -1,7 +1,8 @@
 ﻿using System;
 using Akka.Actor;
+using Shared.Messages;
 
-namespace Shared
+namespace Shared.Actors
 {
     public class ConsoleWriterActor : ReceiveActor
     {

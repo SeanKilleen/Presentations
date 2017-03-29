@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
 using Akka.Actor;
-using Shared;
+using Shared.Messages;
 
-namespace Routing
+namespace Shared.Actors
 {
     public class RandomNumberAfterRandomTimeWorker : ReceiveActor
     {
