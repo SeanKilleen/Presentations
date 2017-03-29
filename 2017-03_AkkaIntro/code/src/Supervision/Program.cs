@@ -4,6 +4,8 @@ using Akka;
 using Akka.Actor;
 using Akka.Routing;
 using Shared;
+using Supervision.Actors;
+using Supervision.Messages;
 
 namespace Supervision
 {

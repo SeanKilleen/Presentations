@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using Akka.Actor;
 
-namespace Supervision
+namespace Supervision.Messages
 {
     [Serializable]
     public class BumpedHeadException : Exception

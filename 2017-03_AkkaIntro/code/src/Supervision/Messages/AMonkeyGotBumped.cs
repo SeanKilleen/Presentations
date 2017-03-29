@@ -1,6 +1,6 @@
 ﻿using Akka.Actor;
 
-namespace Supervision
+namespace Supervision.Messages
 {
     public class AMonkeyGotBumped
     {

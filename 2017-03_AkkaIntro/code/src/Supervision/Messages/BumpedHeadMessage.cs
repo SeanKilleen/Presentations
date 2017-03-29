@@ -1,4 +1,4 @@
-﻿namespace Supervision
+﻿namespace Supervision.Messages
 {
     public class BumpedHeadMessage { }
 }

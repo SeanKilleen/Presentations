@@ -1,8 +1,9 @@
 ﻿using Akka.Actor;
 using Shared.Actors;
 using Shared.Messages;
+using Supervision.Messages;
 
-namespace Supervision
+namespace Supervision.Actors
 {
     public class MonkeyDoctor : ReceiveActor
     {
