@@ -53,13 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleWriterActor.cs" />
-    <Compile Include="FinishedMessage.cs" />
-    <Compile Include="GenerateRandomNumberMessage.cs" />
-    <Compile Include="HelloWorldMessage.cs" />
+    <Compile Include="Actors\ConsoleWriterActor.cs" />
+    <Compile Include="Messages\FinishedMessage.cs" />
+    <Compile Include="Messages\GenerateRandomNumberMessage.cs" />
+    <Compile Include="Messages\HelloWorldMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomNumberAfterRandomTimeWorker.cs" />
-    <Compile Include="WriteSomethingMessage.cs" />
+    <Compile Include="Actors\RandomNumberAfterRandomTimeWorker.cs" />
+    <Compile Include="Messages\WriteSomethingMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
