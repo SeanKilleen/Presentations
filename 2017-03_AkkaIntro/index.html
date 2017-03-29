@@ -18,8 +18,28 @@
 			</div>
 		</div>
 		<script src="reveal.js-3.4.1/js/reveal.js"></script>
+		<script src="reveal.js-3.4.1/lib/js/head.min.js"></script>
+		
 		<script>
 			Reveal.initialize({
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: 'reveal.js-3.4.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// Interpret Markdown in <section> elements
+					{ src: 'reveal.js-3.4.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js-3.4.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+					// Syntax highlight for <code> elements
+					{ src: 'reveal.js-3.4.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+					// Zoom in and out with Alt+click
+					{ src: 'reveal.js-3.4.1/plugin/zoom-js/zoom.js', async: true },
+
+					// Speaker notes
+					{ src: 'reveal.js-3.4.1/plugin/notes/notes.js', async: true }
+				],
+
 				// Display controls in the bottom right corner
 				controls: true,
 
