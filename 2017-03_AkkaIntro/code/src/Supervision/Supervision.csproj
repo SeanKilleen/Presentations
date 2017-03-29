@@ -55,6 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMonkeyGotBumped.cs" />
+    <Compile Include="BumpAMonkey.cs" />
+    <Compile Include="BumpedHeadException.cs" />
+    <Compile Include="BumpedHeadMessage.cs" />
+    <Compile Include="CallTheDoctor.cs" />
+    <Compile Include="Jump.cs" />
+    <Compile Include="MonkeyChild.cs" />
+    <Compile Include="MonkeyCountUpdate.cs" />
+    <Compile Include="MonkeyDoctor.cs" />
+    <Compile Include="MonkeyParent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
