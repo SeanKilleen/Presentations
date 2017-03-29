@@ -5,13 +5,12 @@
             "name": "Launch Mar 2017 Akka pres on 3000",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:3000/index.html",
+            "url": "http://localhost:3000",
             "port": 9223,
             "sourceMaps": true,
             "diagnosticLogging": true,
             "webRoot": "${workspaceRoot}/2017-03_AkkaIntro",
-            "userDataDir": "${workspaceRoot}/out/chrome"        
+            "userDataDir": "${workspaceRoot}/2017-03_AkkaIntro/out/chrome"        
             }
     ]
 }
-///out/chrome
