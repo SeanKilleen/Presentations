@@ -2,14 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Mar 2017 Akka pres on 3000",
+            "name": "Mar 2017 Akka Pres on 3000",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:3000",
             "port": 9223,
             "sourceMaps": true,
             "diagnosticLogging": true,
-            "webRoot": "${workspaceRoot}/2017-03_AkkaIntro",
+            "file": "${workspaceRoot}/2017-03_AkkaIntro/index.html",
             "userDataDir": "${workspaceRoot}/2017-03_AkkaIntro/out/chrome"        
             }
     ]
