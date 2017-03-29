@@ -9,8 +9,8 @@
             "port": 9223,
             "sourceMaps": true,
             "diagnosticLogging": true,
-            "file": "${workspaceRoot}/2017-03_AkkaIntro/index.html",
-            "userDataDir": "${workspaceRoot}/2017-03_AkkaIntro/out/chrome"        
+            "file": "${workspaceRoot}/index.html",
+            "userDataDir": "${workspaceRoot}/out/chrome"        
             }
     ]
 }
