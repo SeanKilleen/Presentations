@@ -21,16 +21,16 @@ namespace Routing
         {
             var actorSystem = ActorSystem.Create("ElasticSystem");
 
-            Props props;
+            Props props; // Just doing it like this for demo purposes
 
-            // Single actor
+            // Example 1: Single actor
             props = Props.Create<RandomNumberAfterRandomTimeWorker>();
 
-            // Router from code
+            // Example 2: Router from code
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(1));
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(5));
 
-            // Router from configuration
+            // Example 3: Router from configuration
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
 
             var randomNumberActor = actorSystem.ActorOf(props, "workers");
@@ -38,7 +38,7 @@ namespace Routing
             Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
             var consoleWriter = actorSystem.ActorOf(Props.Create<ConsoleWriterActor>());
 
-            while (true)
+            while (true) // Infinitely looping to constantly queue up messages.
             {
                 consoleWriter.Tell(new WriteSomethingMessage("Telling the workers to generate a number"));
                 await Task.Delay(TimeSpan.FromSeconds(1));
