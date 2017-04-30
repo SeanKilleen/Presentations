@@ -11,12 +11,14 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
+| "Casting a Wider .NET: Working Toward More OSS Maturity in the .NET Community" | June 2017 | [.NET Fringe Conference](dotnetfringe.org) (Portland, OR) | This talk discusses how to bring a model of open-source maturity to the .NET community in the hopes of getting others involved to realize our shared vision to make .NET a great space for open-source. | 
 
 # Catalog of Past Presentations
 Most recent shown first.
 
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
+| [Attack-a the Akka!](https://seankilleen.com/Presentations/2017-03_AkkaIntro/presentation) | March 29, 2017 | [Microsoft Maniacs Meetup](https://www.meetup.com/Microsoft-Maniacs/events/237553578/) | A revised version of my intro to Akka.NET |
 | [Intro to OSS](seankilleen.com/Presentations/2017-03_IntroToOSS) | April 4, 2017 | Excella OSS Dev Conf 2017 (VA Tech) | A presentation on the "why" of OSS software with an introduction on how to contribute.
 | [Attack-a the Akka!](https://seankilleen.com/Presentations/2017-03_AkkaIntro/presentation) | March 29, 2017 | [Microsoft Maniacs (Reston, VA)](https://www.meetup.com/Microsoft-Maniacs/events/237553578) | A revised version of my Akka.NET Talk
 | Attack-a the Akka! | June 15, 2016 | [TechTalk DC (Arlington, VA)](http://www.meetup.com/TechTalkDC/events/231392513/) | A revised update of a previous Akka.NET introductory presentation. I'll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I'm hoping I'll be able to add some more code samples.
