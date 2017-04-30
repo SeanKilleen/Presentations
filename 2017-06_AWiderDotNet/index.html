@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reveal.js-3.4.1/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js-3.4.1/css/theme/black.css">
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="presentation-style.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type='text/template'>
+					# Casting a Wider .NET
+					### Contributing to OSS
+
+					<small><http://SeanKilleen.com/Presentations/2017-06_AWiderDotNet></small>
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## Hey There! I'm Sean.
+
+					<img src="images/me.jpg" style="width:30%;float:left"/>
+
+					<ul style="width:60%">
+					<li> <i class="fa fa-briefcase" aria-hidden="true"></i> [Excella Consulting](http://excella.com)</li>
+					<li> <i class="fa fa-github" aria-hidden="true"></i> [SeanKilleen](http://github.com/SeanKilleen)</li>
+					<li> <i class="fa fa-envelope" aria-hidden="true"></i> [SeanKilleen@gmail.com](mailto:SeanKilleen@gmail.com)</li>
+					<li> <i class="fa fa-twitter" aria-hidden="true"></i> [@sjkilleen](http://twitter.com/sjkilleen)</li>
+					<li> <i class="fa fa-globe" aria-hidden="true"></i> <http://SeanKilleen.com></li>
+					</ul>
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## (Insert talk here)
+
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					# Thanks!
+
+					* <i class="fa fa-github" aria-hidden="true"></i> [SeanKilleen](http://github.com/SeanKilleen)
+					* <i class="fa fa-twitter" aria-hidden="true"></i> [@sjkilleen](http://twitter.com/sjkilleen)
+					* <i class="fa fa-globe" aria-hidden="true"></i> [SeanKilleen.com](http://SeanKilleen.com)
+					* <i class="fa fa-envelope" aria-hidden="true"></i> [SeanKilleen@gmail.com](mailto:SeanKilleen@gmail.com)
+					* <i class="fa fa-briefcase" aria-hidden="true"></i> [Excella.com](http://excella.com)
+					
+					<small><http://SeanKilleen.com/Presentations/2017-06_AWiderDotNet></small>
+
+					</script>
+				</section>
+			</div>
+		</div>
+		<script src="reveal.js-3.4.1/js/reveal.js"></script>
+		<script src="reveal.js-3.4.1/lib/js/head.min.js"></script>
+		
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: 'reveal.js-3.4.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// Interpret Markdown in <section> elements
+					{ src: 'reveal.js-3.4.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js-3.4.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+					// Syntax highlight for <code> elements
+					{ src: 'reveal.js-3.4.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+					// Zoom in and out with Alt+click
+					{ src: 'reveal.js-3.4.1/plugin/zoom-js/zoom.js', async: true },
+
+					// Speaker notes
+					{ src: 'reveal.js-3.4.1/plugin/notes/notes.js', async: true }
+				],
+
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: false,
+
+				// Display the page number of the current slide
+				slideNumber: false,
+
+				// Push each slide change to the browser history
+				history: true,
+
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+
+				// Enable the slide overview mode
+				overview: true,
+
+				// Vertical centering of slides
+				center: false,
+
+				// Enables touch navigation on devices with touch input
+				touch: true,
+
+				// Loop the presentation
+				loop: false,
+
+				// Change the presentation direction to be RTL
+				rtl: false,
+
+				// Randomizes the order of slides each time the presentation loads
+				shuffle: false,
+
+				// Turns fragments on and off globally
+				fragments: true,
+
+				// Flags if the presentation is running in an embedded mode,
+				// i.e. contained within a limited portion of the screen
+				embedded: false,
+
+				// Flags if we should show a help overlay when the questionmark
+				// key is pressed
+				help: true,
+
+				// Flags if speaker notes should be visible to all viewers
+				showNotes: false,
+
+				// Number of milliseconds between automatically proceeding to the
+				// next slide, disabled when set to 0, this value can be overwritten
+				// by using a data-autoslide attribute on your slides
+				autoSlide: 0,
+
+				// Stop auto-sliding after user input
+				autoSlideStoppable: true,
+
+				// Use this method for navigation when auto-sliding
+				autoSlideMethod: Reveal.navigateNext,
+
+				// Enable slide navigation via mouse wheel
+				mouseWheel: false,
+
+				// Hides the address bar on mobile devices
+				hideAddressBar: true,
+
+				// Opens links in an iframe preview overlay
+				previewLinks: false,
+
+				// Transition style
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Transition speed
+				transitionSpeed: 'default', // default/fast/slow
+
+				// Transition style for full page slide backgrounds
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Number of slides away from the current that are visible
+				viewDistance: 3,
+
+				// Parallax background image
+				parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+				// Parallax background size
+				parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+				// Number of pixels to move the parallax background per slide
+				// - Calculated automatically unless specified
+				// - Set to 0 to disable movement along an axis
+				parallaxBackgroundHorizontal: null,
+				parallaxBackgroundVertical: null				
+			});
+		</script>
+	</body>
+</html>
