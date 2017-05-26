@@ -12,6 +12,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
 | "Casting a Wider .NET: Working Toward More OSS Maturity in the .NET Community" | June 2017 | [.NET Fringe Conference](dotnetfringe.org) (Portland, OR) | This talk discusses how to bring a model of open-source maturity to the .NET community in the hopes of getting others involved to realize our shared vision to make .NET a great space for open-source. | 
+| Attack-a the Akka! | October 17, 2017 | [.NET DC User Group](https://www.meetup.com/dotnetdc/) (Washington, DC) | A revamped version of my introduction to the Actor Model and [Akka.NET](http://getakka.net) | 
 
 # Catalog of Past Presentations
 Most recent shown first.
