@@ -1,0 +1,629 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reveal.js-3.4.1/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js-3.4.1/css/theme/black.css">
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="presentation-style.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown class="center">
+					<script type='text/template'>
+					# Stretching .NET
+					#### An Introduction to ElasticSearch
+
+					<small><http://SeanKilleen.com/Presentations/2017-10_ElasticSearch></small>
+					</script>
+				</section>
+				<section data-markdown class="center nobullets">
+					<script type='text/template'>
+					## Hey There! I'm Sean.
+
+					<img src="images/me.jpg" style="width:30%;float:left"/>
+
+					<ul style="width:60%">
+					<li> <i class="fa fa-briefcase" aria-hidden="true"></i> [Excella Consulting](http://excella.com)</li>
+					<li> <i class="fa fa-github" aria-hidden="true"></i> [SeanKilleen](http://github.com/SeanKilleen)</li>
+					<li> <i class="fa fa-envelope" aria-hidden="true"></i> [SeanKilleen@gmail.com](mailto:SeanKilleen@gmail.com)</li>
+					<li> <i class="fa fa-twitter" aria-hidden="true"></i> [@sjkilleen](http://twitter.com/sjkilleen)</li>
+					<li> <i class="fa fa-globe" aria-hidden="true"></i> <http://SeanKilleen.com></li>
+					</ul>
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					<img src="images/dadProfile.jpg"/>
+					</script>
+				</section>				
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## Standing on the Shoulders of Giants
+					</script>
+				</section>
+				<section data-markdown class="center" data-background-image="images/ExpertBeginnerAvatar.jpg" data-background-size="contain">
+					<script type='text/template'>
+					<!--<img src="images/ExpertBeginnerAvatar.jpg"/>-->
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					<img src="images/ExpertBeginnerTweet1.png"/>
+					</script>
+				</section>								
+				<section data-markdown class="center"  data-background-image="images/elephant-in-the-room.jpeg" data-background-size="contain">
+					<script type='text/template'>
+
+					</script>
+				</section>
+				<section data-markdown data-background-image="images/typing-tongue-out.gif" data-background-size="contain">
+					<script type='text/template'>
+					</script>
+				</section>
+				<section data-markdown class="center" data-background-image="images/elephant-jump.jpeg" data-background-size="contain">
+					<script type='text/template'>
+					<!--#### We're dealing with 
+					# Cultural Debt-->
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### How do we tackle it? 
+					# Empathy.
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					<img src="images/WoodyZuillTweet.png"/>
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## Let's apply this to culture. 
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## So, how do we capture this? 
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					## A maturity model! 
+					</script>
+				</section>
+				<section data-markdown class="center" data-background-image="images/facepalm.gif">
+					<script type='text/template'>
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					# The Model
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# FUD
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD
+
+					# Mistrust
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD
+
+					# Security
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD
+
+					# Legal
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD
+
+					# Reinventing the Wheel
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD
+
+					# We're the best ...right?
+					</script>
+				</section>
+				
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# Acceptance
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Acceptance
+
+					# OSS As Mystery
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Acceptance
+
+					# Learning "The Moves"
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# Consumption
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption
+
+					# Using Packages
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption
+
+					# Understand the ecosystem
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption
+
+					# OSS AS MAGIC
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption
+
+					# Responsible Consumption
+					</script>
+				</section>
+
+				</section>
+				<section data-markdown class="center" data-background-image="images/dwight-customer-right.jpg" data-background-size="contain">
+					<script type='text/template'>
+					</script>
+				</section>				
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# Contribution
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution
+
+					# Pull Requests
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution
+
+					# OSS as two-way street
+					</script>
+				</section>
+				
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# Participation
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation
+
+					# OSS by Default
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation
+
+					# Public Code
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation
+
+					# Encourage Contributions
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation
+
+					# Incentivize Contributions
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### The Model
+					# Cultural Embrace
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Cultural Embrace
+
+					# Avoiding NIH Syndrome
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Cultural Embrace
+
+					# Public Roadmap
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Cultural Embrace
+
+					# Community Direction
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Cultural Embrace
+
+					# Collaborate by Default
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Cultural Embrace
+
+					# Maximally Open
+					</script>
+				</section>
+
+				<!-- FUD to acceptance -->
+				<section data-markdown class="center"  data-background-image="images/help-me-help-you.gif" data-background-size="contain">
+					<script type='text/template'>
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD <i class="fa fa-arrow-right" aria-hidden="true"></i> Acceptance
+
+					# Explain Risks
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD <i class="fa fa-arrow-right" aria-hidden="true"></i> Acceptance
+
+					# Explain Advantages
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD <i class="fa fa-arrow-right" aria-hidden="true"></i> Acceptance
+
+					# License FAQs
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD <i class="fa fa-arrow-right" aria-hidden="true"></i> Acceptance
+
+					# Success Stories
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### FUD <i class="fa fa-arrow-right" aria-hidden="true"></i> Acceptance
+
+					# Mythbusting
+					</script>
+				</section>
+
+				<!-- Acceptance to Consumption -->
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Acceptance <i class="fa fa-arrow-right" aria-hidden="true"></i> Consumption
+
+					# Package Managers
+
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Acceptance <i class="fa fa-arrow-right" aria-hidden="true"></i> Consumption
+
+					# Reponsible Consumption
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Acceptance <i class="fa fa-arrow-right" aria-hidden="true"></i> Consumption
+
+					# OSS Maintainer Empathy
+					</script>
+				</section>
+
+				<!-- Consumption to Contribution -->
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption <i class="fa fa-arrow-right" aria-hidden="true"></i> Contribution
+
+					# Git &amp; Platform fundamentals
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption <i class="fa fa-arrow-right" aria-hidden="true"></i> Contribution
+
+					# [Up-for-grabs.net](http://up-for-grabs.net)
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Consumption <i class="fa fa-arrow-right" aria-hidden="true"></i> Contribution
+
+					# The "Why" 
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution <i class="fa fa-arrow-right" aria-hidden="true"></i> Participation
+
+					# Guide to OSSing software
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution <i class="fa fa-arrow-right" aria-hidden="true"></i> Participation
+
+					# ROI of participation
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution <i class="fa fa-arrow-right" aria-hidden="true"></i> Participation
+
+					# Ways to Encourage Contributions
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Contribution <i class="fa fa-arrow-right" aria-hidden="true"></i> Participation
+
+					# Ways to Incentivize Contributions
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation <i class="fa fa-arrow-right" aria-hidden="true"></i> Cultural Embrace
+
+					# Commit to "collaboration first"
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation <i class="fa fa-arrow-right" aria-hidden="true"></i> Cultural Embrace
+
+					# Take feedback on NIH seriously
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation <i class="fa fa-arrow-right" aria-hidden="true"></i> Cultural Embrace
+
+					# Examples of Public Roadmap
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation <i class="fa fa-arrow-right" aria-hidden="true"></i> Cultural Embrace
+
+					# Examples of Community Driven OSS
+					</script>
+				</section>
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Participation <i class="fa fa-arrow-right" aria-hidden="true"></i> Cultural Embrace
+
+					# Open Governance Models
+					</script>
+				</section>
+
+				<section data-markdown class="center">
+					<script type='text/template'>
+					#### Introducing
+
+					# [AWider.NET](http://AWider.net)
+
+					</script>
+				</section>
+
+				<section data-markdown class="center" data-background-image="images/cat-big-eyes.jpg">
+					<script type='text/template'>
+
+					</script>
+				</section>
+				<section data-markdown class="center" data-background-image="images/youre-awesome.jpeg" data-background-size="contain">
+					<script type='text/template'>
+					</script>
+				</section>
+
+				<section data-markdown class="center nobullets">
+					<script type='text/template'>
+					# Thanks!
+
+					* <i class="fa fa-github" aria-hidden="true"></i> [SeanKilleen](http://github.com/SeanKilleen)
+					* <i class="fa fa-twitter" aria-hidden="true"></i> [@sjkilleen](http://twitter.com/sjkilleen)
+					* <i class="fa fa-globe" aria-hidden="true"></i> [SeanKilleen.com](http://SeanKilleen.com)
+					* <i class="fa fa-envelope" aria-hidden="true"></i> [SeanKilleen@gmail.com](mailto:SeanKilleen@gmail.com)
+					* <i class="fa fa-briefcase" aria-hidden="true"></i> [Excella.com](http://excella.com)
+					
+					<small><http://SeanKilleen.com/Presentations/2017-06_AWiderDotNet></small>
+
+					</script>
+				</section>
+			</div>
+		</div>
+		<script src="reveal.js-3.4.1/js/reveal.js"></script>
+		<script src="reveal.js-3.4.1/lib/js/head.min.js"></script>
+		
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: 'reveal.js-3.4.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// Interpret Markdown in <section> elements
+					{ src: 'reveal.js-3.4.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js-3.4.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+					// Syntax highlight for <code> elements
+					{ src: 'reveal.js-3.4.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+					// Zoom in and out with Alt+click
+					{ src: 'reveal.js-3.4.1/plugin/zoom-js/zoom.js', async: true },
+
+					// Speaker notes
+					{ src: 'reveal.js-3.4.1/plugin/notes/notes.js', async: true }
+				],
+
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: false,
+
+				// Display the page number of the current slide
+				slideNumber: false,
+
+				// Push each slide change to the browser history
+				history: true,
+
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+
+				// Enable the slide overview mode
+				overview: true,
+
+				// Vertical centering of slides
+				center: false,
+
+				// Enables touch navigation on devices with touch input
+				touch: true,
+
+				// Loop the presentation
+				loop: false,
+
+				// Change the presentation direction to be RTL
+				rtl: false,
+
+				// Randomizes the order of slides each time the presentation loads
+				shuffle: false,
+
+				// Turns fragments on and off globally
+				fragments: true,
+
+				// Flags if the presentation is running in an embedded mode,
+				// i.e. contained within a limited portion of the screen
+				embedded: false,
+
+				// Flags if we should show a help overlay when the questionmark
+				// key is pressed
+				help: true,
+
+				// Flags if speaker notes should be visible to all viewers
+				showNotes: false,
+
+				// Number of milliseconds between automatically proceeding to the
+				// next slide, disabled when set to 0, this value can be overwritten
+				// by using a data-autoslide attribute on your slides
+				autoSlide: 0,
+
+				// Stop auto-sliding after user input
+				autoSlideStoppable: true,
+
+				// Use this method for navigation when auto-sliding
+				autoSlideMethod: Reveal.navigateNext,
+
+				// Enable slide navigation via mouse wheel
+				mouseWheel: false,
+
+				// Hides the address bar on mobile devices
+				hideAddressBar: true,
+
+				// Opens links in an iframe preview overlay
+				previewLinks: false,
+
+				// Transition style
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Transition speed
+				transitionSpeed: 'default', // default/fast/slow
+
+				// Transition style for full page slide backgrounds
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Number of slides away from the current that are visible
+				viewDistance: 3,
+
+				// Parallax background image
+				parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+				// Parallax background size
+				parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+				// Number of pixels to move the parallax background per slide
+				// - Calculated automatically unless specified
+				// - Set to 0 to disable movement along an axis
+				parallaxBackgroundHorizontal: null,
+				parallaxBackgroundVertical: null				
+			});
+		</script>
+
+		<!-- google analytics: I'm curious to track the life of this presentation after I give it, and figured why not? -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-100483828-2', 'auto');
+			ga('send', 'pageview');
+
+		</script>		
+	</body>
+</html>
