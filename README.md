@@ -11,7 +11,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
-| Stretching .NET: An Introduction to ElasticSearch | October 9, 2017 | [NoVA Code Camp](http://novacodecamp.org) (Reston, VA) | I'll be presenting an introduction to ElasticSearch for .NET developers, with concepts & code. | 
+| Stretching .NET: An Introduction to ElasticSearch | October 7, 2017 | [NoVA Code Camp](http://novacodecamp.org) (Reston, VA) | I'll be presenting an introduction to ElasticSearch for .NET developers, with concepts & code. | 
 | Attack-a the Akka! | October 17, 2017 | [.NET DC User Group](https://www.meetup.com/dotnetdc/) (Washington, DC) | A revamped version of my introduction to the Actor Model and [Akka.NET](http://getakka.net) | 
 
 # Catalog of Past Presentations
