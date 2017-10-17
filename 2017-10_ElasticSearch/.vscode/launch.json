@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Mar 2017 Akka Pres on 3000",
+            "name": "Oct 2017 ElasticSearch Pres on 3000",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:3000",
