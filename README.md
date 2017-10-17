@@ -11,7 +11,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description | 
 |-------------------|------|-------|-------------|
-| [Attack-a the Akka!](http://SeanKilleen.com/Presentations/2017-10_AkkaIntro) | October 17, 2017 | [.NET DC User Group](https://www.meetup.com/dotnetdc/) (Washington, DC) | A revamped version of my introduction to the Actor Model and [Akka.NET](http://getakka.net) | 
+| [Attack-a the Akka!](http://SeanKilleen.com/Presentations/2017-10_AkkaIntro/presentation) | October 17, 2017 | [.NET DC User Group](https://www.meetup.com/dotnetdc/) (Washington, DC) | A revamped version of my introduction to the Actor Model and [Akka.NET](http://getakka.net) | 
 
 # Catalog of Past Presentations
 Most recent shown first.
