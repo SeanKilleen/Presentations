@@ -4,11 +4,11 @@ A catalog of the presentations I've given or am planning to give.
 
 I figured since I want to expand this list, I should create a central place for them to live. :)
 
-# Have Something You'd Like to See?
+## Have Something You'd Like to See?
 
 [Let me know](mailto:SeanKilleen@gmail.com) -- maybe I can present on it!
 
-# Upcoming Presentations
+## Upcoming Presentations
 
 If there's anything listed here, hopefully you're also seeing a bunch of commits to this repo. :)
 
@@ -16,7 +16,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 |-------------------|------|-------|-------------|
 | Stretching .NET: An Introduction to ElasticSearch | October 7, 2017 | [Capital Area .NET Users Group (Vienna, VA)](http://www.meetup.com/CapArea-Net) | An introduction to ElasticSearch for .NET developers, with concepts & code. |
 
-# Catalog of Past Presentations
+## Catalog of Past Presentations
 
 Most recent shown first.
 
