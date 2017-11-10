@@ -14,7 +14,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| Stretching .NET: An Introduction to ElasticSearch | October 7, 2017 | [Capital Area .NET Users Group (Vienna, VA)](http://www.meetup.com/CapArea-Net) | An introduction to ElasticSearch for .NET developers, with concepts & code. |
+| Stretching .NET: An Introduction to ElasticSearch | January 23, 2018 | [Capital Area .NET Users Group (Vienna, VA)](http://www.meetup.com/CapArea-Net) | An introduction to ElasticSearch for .NET developers, with concepts & code. |
 
 ## Catalog of Past Presentations
 
