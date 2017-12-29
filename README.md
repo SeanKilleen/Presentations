@@ -14,6 +14,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
+| Topic TBD | January 23, 2018 | Capital Area .NET User Group (Vienna, VA) | Looking forward to presenting at CapArea! |
 | Topic TBD | March 6, 2018 | Central Maryland Association for .NET Professionals (CMAP) (Columbia, MD) | Looking forward to presenting at CMAP! |
 | Topic TBD | March 20, 2018 | .NET DC User Group | Looking forward to presenting at .NET DC User Group! |
 
