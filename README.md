@@ -14,7 +14,9 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
+| [Certified Agile Testing &amp; Automation](http://xluh.co/JanAgileTesting) | January 22-24, 2018 | [Excella Consulting](http://xluh.co/JanAgileTesting) | Our ICAgile (ICP-TST/ATA) certified testing course is happening in January. Check the links for more info! |
 | Topic TBD | January 23, 2018 | Capital Area .NET User Group (Vienna, VA) | Looking forward to presenting at CapArea! |
+| [Certified Agile Testing &amp; Automation](http://xluh.co/MarchAgileTesting) | March 5-7, 2018 | [Excella Consulting](http://xluh.co/MarchAgileTesting) | Our ICAgile (ICP-TST/ATA) certified testing course is happening in March. Check the links for more info! |
 | Topic TBD | March 6, 2018 | Central Maryland Association for .NET Professionals (CMAP) (Columbia, MD) | Looking forward to presenting at CMAP! |
 | Topic TBD | March 20, 2018 | .NET DC User Group | Looking forward to presenting at .NET DC User Group! |
 
