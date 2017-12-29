@@ -14,7 +14,8 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| Stretching .NET: An Introduction to ElasticSearch | January 23, 2018 | [Capital Area .NET Users Group](http://www.meetup.com/CapArea-Net) (Vienna, VA) | An introduction to ElasticSearch for .NET developers, with concepts & code. |
+| Topic TBD | March 6, 2018 | Central Maryland Association for .NET Professionals (CMAP) (Columbia, MD) | Looking forward to presenting at CMAP! |
+| Topic TBD | March 20, 2018 | .NET DC User Group | Looking forward to presenting at .NET DC User Group! |
 
 ## Catalog of Past Presentations
 
@@ -22,6 +23,7 @@ Most recent shown first.
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
+| [Stretching .NET: An Introduction to ElasticSearch](http://SeanKilleen.com/Presentations/2017-11_ElasticSearch) | November 15, 2017 | [Capital Area .NET Users Group](https://www.meetup.com/CapArea-Net/events/244895364/) (Vienna, VA) | An introduction to ElasticSearch for .NET developers, with concepts & code. |
 | [Attack-a the Akka!](http://SeanKilleen.com/Presentations/2017-10_AkkaIntro/presentation) | October 17, 2017 | [.NET DC User Group](https://www.meetup.com/dotnetdc/) (Washington, DC) | A revamped version of my introduction to the Actor Model and [Akka.NET](http://getakka.net) |
 | [Stretching .NET: An Introduction to ElasticSearch](http://SeanKilleen.com/Presentations/2017-10_ElasticSearch) | October 7, 2017 | [NoVA Code Camp](http://novacodecamp.org) (Reston, VA) | I'll be presenting an introduction to ElasticSearch for .NET developers, with concepts & code. |
 | "Casting a Wider .NET: Working Toward More OSS Maturity in the .NET Community" ([slides](https://seankilleen.com/Presentations/2017-06_AWiderDotNet), [video](https://www.youtube.com/watch?v=jFDXNGFvcYg)) | June 5, 2017 | [.NET Fringe Conference](http://dotnetfringe.org/speakers.html#sean-killeen) (Portland, OR) | This talk discusses how to bring a model of open-source maturity to the .NET community in the hopes of getting others involved to realize our shared vision to make .NET a great space for open-source. |
