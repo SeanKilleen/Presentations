@@ -18,6 +18,10 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 | Introduction to Akka .NET | March 6, 2018 | [Central Maryland Association for .NET Professionals (CMAP) (Columbia, MD)](https://www.meetup.com/CMAP-Online/events/247545849/) | Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications. |
 | TeamCity, OctopusDeploy, and Azure: So Happy Together| March 20, 2018 | [.NET DC User Group](http://meetu.ps/e/DYnG9/1Zghg/d) | Sean Killeen is back to .NET DC and is going where no presenter should ever go -- a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create -- from scratch -- a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we'll discuss Chocolatey, depoloyment slots, nuget packages, and more. We'll also touch on Appveyor and some other Azure deployment methods, as well as the "why" of CI/CD. |
 
+## Talks I'm considering
+
+These are talks I'm looking to flesh out & put together. If any of these interes you, let me know! I'd love to have a reason to dive into any of them.
+
 ## Catalog of Past Presentations
 
 Most recent shown first.
