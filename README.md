@@ -22,6 +22,12 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 These are talks I'm looking to flesh out & put together. If any of these interes you, let me know! I'd love to have a reason to dive into any of them.
 
+* Operational Visibility through logging with Serilog & Seq: 
+* (fr)Agile: How agile falls apart, and what you can do to hold it all together.
+* An introduction to Neo4j with .NET
+* Getting started with automated benchmarking 
+* Modernizing your .NET Application
+
 ## Catalog of Past Presentations
 
 Most recent shown first.
