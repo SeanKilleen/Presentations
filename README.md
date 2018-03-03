@@ -26,9 +26,9 @@ These are talks I'm looking to flesh out & put together. If any of these interes
 * **(fr)Agile: How agile falls apart, and what you can do to hold it all together**: Working in an agile mindset -- especially when favoring specific approaches -- can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams,  holding it together with duct tape and a little help from my friends.
 * **An introduction to Graph Databases in .NET with Neo4j**: Modern development shops are fast discovering that tables & rows aren't the only way to store data. In this talk, I introduce .NET developers to the advantages of graph databases using Neo4j. You'll learn how graph databases differ from traditional SQL DBs, when it makes sense to use a graph database, and what the advantages are. We'll also work through an example project to get a feel for some of the concepts, and sprinkle in a littler Docker goodness for some added fun.
 * **An introduction performance benchmarks in .NET**: Benchmarking is a crucial skill for modern application developers, who need to tune applications for modern needs. In this session, we'll explain the "why" of benchmarking, introduce tools such as NBench and Benchmark.NET, and build a CI/CD pipeline that ensures our benchmarks always succeed.
-* **Modernizing your .NET Application -- the time is now**: 
-* The Dark Art of just-in-time tech talks
-* A guide to better technical interviews:
+* **Modernizing your .NET Application -- the time is now**: For too long, .NET (and its respective developers) have been seen as a place where good coding practices and modern applications go to die. Why is that? In this session, I'll talk about the challenges to modernizing a .NET web app, techniques to begin the transformation, and how you as a developer at any place in a team can help instigate this change. We'lll talk about the benefits of modernizing your app, both for your organization and for your development team.
+* **The Dark Art of just-in-time tech talks**: I once, to my colleague's chagrin, thought through a tech talk during a drive, wrote slides in an hour, and gave a presentation that was well received and lasted exactly as long as it should. After doing this a few times, I've picked up some tips along the way on how to deliver a talk no matter how rushed you may feel. We'll also talk about the downsides of this approach and how to mitigate the risks.
+* **Level up your team with better technical interviews**: 
 
 ## Catalog of Past Presentations
 
