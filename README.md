@@ -24,9 +24,9 @@ These are talks I'm looking to flesh out & put together. If any of these interes
 
 * **Better Visibility into your .NET app with Structured Logging**: Too many developers underestimate the power that is hidden away in their logs. In this talk, I will take us through the "why" of structured logging and the basics of how to attain it via Serilog and Seq, with plenty of examples along the way. You'll learn how to log better, how to search those logs, how to use logs to identify performance issues, and how I once substituted log messages for an entire UI in order to provide business value quickly.
 * **(fr)Agile: How agile falls apart, and what you can do to hold it all together**: Working in an agile mindset -- especially when favoring specific approaches -- can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams,  holding it together with duct tape and a little help from my friends.
-* An introduction to Neo4j with .NET
-* Getting started with automated benchmarking:
-* Modernizing your .NET Application
+* **An introduction to Graph Databases in .NET with Neo4j**: Modern development shops are fast discovering that tables & rows aren't the only way to store data. In this talk, I introduce .NET developers to the advantages of graph databases using Neo4j. You'll learn how graph databases differ from traditional SQL DBs, when it makes sense to use a graph database, and what the advantages are. We'll also work through an example project to get a feel for some of the concepts, and sprinkle in a littler Docker goodness for some added fun.
+* **An introduction performance benchmarks in .NET**: Benchmarking is a crucial skill for modern application developers, who need to tune applications for modern needs. In this session, we'll explain the "why" of benchmarking, introduce tools such as NBench and Benchmark.NET, and build a CI/CD pipeline that ensures our benchmarks always succeed.
+* **Modernizing your .NET Application -- the time is now**: 
 * The Dark Art of just-in-time tech talks
 * A guide to better technical interviews:
 
