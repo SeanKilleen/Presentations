@@ -22,11 +22,13 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 These are talks I'm looking to flesh out & put together. If any of these interes you, let me know! I'd love to have a reason to dive into any of them.
 
-* Operational Visibility through logging with Serilog & Seq: 
-* (fr)Agile: How agile falls apart, and what you can do to hold it all together.
+* **Better Visibility into your .NET app with Structured Logging**: Too many developers underestimate the power that is hidden away in their logs. In this talk, I will take us through the "why" of structured logging and the basics of how to attain it via Serilog and Seq, with plenty of examples along the way. You'll learn how to log better, how to search those logs, how to use logs to identify performance issues, and how Sean substituted log messages for an entire UI in order to provide business value quickly. 
+* (fr)Agile: How agile falls apart, and what you can do to hold it all together:
 * An introduction to Neo4j with .NET
-* Getting started with automated benchmarking 
+* Getting started with automated benchmarking:
 * Modernizing your .NET Application
+* The Dark Art of just-in-time tech talks
+* A guide to better technical interviews:
 
 ## Catalog of Past Presentations
 
