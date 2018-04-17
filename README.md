@@ -15,7 +15,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
 | TBD | April 21, 2018 | OSS Dev Conf (Blacksburg, VA) | I'm excited to present at the OSS Dev Conf! Cooking up a topic riiiiight now. |
-| POSTPONED: TeamCity, OctopusDeploy, and Azure: So Happy Together| TBD (was 4/7/2018) | [NoVA Code Camp](http://novacodecamp.org) | Sean Killeen is going where no presenter should ever go -- a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create -- from scratch -- a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we'll discuss Chocolatey, deployment slots, nuget packages, and more. We'll also touch on Appveyor and some other Azure deployment methods, as well as the "why" of CI/CD. |
+| POSTPONED: TeamCity, OctopusDeploy, and Azure: So Happy Together| 5/12/2018 | [NoVA Code Camp](http://novacodecamp.org) | Sean Killeen is going where no presenter should ever go -- a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create -- from scratch -- a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we'll discuss Chocolatey, deployment slots, nuget packages, and more. We'll also touch on Appveyor and some other Azure deployment methods, as well as the "why" of CI/CD. |
 
 ## Talks I'm considering
 
