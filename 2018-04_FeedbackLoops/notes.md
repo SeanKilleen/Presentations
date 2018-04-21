@@ -68,7 +68,7 @@ Philosophy Book on Twitter
 Steve buscemi hello fellow kids
 
 Feedback Loop Categories
-    Code: Enable Quality
+    Code: Enable Quality (infinite loop)
         Bug Reports
         Manual Release Testing
         Continuous Integration (nightly)
@@ -78,18 +78,18 @@ Feedback Loop Categories
         Unit Tests
         Continuous Testing
         TDD
-    Delivery: Enable Value
+    Delivery: Enable Value ($ loop)
         Yearly Release
         Quarterly Release
         Per-sprint
         Nightly
         Continuous
-    Infrastructure: Enable Architecture
+    Infrastructure: Enable Architecture (circular building)
         Bare metal servers
         VMs
         Infrastructure as Code
         Containers
-    Marketing: Enable Reach
+    Marketing: Enable Reach (globe?)
         Yearly Survey
         Feedback popups
         Analytics
@@ -118,8 +118,10 @@ Feedback Loop Categories
         Seeking feedback often
         Telegraphing Intention
     Career: Enable Happiness
+        Major career shift
         Resume Cattle Calls
         Job Boards
         Building Relationships
-        XC
+        Experiential Learning (XC)
 Weird....all of those things with smaller feedback loops are trends! (hmm icon)
+Diversity &amp; Inclusion
