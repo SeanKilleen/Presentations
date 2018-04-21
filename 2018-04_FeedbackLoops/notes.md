@@ -42,23 +42,3 @@ Categories where feedback loops matter include development, deployment, infrastr
 
 
 Regular feedback loops also help uncover patterns. If you have a cycle that repeats every day and the same thing comes up again and again, it's easy then if you only check in once every month
-
-Note to self, think about what smaller feedback loops for each category actually delivered. For example feedback loops on career deliver a better, more rewarding career. Feedback loops on testing deliver better quality software. Feedback loops on process deliver more value. Etc
-
-Kanye West Connection. Better faster stronger. Also, he released life of Pablo when it wasn't even finished yet. Ship it.
-
-
-Feedback Loop Categories
-    Professional: Enable Growth
-        Yearly Review
-        Bi-weekly Check-in
-        Seeking feedback often
-        Telegraphing Intention
-    Career: Enable Happiness
-        Major career shift
-        Resume Cattle Calls
-        Job Boards
-        Building Relationships
-        Experiential Learning (XC)
-Weird....all of those things with smaller feedback loops are trends! (hmm icon)
-Diversity &amp; Inclusion
