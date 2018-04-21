@@ -79,23 +79,37 @@ Feedback Loop Categories
         VMs
         Infrastructure as Code
         Containers
+    Marketing
+        Yearly Survey
+        Feedback popups
+        Analytics
+        A/B testing
     Process
         Waterfall
         Scrum
         Kanban
         Experiments
-Meetings
-    Large team meetings
-    Breakout meetings
-OSS 
+    Team Interactions
+        Release Retro
+        Sprint Retro
+        Standup
+        Pair Programming
+        Mobbing
+    OSS 
         Fork 
         Pull Request
         WIP Pull Request
         Issue
-    Careers
+    Professional Growth
         Yearly Review
         Bi-weekly Check-in
-        Seeking feedback all the time
+        Seeking feedback often
+        Telegraphing Intention
+    Career
+        Resume Cattle Calls
+        Job Boards
+        Building Relationships
+        XC
     Team building
 
-Weird....all of those things with smaller feedback loops are trends!
+Weird....all of those things with smaller feedback loops are trends! (hmm icon)
