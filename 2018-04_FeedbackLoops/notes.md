@@ -47,70 +47,8 @@ Note to self, think about what smaller feedback loops for each category actually
 
 Kanye West Connection. Better faster stronger. Also, he released life of Pablo when it wasn't even finished yet. Ship it.
 
-http://www.xxlmag.com/news/2016/06/kanye-west-the-life-of-pablo-changes/
-
-http://archive.defense.gov/dodcmsshare/newsphoto/2005-08/050806-N-9769P-004.jpg
-
-Images:
-
-https://pixabay.com/en/colorful-ring-fruit-loops-cereal-2583475/
-https://pixabay.com/en/empire-state-building-new-york-1592978/
-
-
-What is a feedback loop?
-
-
-Better/Faster/Stronger image
-Kanye Image
-Life of Pablo Cover
-Philosophy Book on Twitter
-Steve buscemi hello fellow kids
 
 Feedback Loop Categories
-    Code: Enable Quality (infinite loop)
-        Bug Reports
-        Manual Release Testing
-        Continuous Integration (nightly)
-        Automated Acceptance Tests
-        Integration Tests
-        Continuous Integration (every change)
-        Unit Tests
-        Continuous Testing
-        TDD
-    Delivery: Enable Value ($ loop)
-        Yearly Release
-        Quarterly Release
-        Per-sprint
-        Nightly
-        Continuous
-    Infrastructure: Enable Architecture (circular building)
-        Bare metal servers
-        VMs
-        Infrastructure as Code
-        Containers
-    Marketing: Enable Reach (globe?)
-        Yearly Survey
-        Feedback popups
-        Analytics
-        A/B testing
-    Process: Enable adaptation
-        Waterfall
-        Scrum
-        Kanban
-        Experiments
-    Team Interactions: Enable Collaboration
-        Release Retro
-        Sprint Retro
-        Standup
-        Pair Programming
-        Mood Boards
-        Mobbing
-    OSS: Enable Contribution
-        Copy
-        Fork 
-        Pull Request
-        WIP Pull Request
-        Issue
     Professional: Enable Growth
         Yearly Review
         Bi-weekly Check-in
