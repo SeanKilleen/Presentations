@@ -7,7 +7,6 @@ Ideas for Imagery to use throughout
 * Shoe laces / knots
 * Skywriting loops?
 
-What are feedback loops?
 
 Why do we want to make our feedback loops as small as possible?
 
