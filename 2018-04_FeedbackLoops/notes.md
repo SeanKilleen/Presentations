@@ -60,6 +60,13 @@ https://pixabay.com/en/empire-state-building-new-york-1592978/
 
 What is a feedback loop?
 
+
+Better/Faster/Stronger image
+Kanye Image
+Life of Pablo Cover
+Philosophy Book on Twitter
+Steve buscemi hello fellow kids
+
 Feedback Loop Categories
     Code: Enable Quality
         Bug Reports
