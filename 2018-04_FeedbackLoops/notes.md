@@ -58,58 +58,61 @@ https://pixabay.com/en/colorful-ring-fruit-loops-cereal-2583475/
 https://pixabay.com/en/empire-state-building-new-york-1592978/
 
 
+What is a feedback loop?
+
 Feedback Loop Categories
-    Code Quality
+    Code: Enable Quality
         Bug Reports
         Manual Release Testing
-        Continuous Integration
+        Continuous Integration (nightly)
         Automated Acceptance Tests
         Integration Tests
+        Continuous Integration (every change)
         Unit Tests
         Continuous Testing
         TDD
-    Delivery
+    Delivery: Enable Value
         Yearly Release
         Quarterly Release
         Per-sprint
         Nightly
         Continuous
-    Infrastructure
+    Infrastructure: Enable Architecture
         Bare metal servers
         VMs
         Infrastructure as Code
         Containers
-    Marketing
+    Marketing: Enable Reach
         Yearly Survey
         Feedback popups
         Analytics
         A/B testing
-    Process
+    Process: Enable adaptation
         Waterfall
         Scrum
         Kanban
         Experiments
-    Team Interactions
+    Team Interactions: Enable Collaboration
         Release Retro
         Sprint Retro
         Standup
         Pair Programming
+        Mood Boards
         Mobbing
-    OSS 
+    OSS: Enable Contribution
+        Copy
         Fork 
         Pull Request
         WIP Pull Request
         Issue
-    Professional Growth
+    Professional: Enable Growth
         Yearly Review
         Bi-weekly Check-in
         Seeking feedback often
         Telegraphing Intention
-    Career
+    Career: Enable Happiness
         Resume Cattle Calls
         Job Boards
         Building Relationships
         XC
-    Team building
-
 Weird....all of those things with smaller feedback loops are trends! (hmm icon)
