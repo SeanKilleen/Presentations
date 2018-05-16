@@ -14,8 +14,8 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| TeamCity, OctopusDeploy, and Azure: So Happy Together| May 12, 2018 | [NoVA Code Camp](http://novacodecamp.org) | Sean Killeen is going where no presenter should ever go -- a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create -- from scratch -- a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we'll discuss Chocolatey, deployment slots, nuget packages, and more. We'll also touch on Appveyor and some other Azure deployment methods, as well as the "why" of CI/CD. |
 | Stretching .NET: An Introduction to ElasticSearch | May 16, 2018 | [Microsoft Maniacs Meetup](https://www.meetup.com/Microsoft-Maniacs/events/249938919/) (Sterling, VA) | NEST is a fantastic client for the ElasticSearch DB, which has a number of performance advantages and great use cases for solving modern development problems. In this session, you'll learn some background about ElasticSearch for .NET, and will work through a real-world use case for utilizing it in your applications. |
+| TBD | August 9-12, 2018 | [Code on the Beach](https://codeonthebeach.com) (Atlantic Beach, FL) | I'm excited to have been accepted to Code on the Beach this year! More information to come as soon as I know which session was selected. |
 
 ## Talks I'm considering
 
