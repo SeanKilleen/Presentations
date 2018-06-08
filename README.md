@@ -14,7 +14,6 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| [Stretching .NET: An Introduction to ElasticSearch](http://SeanKilleen.com/Presentations/2018-05_ElasticSearch) | May 16, 2018 | [Microsoft Maniacs Meetup](https://www.meetup.com/Microsoft-Maniacs/events/249938919/) (Sterling, VA) | NEST is a fantastic client for the ElasticSearch DB, which has a number of performance advantages and great use cases for solving modern development problems. In this session, you'll learn some background about ElasticSearch for .NET, and will work through a real-world use case for utilizing it in your applications. |
 | TBD | August 9-12, 2018 | [Code on the Beach](https://www.codeonthebeach.com) (Atlantic Beach, FL) | I'm excited to have been accepted to Code on the Beach this year! More information to come as soon as I know which session was selected. |
 
 ## Talks I'm considering
