@@ -14,7 +14,8 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| TBD | August 9-12, 2018 | [Code on the Beach](https://www.codeonthebeach.com) (Atlantic Beach, FL) | I'm excited to have been accepted to Code on the Beach this year! More information to come as soon as I know which session was selected. |
+| [An Introduction to the Actor Model and Akka.NET](https://www.codeonthebeach.com/COTB2018/session/3195/an-introduction-to-the-actor-model-and-akka-net) | August 9-12, 2018 | [Code on the Beach](https://www.codeonthebeach.com) (Atlantic Beach, FL) | Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications. |
+| [(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together](https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together) | October 2-5, 2018 | [TechBash 2018](https://www.techbash.com) (Kalahari Resort, PA) | Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends. | 
 
 ## Talks I'm considering
 
