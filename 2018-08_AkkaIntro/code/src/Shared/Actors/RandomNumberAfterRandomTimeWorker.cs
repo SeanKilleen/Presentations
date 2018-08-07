@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Akka.Actor;
 using Shared.Messages;
@@ -11,16 +12,16 @@ namespace Shared.Actors
 
         public RandomNumberAfterRandomTimeWorker()
         {
-            Console.WriteLine($"created at {Self.Path}");
             _consoleWriterActorRef = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");
-            Console.WriteLine("console actor created at {0}", _consoleWriterActorRef.Path);
 
-            Receive<GenerateRandomNumberMessage>(async msg =>
+            Receive<GenerateRandomNumberMessage>(msg =>
             {
+                _consoleWriterActorRef.Tell(new WriteSomethingMessage("I've been told to generate a number"));
                 var numberGenerator = new Random();
 
                 var secsToWait = numberGenerator.Next(1, 10);
-                await Task.Delay(TimeSpan.FromSeconds(secsToWait));
+           
+                Thread.Sleep(TimeSpan.FromSeconds(secsToWait));
 
                 var randomNumber = numberGenerator.Next(1, 1000000000);
 

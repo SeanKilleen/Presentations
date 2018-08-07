@@ -1,5 +1,6 @@
 ﻿using System;
 using Akka.Actor;
+using Akka.Routing;
 using Shared.Actors;
 using Shared.Messages;
 
@@ -38,15 +39,9 @@ namespace Routing
                 Context.System.Scheduler.ScheduleTellRepeatedly(
                     TimeSpan.Zero,
                     TimeSpan.FromSeconds(1),
-                    Self,
+                    _randomNumberActor,
                     new GenerateRandomNumberMessage(),
                     Self);
-            });
-
-            Receive<GenerateRandomNumberMessage>(msg =>
-            {
-                _consoleWriterActor.Tell(new WriteSomethingMessage("telling the random number actor to generate a number."));
-                _randomNumberActor.Tell(msg);
             });
         }
     }
