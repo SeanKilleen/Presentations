@@ -16,11 +16,6 @@ namespace Routing
     {
         static void Main(string[] args)
         {
-            Task.Run(() => MainAsync()).Wait();
-        }
-
-        static async Task MainAsync()
-        {
             var actorSystem = ActorSystem.Create("ElasticSystem");
 
             Props props; // Just doing it like this for demo purposes
@@ -40,14 +35,9 @@ namespace Routing
             Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
             var consoleWriter = actorSystem.ActorOf(Props.Create<ConsoleWriterActor>());
 
-            while (true) // Infinitely looping to constantly queue up messages.
-            {
-                consoleWriter.Tell(new WriteSomethingMessage("Telling the workers to generate a number"));
-                await Task.Delay(TimeSpan.FromSeconds(1));
-                randomNumberActor.Tell(new GenerateRandomNumberMessage());
             }
-
+            actorSystem.Scheduler.ScheduleTellRepeatedly(TimeSpan.Zero, TimeSpan.FromSeconds(1), randomNumberActor, new GenerateRandomNumberMessage(),ActorRefs.NoSender);
+            Console.ReadLine();
         }
-
     }
 }
