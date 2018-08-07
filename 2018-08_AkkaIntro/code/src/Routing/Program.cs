@@ -28,7 +28,12 @@ namespace Routing
 
             Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
 
-            actorSystem.Scheduler.ScheduleTellRepeatedly(TimeSpan.Zero, TimeSpan.FromSeconds(1), randomNumberActor, new GenerateRandomNumberMessage(),ActorRefs.NoSender);
+            actorSystem.Scheduler.ScheduleTellRepeatedly(
+                TimeSpan.Zero, 
+                TimeSpan.FromSeconds(1), 
+                randomNumberActor, 
+                new GenerateRandomNumberMessage(),
+                ActorRefs.NoSender);
 
             Console.ReadLine();
         }
