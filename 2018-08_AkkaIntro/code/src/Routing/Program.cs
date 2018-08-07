@@ -1,16 +1,10 @@
-﻿using System.Security.Cryptography;
-using Shared.Actors;
+﻿using Shared.Actors;
 using Shared.Messages;
 
 namespace Routing
 {
     using System;
-    using System.Threading.Tasks;
-
     using Akka.Actor;
-    using Akka.Routing;
-
-    using Shared;
 
     class Program
     {
