@@ -196,8 +196,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemoActor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

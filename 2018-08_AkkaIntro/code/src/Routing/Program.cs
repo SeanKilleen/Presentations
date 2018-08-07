@@ -1,7 +1,4 @@
-﻿using Shared.Actors;
-using Shared.Messages;
-
-namespace Routing
+﻿namespace Routing
 {
     using System;
     using Akka.Actor;
@@ -12,28 +9,9 @@ namespace Routing
         {
             var actorSystem = ActorSystem.Create("ElasticSystem");
 
-            Props props; // Just doing it like this for demo purposes
+            var demoActor = actorSystem.ActorOf(Props.Create<DemoActor>(), "demoActor");
 
-            // Example 1: Single actor
-            props = Props.Create<RandomNumberAfterRandomTimeWorker>();
-
-            // Example 2: Router from code
-            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(1));
-            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(5));
-
-            // Example 3: Router from configuration
-            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
-
-            var randomNumberActor = actorSystem.ActorOf(props, "workers");
-
-            Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
-
-            actorSystem.Scheduler.ScheduleTellRepeatedly(
-                TimeSpan.Zero, 
-                TimeSpan.FromSeconds(1), 
-                randomNumberActor, 
-                new GenerateRandomNumberMessage(),
-                ActorRefs.NoSender);
+            demoActor.Tell(new StartDemo());
 
             Console.ReadLine();
         }

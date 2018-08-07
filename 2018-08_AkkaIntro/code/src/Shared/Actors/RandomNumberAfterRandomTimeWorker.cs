@@ -11,7 +11,7 @@ namespace Shared.Actors
 
         public RandomNumberAfterRandomTimeWorker()
         {
-            _consoleWriterActorRef = Context.ActorOf(Props.Create<ConsoleWriterActor>());
+            _consoleWriterActorRef = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");
             Console.WriteLine("console actor created at {0}", _consoleWriterActorRef.Path);
 
             Receive<GenerateRandomNumberMessage>(async msg =>
