@@ -53,9 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actors\ConsoleWriterActor.cs" />
+    <Compile Include="Actors\DemoActor.cs" />
     <Compile Include="Messages\FinishedMessage.cs" />
     <Compile Include="Messages\GenerateRandomNumberMessage.cs" />
     <Compile Include="Messages\HelloWorldMessage.cs" />
+    <Compile Include="Messages\StartDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Actors\RandomNumberAfterRandomTimeWorker.cs" />
     <Compile Include="Messages\WriteSomethingMessage.cs" />
