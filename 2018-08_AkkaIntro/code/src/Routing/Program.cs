@@ -35,7 +35,6 @@ namespace Routing
             Console.WriteLine("randomNumberActor at {0}", randomNumberActor.Path);
             var consoleWriter = actorSystem.ActorOf(Props.Create<ConsoleWriterActor>());
 
-            }
             actorSystem.Scheduler.ScheduleTellRepeatedly(TimeSpan.Zero, TimeSpan.FromSeconds(1), randomNumberActor, new GenerateRandomNumberMessage(),ActorRefs.NoSender);
             Console.ReadLine();
         }
