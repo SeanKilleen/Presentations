@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "src\Routing\Rout
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{D532EAAF-7F20-4B50-9810-3F7B71388F53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervision", "Supervision\Supervision.csproj", "{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
