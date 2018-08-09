@@ -393,7 +393,6 @@
 					<aside class="notes">
 						System and User actors
 						<br/><br/>Parent is responsible for children
-						<br/><br/>One for one vs. All for One
 						<br/><br/>Thinking about it up front at dev time
 					</aside>
 					</script>
@@ -406,7 +405,8 @@
 					![](images/Strategies_Small2.png)
 
 					<aside class="notes">
-						TODO
+						One for one vs. All for One
+						<br/><br/>Easy custom supervisory structures 
 					</aside>
 					</script>
 				</section>
@@ -425,7 +425,9 @@
 					# Async by Default
 
 					<aside class="notes">
-						TODO
+						Who here writes great async code always? Your async code is probably terible
+						<br/><br/>Async without the cruft
+						<br/><br/>Easier to reason about
 					</aside>
 					</script>
 				</section>
@@ -435,7 +437,9 @@
 					# Recoverability
 
 					<aside class="notes">
-						TODO
+						Child actors vs character actors
+						<br/><br/>Scale out work across many actors
+						<br/><br/>Push dangerous work into child actors
 					</aside>
 					</script>
 				</section>
@@ -445,7 +449,8 @@
 					# Cheap!
 
 					<aside class="notes">
-						TODO
+						No CPU unless a message is actually processing
+						<br/><br/>Over 1 million actors per GB
 					</aside>
 					</script>
 				</section>
@@ -455,7 +460,10 @@
 					# Location Transparency
 
 					<aside class="notes">
-						TODO
+						Think Cell phone grid 
+						<br/><br/>You don't need to care where the actor lives
+						<br/><br/>Can be changed via configuration without code updates
+						<br/><br/>Same / different process, same / different machine
 					</aside>
 					</script>
 				</section>
@@ -465,7 +473,8 @@
 					# Easy State Machines
 
 					<aside class="notes">
-						TODO
+						Become / Unbecome
+						<br/><br/>Can change how it will process next message
 					</aside>
 					</script>
 				</section>
@@ -475,7 +484,9 @@
 					# Configurability
 
 					<aside class="notes">
-						TODO
+						HOCON: Human-Optimized Config Object Notation
+
+						<br/><br/>Fallback and layered configs
 					</aside>
 					</script>
 				</section>
@@ -487,7 +498,7 @@
 					![](images/core/01.png)
 
 					<aside class="notes">
-						TODO
+						Single Core at first
 					</aside>
 					</script>
 				</section>
@@ -499,7 +510,9 @@
 					![](images/core/Multi.png)
 
 					<aside class="notes">
-						TODO
+						Maybe then multi-core
+						<br/><br/>Maybe then you'd adapt to use TPL or async / await
+						<br/><br/>What happens when it's not enough?
 					</aside>
 					</script>
 				</section>
@@ -511,7 +524,10 @@
 					![](images/core/ScaleOut.png)
 
 					<aside class="notes">
-						TODO
+						This is a key concept.
+						<br/><br/>It's just code you write now
+						<br/><br/>Adding more cores and more machines is the same
+						<br/><br/>Reduce cost of change
 					</aside>
 					</script>
 				</section>
@@ -543,7 +559,12 @@
 					* Streaming
 				
 					<aside class="notes">
-						TODO
+						Persistence: Journal of events using a base class (and snapshots!)
+						<br/><br/>Clustering: Add / remove notes without adjusting. Peer to peer, gossip/consensus, trivial scale-out
+						<br/><br/>Also poison pills: ordinary message that stops an actor
+						<br/><br/>Also dead letters: When an actor terminates, sends messages here for recovery
+						<br/><br/>Also service bus interoperability
+						<br/><br/>Also .NET Core
 					</aside>
 					</script>
 				</section>
