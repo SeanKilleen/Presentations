@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervision", "Supervision\Supervision.csproj", "{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecomeUnbecome", "BecomeUnbecome\BecomeUnbecome.csproj", "{7F850207-82D7-4534-AC7A-7678BB1FCABD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6BD9624-0E6B-4DC4-826A-BCA86813C9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F850207-82D7-4534-AC7A-7678BB1FCABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F850207-82D7-4534-AC7A-7678BB1FCABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F850207-82D7-4534-AC7A-7678BB1FCABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F850207-82D7-4534-AC7A-7678BB1FCABD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
