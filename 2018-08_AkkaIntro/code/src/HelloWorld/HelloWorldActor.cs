@@ -2,22 +2,27 @@ using System;
 using Akka;
 using Akka.Actor;
 using Shared;
+using Shared.Actors;
 using Shared.Messages;
 
 namespace HelloWorld
 {
     public class HelloWorldActor : ReceiveActor
     {
+        private readonly IActorRef _consoleWriter;
+
         public HelloWorldActor()
         {
+            _consoleWriter = Context.ActorOf<ConsoleWriterActor>();
+
             Receive<HelloWorldMessage>(message =>
             {
-                Console.WriteLine("Hello, {0}", message.Name);
+                _consoleWriter.Tell(new WriteSomethingMessage($"Hello, {message.Name}"), Self);
             });
 
             Receive<FinishedMessage>(message =>
             {
-                Console.WriteLine("I guess we're done here!");
+                _consoleWriter.Tell(new WriteSomethingMessage("I guess we're done here!"));
             });
         }
     }

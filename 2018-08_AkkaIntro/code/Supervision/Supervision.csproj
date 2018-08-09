@@ -144,8 +144,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParentActor.cs" />
+    <Compile Include="ProcessANumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VolatileChildActor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

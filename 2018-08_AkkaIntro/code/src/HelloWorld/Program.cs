@@ -14,8 +14,6 @@ namespace HelloWorld
 
             var helloWorldActor = system.ActorOf(Props.Create<HelloWorldActor>(), "helloWorldActor");
 
-            // NOTE: Could also use the Scheduler to send messages
-            // It is done quickly this way for demo purposes.
             while (true) 
             {
                 Console.WriteLine("Enter your name");
