@@ -155,5 +155,11 @@
     <Folder Include="Actors\" />
     <Folder Include="Messages\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Shared\Shared.csproj">
+      <Project>{D532EAAF-7F20-4B50-9810-3F7B71388F53}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

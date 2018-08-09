@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Akka.Actor;
 using Akka.Routing;
+using Shared.Actors;
+using Shared.Messages;
 
 namespace Supervision
 {
@@ -14,11 +16,13 @@ namespace Supervision
         {
             var system = ActorSystem.Create("supervisionSystem");
 
-            var parentActor = system.ActorOf(Props.Create<ParentActor>());
+            var parentActor = system.ActorOf(Props.Create<ParentActor>(), "parentActor");
+            var consoleWriter = system.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");
 
             var numberRange = Enumerable.Range(1, 100);
-            foreach(var number in numberRange)
+            foreach (var number in numberRange)
             {
+                consoleWriter.Tell(new WriteSomethingMessage($"Submitting number {number} for processing"));
                 parentActor.Tell(new ProcessANumber(number));
             }
 
@@ -42,13 +46,24 @@ namespace Supervision
                 _volatileChildren.Tell(msg);
             });
         }
+        //protected override SupervisorStrategy SupervisorStrategy()
+        //{
+        //    return new OneForOneStrategy(
+        //        maxNrOfRetries:10, 
+        //        withinTimeMilliseconds:1000, 
+        //        localOnlyDecider: ex => Directive.Resume);
+        //}
+
     }
 
     public class VolatileChildActor : ReceiveActor
     {
+        private readonly IActorRef _consoleWriter;
         private int processedNumbers = 0;
         public VolatileChildActor()
         {
+            _consoleWriter = Context.ActorOf<ConsoleWriterActor>("consoleWriter");
+
             Receive<ProcessANumber>(msg =>
             {
                 if (processedNumbers == 6)
@@ -57,7 +72,7 @@ namespace Supervision
                     throw new Exception($"I already processed 6 numbers; too tried to process number {msg.Number}");
                 }
 
-                Console.WriteLine($"Processing number: {msg.Number}");
+                _consoleWriter.Tell(new WriteSomethingMessage($"Processing number: {msg.Number}"), Self);
                 processedNumbers++;
             });
         }
