@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Akka.Actor;
 using Akka.Routing;
+using DotNetty.Handlers.Timeout;
 using Shared.Actors;
 using Shared.Messages;
 
@@ -22,7 +20,6 @@ namespace Supervision
             var numberRange = Enumerable.Range(1, 100);
             foreach (var number in numberRange)
             {
-                consoleWriter.Tell(new WriteSomethingMessage($"Submitting number {number} for processing"));
                 parentActor.Tell(new ProcessANumber(number));
             }
 
@@ -36,46 +33,56 @@ namespace Supervision
 
         public ParentActor()
         {
-            var props = Props.Create<VolatileChildActor>()
-                .WithRouter(new RoundRobinPool(3));
+            var routerSupervisionStrategy = new OneForOneStrategy(
+                localOnlyDecider: ex => Directive.Resume);
 
-            _volatileChildren = Context.ActorOf(props);
+            var props = Props.Create<VolatileChildActor>()
+                .WithRouter(new RoundRobinPool(1)
+                    .WithSupervisorStrategy(routerSupervisionStrategy)
+                );
+
+            _volatileChildren = Context.ActorOf(props, "children");
 
             Receive<ProcessANumber>(msg =>
             {
                 _volatileChildren.Tell(msg);
             });
         }
-        //protected override SupervisorStrategy SupervisorStrategy()
-        //{
-        //    return new OneForOneStrategy(
-        //        maxNrOfRetries:10, 
-        //        withinTimeMilliseconds:1000, 
-        //        localOnlyDecider: ex => Directive.Resume);
-        //}
-
     }
 
-    public class VolatileChildActor : ReceiveActor
+    public class VolatileChildActor : ReceiveActor, IWithUnboundedStash
     {
-        private readonly IActorRef _consoleWriter;
+        private readonly ActorSelection _consoleWriter;
         private int processedNumbers = 0;
         public VolatileChildActor()
         {
-            _consoleWriter = Context.ActorOf<ConsoleWriterActor>("consoleWriter");
+            _consoleWriter = Context.ActorSelection("/user/consoleWriter");
+
 
             Receive<ProcessANumber>(msg =>
             {
                 if (processedNumbers == 6)
                 {
                     processedNumbers = 0;
-                    throw new Exception($"I already processed 6 numbers; too tried to process number {msg.Number}");
+                    throw new Exception($"I already processed 6 numbers; too tired to process number {msg.Number}");
                 }
 
                 _consoleWriter.Tell(new WriteSomethingMessage($"Processing number: {msg.Number}"), Self);
                 processedNumbers++;
             });
         }
+
+        //protected override void PreRestart(Exception reason, object message)
+        //{
+        //    Stash.Stash();
+        //}
+
+        //protected override void PostRestart(Exception reason)
+        //{
+        //    Stash.UnstashAll();
+        //}
+
+        public IStash Stash { get; set; }
     }
 
     public class ProcessANumber
