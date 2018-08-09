@@ -46,16 +46,22 @@ namespace Supervision
 
     public class VolatileChildActor : ReceiveActor
     {
+        private int processedNumbers = 0;
         public VolatileChildActor()
         {
             Receive<ProcessANumber>(msg =>
             {
-                Console.WriteLine(msg.Number);
+                if (processedNumbers == 6)
+                {
+                    processedNumbers = 0;
+                    throw new Exception($"I already processed 6 numbers; too tried to process number {msg.Number}");
+                }
+
+                Console.WriteLine($"Processing number: {msg.Number}");
+                processedNumbers++;
             });
         }
     }
-
-    public class StartDemoMessage { }
 
     public class ProcessANumber
     {
