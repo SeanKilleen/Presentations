@@ -111,8 +111,10 @@
 					<script type='text/template'>
 					# Why This Matters
 	
-					<aside class="notes">
-						TODO
+					<aside class="notes" data-markdown>
+						Previously: Old school request/response
+
+						<br/>Not good enough
 					</aside>
 					</script>
 				</section>
@@ -174,7 +176,7 @@
 					## Actors: Not New
 
 					<aside class="notes">
-						TODO
+						Carl Hewitt -- 1973 white paper
 					</aside>
 					</script>
 				</section>
@@ -184,7 +186,12 @@
 					## Where are the actors?
 
 					<aside class="notes">
-						TODO
+						Erlang 
+						<br/>Scala (Box)
+						<br/>LinkedIn (Java Akka)
+						<br/>Orleans (Xbox – Halo)
+						<br/>WhatsApp
+						<br/>Telecom etc.							
 					</aside>
 					</script>
 				</section>
@@ -194,7 +201,7 @@
 					## Akka and Akka.NET
 	
 					<aside class="notes">
-						TODO
+						Port of Java Akka
 					</aside>
 					</script>
 				</section>
@@ -213,7 +220,10 @@
 					## Everything is an Actor
 
 					<aside class="notes">
-						TODO
+						OOP Everything is an object; AM everything is an actor
+
+						<br/><br/>Container for State, Behavior, Mailbox, Children, Supervision
+
 					</aside>
 					</script>
 				</section>
@@ -223,7 +233,9 @@
 					## Encapsulation
 
 					<aside class="notes">
-						TODO
+						ActorRef encapsulates Behavior
+						
+						Functions as one unit
 					</aside>
 					</script>
 				</section>
@@ -336,7 +348,11 @@
 					# Context
 
 					<aside class="notes">
-						TODO
+						Context.ActorOf is used to create children
+
+						<br/>Pretty subtle in that it’s not always available
+
+						<br/>However, should know that every actor has one							
 					</aside>
 					</script>
 				</section>
