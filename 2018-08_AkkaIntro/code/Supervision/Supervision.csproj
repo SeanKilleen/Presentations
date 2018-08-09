@@ -152,10 +152,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Shared\Shared.csproj">
-      <Project>{d532eaaf-7f20-4b50-9810-3f7b71388f53}</Project>
-      <Name>Shared</Name>
-    </ProjectReference>
+    <Folder Include="Actors\" />
+    <Folder Include="Messages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
