@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankSlate", "src\BlankSlate\BlankSlate.csproj", "{0ECBA0D4-41A3-4DDB-AEF0-BA808047B2BD}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "src\Routing\Routing.csproj", "{97324748-7F9A-482A-91E0-C664C5DCDE10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{D532EAAF-7F20-4B50-9810-3F7B71388F53}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervision", "src\Supervision\Supervision.csproj", "{1F480A73-8139-405A-AA8E-F0F45600AF5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +33,11 @@ Global
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D532EAAF-7F20-4B50-9810-3F7B71388F53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F480A73-8139-405A-AA8E-F0F45600AF5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54AB19D9-53F8-4900-B7BC-9E86381D8E7A}
 	EndGlobalSection
 EndGlobal
