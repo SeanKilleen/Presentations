@@ -9,13 +9,7 @@ namespace Supervision
 
         public ParentActor()
         {
-            var routerSupervisionStrategy = new OneForOneStrategy(
-                localOnlyDecider: ex => Directive.Resume);
-
-            var props = Props.Create<VolatileChildActor>()
-                .WithRouter(new RoundRobinPool(1)
-                    .WithSupervisorStrategy(routerSupervisionStrategy)
-                );
+            var props = Props.Create<VolatileChildActor>();
 
             _volatileChildren = Context.ActorOf(props, "children");
 
@@ -23,6 +17,12 @@ namespace Supervision
             {
                 _volatileChildren.Tell(msg);
             });
+        }
+
+        protected override SupervisorStrategy SupervisorStrategy()
+        {
+            return new OneForOneStrategy(
+                localOnlyDecider: ex => Directive.Stop);
         }
     }
 }
