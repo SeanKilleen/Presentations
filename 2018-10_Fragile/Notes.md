@@ -22,7 +22,10 @@
 * Missing engineering principles leading to fire-fighting
 * Forgetting the general value proposition of agile: you eventually run out of money or time. How do you deliver what's valuable now? (sometimes everyone wants everything)
 * No "decider"
-* Points or similarly flawed measurements becoming too central to the process. 
+* Points or similarly flawed measurements becoming too central to the process.
+* A knee-jerk reaction back to chaos
+* Oh no, someone took agile training
+* Forgetting first principles -- quality of conversations, clear communications & conversations, all working towards providing the same value, etc.
 
 ## How you can keep it altogether
 
