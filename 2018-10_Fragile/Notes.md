@@ -9,7 +9,8 @@
 * Project thinking instead of product thinking
 * Forgetting about value
 * Feature factories
-* Lack of production thinking
+* Lack of production thinking -- especially if on a long effort where nothing is being launched. Which leads me to...
+* A long effort where nothing is being launched.
 * Adherence to prescriptions
 * Neglecting tools / techniques / lessons outside of the agile spectrum
 * Stakeholder shifts / changes
@@ -26,6 +27,7 @@
 * A knee-jerk reaction back to chaos
 * Oh no, someone took agile training
 * Forgetting first principles -- quality of conversations, clear communications & conversations, all working towards providing the same value, etc.
+* Bottlenecks
 
 ## How you can keep it altogether
 
@@ -37,3 +39,5 @@
 * Keeping stakeholders at the correct distance at the right time. Does a client need to be in planning? Yes. Does a client need to be in retros? Ideally but not necessarily. Does a client need to understand test coverage or points? Not necessarily.
 * Always keep your team's psychological safety & well-being front & center.
 * Understand the hierarchy of needs in your given situation. How do you move from one level to the next?
+* Knowledge sharing
+* Make yourself dispensable.
