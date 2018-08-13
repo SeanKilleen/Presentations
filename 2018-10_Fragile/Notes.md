@@ -32,3 +32,5 @@
 * Constantly think about the value provided by your prescribed processes.
 * Technical excellence is not optional
 * Keeping stakeholders at the correct distance at the right time. Does a client need to be in planning? Yes. Does a client need to be in retros? Ideally but not necessarily. Does a client need to understand test coverage or points? Not necessarily.
+* Always keep your team's psychological safety & well-being front & center.
+* Understand the hierarchy of needs in your given situation. How do you move from one level to the next?
