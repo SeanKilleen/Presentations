@@ -41,3 +41,5 @@
 * Understand the hierarchy of needs in your given situation. How do you move from one level to the next?
 * Knowledge sharing
 * Make yourself dispensable.
+* Instill ownership / accountability
+* let the team fail, especially early on
