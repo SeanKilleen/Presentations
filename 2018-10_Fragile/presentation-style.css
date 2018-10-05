@@ -11,6 +11,7 @@ div.side-by-side{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    align-content:center;
 }
 
 ul.remove-bullets {
@@ -18,11 +19,12 @@ ul.remove-bullets {
 }
 
 .right-side {
-
+    /* flex-basis: 40%; */
+    flex: 0 0 250px;
 }
 
 .left-side {
-
+    flex-basis: 60%;
 }
 
 .fa-tint {
