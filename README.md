@@ -14,7 +14,7 @@ If there's anything listed here, hopefully you're also seeing a bunch of commits
 
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
-| [(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together](https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together) | October 2-5, 2018 | [TechBash 2018](https://www.techbash.com) (Kalahari Resort, PA) | Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends. |
+| [(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together](https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together) ([Slides](http://SeanKilleen.com/Presentations/2018-10_Fragile)) | October 2-5, 2018 | [TechBash 2018](https://www.techbash.com) (Kalahari Resort, PA) | Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends. |
 
 ## Talks I'm considering
 
