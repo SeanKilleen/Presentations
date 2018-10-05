@@ -17,3 +17,7 @@ div.side-by-side{
 ul.remove-bullets {
     list-style: none;
 }
+
+.right-side {
+    flex-grow:12;
+}
