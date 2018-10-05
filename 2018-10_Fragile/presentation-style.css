@@ -21,3 +21,20 @@ ul.remove-bullets {
 .right-side {
     flex-grow:12;
 }
+
+.fa-tint {
+    opacity: 0.3;
+}
+
+.fa-tint + span { 
+    opacity: 0.3;
+}
+
+.fa-tint.selected {
+    opacity: 1.0;
+    color: #009fe1;
+}
+
+.fa-tint.selected + span {
+    opacity: 1.0;
+}
