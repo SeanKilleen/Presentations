@@ -5,3 +5,11 @@
 a.lightlink {
     color: white;
 }
+
+div.side-by-side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+}
