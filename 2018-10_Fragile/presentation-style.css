@@ -35,7 +35,7 @@ ul.remove-bullets {
     opacity: 0.3;
 }
 
-.fa-tint.selected {
+.fa.selected {
     opacity: 1.0;
     color: #009fe1;
 }
