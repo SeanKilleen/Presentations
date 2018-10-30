@@ -12,8 +12,10 @@ I figured since I want to expand this list, I should create a central place for 
 
 If there's anything listed here, hopefully you're also seeing a bunch of commits to this repo. :)
 
+<!--
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
+-->
 
 ## Talks I'm considering
 
