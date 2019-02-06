@@ -12,10 +12,11 @@ I figured since I want to expand this list, I should create a central place for 
 
 If there's anything listed here, hopefully you're also seeing a bunch of commits to this repo. :)
 
-<!--
 | Presentation Name | Date | Venue | Description |
 |-------------------|------|-------|-------------|
--->
+| Serverless is more: An Introduction to Azure Functions | February 20, 2019 | Microsoft Maniacs (Sterling, VA) | In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we *didn't* have to do.|
+| Serverless is more: An Introduction to Azure Functions | May 7, 2019 | Central Maryland Association for .NET Professionals (CMAP) (Columbia, MD) | In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we *didn't* have to do.|
+| (Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together | June 6-7, 2019 | [RevolutionConf](https://revolutionconf.com/) (Virginia Beach, VA) | Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends. |
 
 ## Talks I'm considering
 
