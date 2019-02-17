@@ -40,5 +40,22 @@
 			"<section data-background-image='images/${1:ImagePath}' data-background-size='contain'></section>"
 		],
 		"description": "A slide that is only supposed to be an image"
+	},
+	"Slide with small heading": {
+		"scope": "html",
+		"prefix": "slide-smallheading",
+		"body": [
+			"<section data-markdown class='center'>",
+			"\t<script type='text/template'>",
+			"\t#### ${1:Smaller Heading}",
+			"",
+			"\t## ${2:Larger Heading}",
+			"\t<aside class='notes'>",
+			"\t\t",
+			"\t</aside>",
+			"\t</script>",
+			"</section>"
+		],
+		"description": "New default slide with markdown formatting"
 	}
 }
