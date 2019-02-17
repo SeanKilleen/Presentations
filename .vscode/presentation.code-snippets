@@ -56,6 +56,6 @@
 			"\t</script>",
 			"</section>"
 		],
-		"description": "New default slide with markdown formatting"
+		"description": "Slide with small top heading and larger bottom heading"
 	}
 }
