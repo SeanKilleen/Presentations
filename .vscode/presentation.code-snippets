@@ -32,5 +32,13 @@
 			"</section>"
 		],
 		"description": "New default slide with markdown formatting"
+	},
+	"Image Only Slide": {
+		"scope": "html",
+		"prefix": "slide-imageonly",
+		"body": [
+			"<section data-background-image='images/${1:ImagePath}' data-background-size='contain'></section>"
+		],
+		"description": "A slide that is only supposed to be an image"
 	}
 }
