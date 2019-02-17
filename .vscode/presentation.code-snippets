@@ -22,12 +22,11 @@
 		"body": [
 			"<section data-markdown class='center'>",
 			"\t<script type='text/template'>",
-			"\t#${1:Heading}",
+			"\t# ${1:Heading}",
 			"",
-			"\t{$2:text}",
+			"\t${2:text}",
 			"\t<aside class='notes'>",
-			"\t\tNotes",
-			"\t\t<br/>More Notes",
+			"\t\t",
 			"\t</aside>",
 			"\t</script>",
 			"</section>"
