@@ -1,0 +1,14 @@
+{
+  "name": "2019-03-AkkaIntro",
+  "version": "1.0.0",
+  "description": "Presentation with reveal.js",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "Sean Killeen (SeanKilleen.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
