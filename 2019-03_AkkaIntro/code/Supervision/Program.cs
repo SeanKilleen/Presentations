@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Akka.Actor;
-using DotNetty.Handlers.Timeout;
 using Shared.Actors;
 
 namespace Supervision

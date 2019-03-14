@@ -4,8 +4,6 @@ using Shared.Messages;
 
 namespace HelloWorld
 {
-    using Shared;
-
     class Program
     {
         static void Main(string[] args)
