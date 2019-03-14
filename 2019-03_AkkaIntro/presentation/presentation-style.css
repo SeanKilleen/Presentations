@@ -5,3 +5,41 @@
 a.lightlink {
     color: white;
 }
+
+div.side-by-side{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content:center;
+}
+
+ul.remove-bullets {
+    list-style: none;
+}
+
+.right-side {
+    /* flex-basis: 40%; */
+    flex: 0 0 250px;
+}
+
+.left-side {
+    flex-basis: 60%;
+}
+
+.fa-tint {
+    opacity: 0.3;
+}
+
+.fa-tint + span { 
+    opacity: 0.3;
+}
+
+.fa.selected {
+    opacity: 1.0;
+    color: #009fe1;
+}
+
+.fa-tint.selected + span {
+    opacity: 1.0;
+}
