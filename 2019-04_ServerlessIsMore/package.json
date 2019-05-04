@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Presentation with reveal.js",
   "scripts": {
-    "lite": "lite-server --port 10001",
-    "start": "npm run lite"
+    "build": "mdx-deck build deck.mdx",
+    "start": "mdx-deck deck.mdx --port 10001",
+    "lite": "lite-server --port 10001"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "i": "^0.3.6",
+    "lite-server": "^2.4.0",
+    "mdx-deck": "^2.3.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/free-regular-svg-icons": "^5.8.1",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4"
   }
 }
