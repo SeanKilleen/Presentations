@@ -1,1 +1,0 @@
-All mountain images courtesy of <https://unsplash.com>, which uses a wonderfully permissive [license](https://unsplash.com/license).
