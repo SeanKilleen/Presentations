@@ -1,5 +1,5 @@
 {
-  "name": "ElasticSearch",
+  "name": "elastic-search-presentation",
   "version": "1.0.0",
   "description": "Presentation with reveal.js",
   "scripts": {
