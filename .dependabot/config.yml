@@ -1,0 +1,18 @@
+version: 1
+
+update_configs:
+  - package_manager: "javascript"
+    directory: "/2019-04_ServerlessIsMore"
+    update_schedule: "live"
+  - package_manager: "javascript"
+    directory: "/2019-04_AkkaIntro/presentation"
+    update_schedule: "live"
+  - package_manager: "dotnet:nuget"
+    directory: "/2019-04_AkkaIntro/code"
+    update_schedule: "live"
+  - package_manager: "javascript"
+    directory: "/2019-03_AkkaIntro/presentation"
+    update_schedule: "live"
+ - package_manager: "dotnet:nuget"
+    directory: "/2019-03_AkkaIntro/code"
+    update_schedule: "live"
