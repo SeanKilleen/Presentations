@@ -1,11 +1,13 @@
-﻿namespace Routing
+﻿using System.Threading.Tasks;
+
+namespace Routing
 {
     using System;
     using Akka.Actor;
 
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var actorSystem = ActorSystem.Create("ElasticSystem");
 
@@ -13,7 +15,7 @@
 
             demoActor.Tell(new StartDemo());
 
-            Console.ReadLine();
+            await actorSystem.WhenTerminated;
         }
     }
 }
