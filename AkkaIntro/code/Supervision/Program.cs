@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 using Akka.Actor;
 using Shared.Actors;
 
@@ -7,7 +8,7 @@ namespace Supervision
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var system = ActorSystem.Create("supervisionSystem");
 
@@ -20,7 +21,7 @@ namespace Supervision
                 parentActor.Tell(new ProcessANumber(number));
             }
 
-            Console.ReadLine();
+            await system.WhenTerminated;
         }
     }
 }
