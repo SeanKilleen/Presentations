@@ -1,0 +1,14 @@
+{
+  "name": "2018-10-Fragile",
+  "version": "1.0.0",
+  "description": "Presentation with reveal.js",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  }
+}
