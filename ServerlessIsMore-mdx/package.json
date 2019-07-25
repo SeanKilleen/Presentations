@@ -10,6 +10,6 @@
   "author": "Sean Killeen",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^3.0.7"
+    "mdx-deck": "^2.5.1"
   }
 }
