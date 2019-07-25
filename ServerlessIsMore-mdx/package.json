@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sean Killeen",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^3.0.7"
+  }
 }
