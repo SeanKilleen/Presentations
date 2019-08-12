@@ -9,6 +9,6 @@
   "author": "Sean Killeen (SeanKilleen.com)",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.3"
+    "lite-server": "^2.5.4"
   }
 }
