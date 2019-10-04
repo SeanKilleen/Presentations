@@ -27,7 +27,7 @@ namespace Routing
 
             // Example 3: Router from configuration
 
-            props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
+            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
 
             _randomNumberActor = Context.ActorOf(props, "workers");
             _consoleWriterActor = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");

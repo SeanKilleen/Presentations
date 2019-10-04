@@ -12,11 +12,11 @@ namespace Routing
         {
             var config = ConfigurationFactory.ParseString(@"akka.actor.deployment {
       # Uncomment these to add config for workers            
-          /demoactor/workers {
-            router = round-robin-pool
-            nr-of-instances = 25
-            remote = ""akka.tcp://BlankSlate@localhost:9001/""
-          }
+        #  /demoactor/workers {
+        #    router = round-robin-pool
+        #    nr-of-instances = 25
+        #    remote = ""akka.tcp://BlankSlate@localhost:9001/""
+        #  }
     }
     akka
     { 
