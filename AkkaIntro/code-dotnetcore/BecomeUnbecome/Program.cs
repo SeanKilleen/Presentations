@@ -1,19 +1,23 @@
 ﻿using System;
-using System.Threading.Tasks;
+using Akka.Actor;
+using Shared.Actors;
+using Shared.Messages;
 
-namespace BlankSlate
+namespace BecomeUnbecome
 {
-    using Akka.Actor;
-
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            var actorSystem = ActorSystem.Create("BlankSlate");
+            var actorSystem = ActorSystem.Create("becomeUnbecomeDemo");
+            var variableWriter = actorSystem.ActorOf<VariableConsoleWriterActor>();
 
-            Console.WriteLine("Sitting here doing my thing");
-
-            await actorSystem.WhenTerminated;
+            Console.WriteLine("Say some things!");
+            while (true)
+            {
+                var text = Console.ReadLine();
+                variableWriter.Tell(new WriteSomethingMessage(text), ActorRefs.Nobody);
+            }
         }
     }
 }
