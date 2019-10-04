@@ -10,7 +10,8 @@ namespace HelloWorld
         {
             var system = ActorSystem.Create("HelloWorldSystem");
 
-            var helloWorldActor = system.ActorOf(Props.Create<HelloWorldActor>(), "helloWorldActor");
+            var helloWorldActor = system.ActorOf(Props.Create<HelloWorldActor>()
+                , "helloWorldActor");
 
             while (true) 
             {
