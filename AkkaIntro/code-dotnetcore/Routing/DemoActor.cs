@@ -1,5 +1,9 @@
 ﻿using System;
+using System.IO;
 using Akka.Actor;
+using Akka.Configuration;
+using Akka.Routing;
+using Microsoft.Extensions.Configuration;
 using Shared.Actors;
 using Shared.Messages;
 
@@ -22,7 +26,8 @@ namespace Routing
             //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(new RoundRobinPool(5));
 
             // Example 3: Router from configuration
-            //props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
+
+            props = Props.Create<RandomNumberAfterRandomTimeWorker>().WithRouter(FromConfig.Instance);
 
             _randomNumberActor = Context.ActorOf(props, "workers");
             _consoleWriterActor = Context.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");

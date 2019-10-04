@@ -1,26 +1,27 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
-using Akka;
 using Akka.Actor;
-using Akka.Routing;
-using Shared;
-using Supervision.Actors;
-using Supervision.Messages;
+using Shared.Actors;
 
 namespace Supervision
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            var system = ActorSystem.Create("monkeysOnBed");
-            var parentActor = system.ActorOf(Props.Create<MonkeyParent>(), "parentMonkey");
+            var system = ActorSystem.Create("supervisionSystem");
 
-            while (true)
+            var parentActor = system.ActorOf(Props.Create<ParentActor>(), "parentActor");
+            var consoleWriter = system.ActorOf(Props.Create<ConsoleWriterActor>(), "consoleWriter");
+
+            var numberRange = Enumerable.Range(1, 100);
+            foreach (var number in numberRange)
             {
-                Console.ReadLine();
-                parentActor.Tell(new BumpAMonkey());
+                parentActor.Tell(new ProcessANumber(number));
             }
+
+            await system.WhenTerminated;
         }
     }
 }
