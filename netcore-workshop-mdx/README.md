@@ -2,6 +2,13 @@
 
 ## Benefits of .NET Core
 
+* Speed
+* Resource utilization
+* Containerization & Deployment
+* Xplat
+* Better project files
+* Hostability
+
 ## The Coming of .NET 5
 
 ## Obstacles to .NET Core Modernization
