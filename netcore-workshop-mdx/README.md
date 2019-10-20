@@ -6,6 +6,12 @@
 
 ## Obstacles to .NET Core Modernization
 
+## Setting Ourselves Up For Success
+
+### Automated Testing
+
+### Benchmarking
+
 ## Going through the process
 
 ### Getting to .NET Framework 4.7.2
