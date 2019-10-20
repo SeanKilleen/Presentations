@@ -8,10 +8,10 @@
 
 ## Going through the process
 
-#### .NET Core Portability Analyzer
+### .NET Core Portability Analyzer
 
-#### Upgrading the Startup Files
+### Upgrading the Startup Files
 
-#### Updating Packages
+### Updating Packages
 
-#### Updating the Project Format
+### Updating the Project Format
