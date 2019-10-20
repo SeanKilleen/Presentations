@@ -7,9 +7,13 @@
 * Containerization & Deployment
 * Xplat
 * Better project files
-* Hostability
+* Hosting Options
 
 ## The Coming of .NET 5
+
+* .NET Core is where all the new stuff will happen
+* .NET 4.x is the last version that does things that way
+* .NET 5 _is_ .NET Core.
 
 ## Obstacles to .NET Core Modernization
 
