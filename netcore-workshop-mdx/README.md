@@ -19,6 +19,13 @@
 
 ## Setting Ourselves Up For Success
 
+## Pitfalls
+
+* Reinstalling packages
+* Dependencies not doing what they need to do
+* Needing to move to OWIN middleware first
+* Package updates causing headaches.
+
 ### Automated Testing
 
 ### Benchmarking
