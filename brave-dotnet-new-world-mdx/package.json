@@ -1,0 +1,24 @@
+{
+  "name": "brave-dotnet-new-world-mdx",
+  "version": "1.0.0",
+  "description": "Sean's brave dotnet-new world talk, in MDX format.",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck presentation.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "static": "cp -R images ./dist",
+    "build": "mdx-deck build presentation.mdx && npm run static"
+  },
+  "author": "Sean Killeen",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^2.5.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4"
+  }
+}
