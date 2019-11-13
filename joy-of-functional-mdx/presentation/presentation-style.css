@@ -1,0 +1,12 @@
+.fa-ul {
+    padding-left: 40px;
+    margin-block-start: 10px;
+}
+
+.less-bottom-margin {
+    margin-block-end: 0px;
+}
+
+.fa-ul > li > svg {
+    margin-top: 15px;
+}
