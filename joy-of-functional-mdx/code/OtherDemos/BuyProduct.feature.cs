@@ -24,7 +24,7 @@ namespace OtherDemos
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "VendingMachineProduct.feature"
+#line 1 "BuyProduct.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]

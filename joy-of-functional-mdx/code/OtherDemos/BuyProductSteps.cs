@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using ProductionCode;
 using TechTalk.SpecFlow;
 
@@ -12,12 +9,6 @@ namespace OtherDemos
     {
         private VendingMachine vm;
         private Product product;
-
-        [BeforeFeature]
-        public static void OneTimeSetup()
-        {
-
-        }
 
         [Given(@"I am at the vending machine")]
         public void GivenIAmAtTheVendingMachine()
