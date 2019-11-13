@@ -3,7 +3,6 @@
 	I want to receive a product 
 	So that I can experience a yummy treat
 
-@mytag
 Scenario: Receive a Product
 	Given I am at the vending machine
 	When I insert a quarter

@@ -17,4 +17,19 @@
     <ProjectReference Include="..\ProductionCode\ProductionCode.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ListProducts.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ListProducts.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="ListProducts.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ListProducts.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
 </Project>
