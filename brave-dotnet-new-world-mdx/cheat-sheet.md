@@ -54,7 +54,7 @@
 ## For the updated container demo
 
 ```bash
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0.0-bionic
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0-bionic
 ```
 
 ```bash
