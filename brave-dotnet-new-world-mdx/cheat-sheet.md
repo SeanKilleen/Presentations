@@ -14,10 +14,15 @@
 
 * `dotnet new --list`
 
-## Installing s
+## Installing
 
-* From 
+### From GitHub
 
-## References 
+* Clone repo
+* `dotnet new -i [path]`
 
-* https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates
+## References
+
+* Good doc: https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates
+* Template engine source code: https://github.com/dotnet/templating/
+* Samples: https://github.com/dotnet/dotnet-template-samples

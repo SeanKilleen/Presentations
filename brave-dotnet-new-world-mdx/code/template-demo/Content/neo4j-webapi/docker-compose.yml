@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+  web: # this is the name of the service we're creating; it's chosen by us. Here, we're calling it "web".
+    container_name: 'ProjectShortName-api' # this is the name of the container to us
+    depends_on:
+      - graphdb
+    build:
+      context: .
+      dockerfile: DOCKERFILE_WEBAPP
+    environment:
+      - SECONDS_PAUSE_BEFORE_MIGRATION=15
+      - RUN_MIGRATIONS=true
+    ports:
+      - "5000:10901"
+    networks:
+      - ProjectShortName-network # this is a docker feature to allow you to place your various services within a virtual network so they can talk to each other. Note all the services we define here use the "app-network" network.
+  graphdb:
+    image: neo4j:3.3.1
+    container_name: 'ProjectShortName-graphdb'
+    environment: 
+      - NEO4J_AUTH=neo4j/neo4jpassword
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+    volumes:
+      - ./data/import:/import
+      - ./data/plugins:/plugins
+      - ./data/data-files:/data
+    ports: 
+      #TODO: Remove these so that the API can get to them but not the host? (security)
+      - "7087:7687" # bolt protocol
+      - "7074:7474" # http protocol
+      - "7073:7473" # https protocol
+    networks:
+      - ProjectShortName-network
+    
+networks:
+  ProjectShortName-network:
+    driver: bridge
