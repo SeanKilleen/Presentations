@@ -18,7 +18,7 @@
       "datatype": "string",
       "fileRename": "ProjectShortName",
       "replaces":"ProjectShortName",
-      "isRequired": "true"
+      "isRequired": true
     },
     "webApiPortNumber": {
       "description": "The port number of the WebAPI that your host machine will be able to see. Will be mapped from the docker container.",
