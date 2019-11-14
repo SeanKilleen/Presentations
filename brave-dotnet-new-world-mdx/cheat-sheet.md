@@ -50,3 +50,14 @@
 * Fill it out
 * Create the project in a new place
 * Run it
+
+## For the updated container demo
+
+```bash
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0.0-bionic
+```
+
+```bash
+# Add wget
+RUN apt-get update && apt-get install -y wget gnupg
+```
