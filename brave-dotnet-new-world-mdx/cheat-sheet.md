@@ -42,3 +42,8 @@
 * Open the project, demo project (showcase that it's a working project)
 * Make updates to project
 * Demo `type: generated` and `generator: port` in the custom sample
+* Reinstall the template
+* Get help for the template
+* Fill it out
+* Create the project in a new place
+* Run it
