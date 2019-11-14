@@ -24,6 +24,7 @@
 ### From Nuget
 
 * `dotnet new -i NugetPackageName`
+* Can also use `--nuget-source` to specify your own nuget server
 
 ## References
 
@@ -31,6 +32,8 @@
 * Template engine source code: https://github.com/dotnet/templating/
 * Samples: https://github.com/dotnet/dotnet-template-samples
 * Post-install actions: https://github.com/dotnet/templating/wiki/Post-Action-Registry
+* Generators: https://github.com/dotnet/templating/wiki/Available-Parameter-Generators
+
 
 ## Demo Sequence
 
