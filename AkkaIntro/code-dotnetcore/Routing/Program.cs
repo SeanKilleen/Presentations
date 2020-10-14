@@ -32,14 +32,16 @@ namespace Routing
         {
             dot-netty.tcp 
             {
-                  transport-protocol = tcp
-                  port = 8091
-                  hostname = ""localhost""        
+                enforce-ip-family = true
+                dns-use-ipv6 = false
+                transport-protocol = tcp
+                port = 8091
+                public-hostname = ""localhost""
+                hostname = ""127.0.0.1""        
             }
         }
     }
 ");
-
             var actorSystem = ActorSystem.Create("ElasticSystem", config);
 
             var demoActor = actorSystem.ActorOf(Props.Create<DemoActor>(), "demoactor");
