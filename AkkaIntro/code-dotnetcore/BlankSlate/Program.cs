@@ -22,9 +22,12 @@ namespace BlankSlate
       {
           dot-netty.tcp 
           {
+                enforce-ip-family = true
+                dns-use-ipv6 = false
                 transport-protocol = tcp
                 port = 9001
-                hostname = ""localhost""        
+                public-hostname = ""localhost""
+                hostname = ""127.0.0.1""        
          }
       }
     }");
