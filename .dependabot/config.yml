@@ -20,7 +20,7 @@ update_configs:
     directory: "/brave-dotnet-new-world-mdx"
     update_schedule: "live"
   - package_manager: "javascript"
-    directory: "/joy-of-functional-mdx"
+    directory: "/joy-of-functional-mdx/presentation"
     update_schedule: "live"
   - package_manager: "javascript"
     directory: "/netcore-workshop-mdx"
