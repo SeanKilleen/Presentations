@@ -2,7 +2,7 @@ version: 1
 
 update_configs:
   - package_manager: "javascript"
-    directory: "/ServerlessIsMore"
+    directory: "/ServerlessIsMore-mdx"
     update_schedule: "live"
   - package_manager: "javascript"
     directory: "/AkkaIntro/presentation"
@@ -15,4 +15,13 @@ update_configs:
     update_schedule: "live"
   - package_manager: "javascript"
     directory: "/Fragile"
+    update_schedule: "live"
+  - package_manager: "javascript"
+    directory: "/brave-dotnet-new-world-mdx"
+    update_schedule: "live"
+  - package_manager: "javascript"
+    directory: "/joy-of-functional-mdx"
+    update_schedule: "live"
+  - package_manager: "javascript"
+    directory: "/netcore-workshop-mdx"
     update_schedule: "live"
