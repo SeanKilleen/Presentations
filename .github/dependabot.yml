@@ -1,0 +1,50 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/AkkaIntro/presentation"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/AkkaIntro/code"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/ElasticSearch"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/Fragile"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/ServerlessIsMore-mdx"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/brave-dotnet-new-world-mdx"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/netcore-workshop-mdx"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/joy-of-functional-mdx/presentation"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
