@@ -6,138 +6,45 @@ updates:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: lodash
-    versions:
-    - 4.17.20
 - package-ecosystem: nuget
   directory: "/AkkaIntro/code"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: Akka
-    versions:
-    - 1.4.16
-    - 1.4.17
-    - 1.4.18
-  - dependency-name: Akka.Remote
-    versions:
-    - 1.4.16
-    - 1.4.17
-    - 1.4.18
-  - dependency-name: Microsoft.Extensions.Primitives
-    versions:
-    - 5.0.0
 - package-ecosystem: npm
   directory: "/ElasticSearch"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: lodash
-    versions:
-    - 4.17.20
 - package-ecosystem: npm
   directory: "/Fragile"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: lodash
-    versions:
-    - 4.17.20
 - package-ecosystem: npm
   directory: "/ServerlessIsMore-mdx"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: y18n
-    versions:
-    - 4.0.1
-  - dependency-name: "@fortawesome/free-regular-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/fontawesome-svg-core"
-    versions:
-    - 1.2.34
-  - dependency-name: "@fortawesome/free-brands-svg-icons"
-    versions:
-    - 5.15.2
 - package-ecosystem: npm
   directory: "/brave-dotnet-new-world-mdx"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: y18n
-    versions:
-    - 4.0.1
-    - 4.0.2
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/fontawesome-svg-core"
-    versions:
-    - 1.2.34
-  - dependency-name: "@fortawesome/free-brands-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-regular-svg-icons"
-    versions:
-    - 5.15.2
 - package-ecosystem: npm
   directory: "/netcore-workshop-mdx"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: y18n
-    versions:
-    - 4.0.1
-    - 4.0.2
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/fontawesome-svg-core"
-    versions:
-    - 1.2.34
-  - dependency-name: "@fortawesome/free-brands-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-regular-svg-icons"
-    versions:
-    - 5.15.2
 - package-ecosystem: npm
   directory: "/joy-of-functional-mdx/presentation"
   schedule:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: y18n
-    versions:
-    - 4.0.1
-    - 4.0.2
-  - dependency-name: "@fortawesome/fontawesome-svg-core"
-    versions:
-    - 1.2.34
-  - dependency-name: "@fortawesome/free-brands-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-regular-svg-icons"
-    versions:
-    - 5.15.2
