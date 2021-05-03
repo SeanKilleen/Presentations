@@ -86,11 +86,6 @@ resource "azurerm_network_interface_security_group_association" "akkaassociation
   network_security_group_id = azurerm_network_security_group.akka_remote_ports.id
 }
 
-resource "azurerm_network_interface_security_group_association" "akkaassociation_main" {
-  network_interface_id      = azurerm_network_interface.main.id
-  network_security_group_id = azurerm_network_security_group.akka_remote_ports.id
-}
-
 resource "azurerm_linux_virtual_machine" "main" {
   name                            = "${var.prefix}-vm"
   resource_group_name             = azurerm_resource_group.main.name
