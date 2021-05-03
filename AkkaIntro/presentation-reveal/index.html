@@ -660,7 +660,11 @@
             hash: true,
 
             dependencies: [
-            { src: '../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); } }
+                {
+                    src: '../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.js', async: true, callback: function () {
+                        title_footer.initialize("Akka .NET Introduction | SeanKilleen.com | @sjkilleen");
+                    }
+                }
             ],
 
             // Learn about plugins: https://revealjs.com/plugins/
