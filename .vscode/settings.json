@@ -1,6 +1,31 @@
 {
     "editor.tabCompletion": "onlySnippets",
     "cSpell.words": [
-        "gtag"
+        "Akka",
+        "Configurability",
+        "HOCON",
+        "Johansson",
+        "Killeen",
+        "Nethouse",
+        "Unbecome",
+        "iframes",
+        "petabridge",
+    ],
+    "cSpell.ignoreWords": [
+        "gtag",
+        "aaronontheweb",
+        "altindas",
+        "deniz",
+        "hendry",
+        "janek",
+        "knowledgements",
+        "michal",
+        "rogeralsing",
+        "sjkilleen",
+        "wkpdf",
+        "yosh",
+        "autoslide",
+        "oberhauser"
     ]
+    
 }
