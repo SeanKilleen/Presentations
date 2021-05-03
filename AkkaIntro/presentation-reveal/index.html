@@ -46,6 +46,9 @@
                 <br/>
                 <a href ="http://SeanKilleen.com/Presentations/AkkaIntro/presentation" class="lightlink">/AkkaIntro/presentation</a>
 
+                Notes:
+
+                Note to self -- you can use 'b' to blank the presentation.
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -722,7 +725,7 @@
 
             // Add the current slide number to the URL hash so that reloading the
             // page/copying the URL will return you to the same slide
-            hash: false,
+            hash: true,
 
             // Flags if we should monitor the hash and change slides accordingly
             respondToHashChanges: true,
@@ -782,7 +785,7 @@
             // If you're on slide 1.3 and navigate right, you will normally move
             // from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
             // from 1.3 -> 2.3.
-            navigationMode: 'default',
+            navigationMode: 'linear',
 
             // Randomizes the order of slides each time the presentation loads
             shuffle: false,
@@ -925,7 +928,7 @@
             hideInactiveCursor: true,
 
             // Time before the cursor is hidden (in ms)
-            hideCursorTime: 5000
+            hideCursorTime: 2000
 
         });
     </script>
