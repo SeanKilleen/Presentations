@@ -110,11 +110,12 @@
                 <textarea data-template>
                 # Why This Matters
 
-                ^Notes:
+                Notes:
                 
                 Previously: Old school request/response
+
                 Not good enough
-                </aside>
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -162,9 +163,9 @@
                 #### Overview 
                 ## Actors: Not New
 
-                <aside class="notes">
-                    Carl Hewitt -- 1973 white paper
-                </aside>
+                Notes:
+
+                Carl Hewitt -- 1973 white paper
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -172,16 +173,18 @@
                 #### Overview
                 ## Where are the actors?
 
-                <aside class="notes">
-                    Erlang 
-                    <br/>Scala (Box)
-                    <br/>LinkedIn (Java Akka)
-                    <br/>Orleans (Xbox – Halo)
-                    <br/>WhatsApp
-                    <br/>Telecom etc.							
-                    <br/><br/>Finance | Data crunching | Event Streams
-                    <br/><br/>Neural networks
-                </aside>
+
+                Notes:
+
+                Erlang 
+                Scala (Box)
+                LinkedIn (Java Akka)
+                Orleans (Xbox – Halo)
+                WhatsApp
+                Telecom etc.							
+                Finance | Data crunching | Event Streams
+                Neural networks
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -189,9 +192,10 @@
                 #### Overview
                 ## Akka and Akka.NET
 
-                <aside class="notes">
-                    Port of Java Akka
-                </aside>
+                Notes:
+                
+                Port of Java Akka
+                
                 </textarea>
             </section>
             <section data-markdown data-background-image="images/mountains/m-wong-40443.jpg">
@@ -205,12 +209,11 @@
                 #### Concepts
                 ## Everything is an Actor
 
-                <aside class="notes">
-                    OOP Everything is an object; AM everything is an actor
+                Notes:
 
-                    <br/><br/>Container for State, Behavior, Mailbox, Children, Supervision
+                OOP Everything is an object; AM everything is an actor
 
-                </aside>
+                Container for State, Behavior, Mailbox, Children, Supervision
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -218,11 +221,12 @@
                 #### Concepts
                 ## Encapsulation
 
-                <aside class="notes">
-                    ActorRef encapsulates Behavior / responsibility
-                    
-                    <br/><br/>Functions as one unit
-                </aside>
+                Notes:
+                
+                ActorRef encapsulates Behavior / responsibility
+
+                Functions as one unit
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -265,9 +269,10 @@
 
                 <span class="highlight">akka.tcp://</span>MySystem@localhost:8080/user/HelloWorldActor
 
-                <aside class="notes">
-                    Supports TCP out of the box; configurable with others
-                </aside>
+                Notes:
+                
+                Supports TCP out of the box; configurable with others
+                
                 </textarea>
             </section>
             <section data-markdown class="center" data-transition="none">
@@ -303,35 +308,40 @@
 
                 ![](images/Lifecycle.png)
 
-                <aside class="notes">
-                    TODO
-                </aside>
+                Notes:
+                
+                TODO
+                
                 </textarea>
             </section>
             <section data-markdown data-background-image="images/mountains/patrick-hendry-198732.jpg">
                 <textarea data-template>
                 # Context
 
-                <aside class="notes">
-                    Context.ActorOf is used to create children
+                Notes:
 
-                    <br/>Pretty subtle in that it’s not always available
+                Context.ActorOf is used to create children
 
-                    <br/>However, should know that every actor has one							
-                </aside>
+                Pretty subtle in that it’s not always available
+
+                However, should know that every actor has one							
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
                 <textarea data-template>
                 ![](images/ConceptAnimation.gif)
 
-                <aside class="notes">
-                    Event-driven thread; no polling
+                Notes:
+                
+                Event-driven thread; no polling
 
-                    <br/><br/>Behavoir, State, Supervision
-                    <br/><br/>One Message at a time from Mailbox
-                    <br/><br/>Transport agnostic
-                </aside>
+                Behavoir, State, Supervision
+                
+                One Message at a time from Mailbox
+                
+                Transport agnostic
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -341,11 +351,14 @@
 
                 ![](images/ClassicHierarchy_small.png)
 
-                <aside class="notes">
-                    Think of a classic OOP System
-                    <br/><br/>Exceptions may or may not bubble up
-                    <br/><br/>Unclear who is responsible for handling errors
-                </aside>
+                Notes:
+                
+                Think of a classic OOP System
+                
+                Exceptions may or may not bubble up
+                
+                Unclear who is responsible for handling errors
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -355,11 +368,14 @@
 
                 ![](images/ErrorKernel_small.png)
 
-                <aside class="notes">
-                    System and User actors
-                    <br/><br/>Parent is responsible for children
-                    <br/><br/>Thinking about it up front at dev time
-                </aside>
+                Notes:
+                
+                System and User actors
+
+                Parent is responsible for children
+
+                Thinking about it up front at dev time
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -369,10 +385,12 @@
 
                 ![](images/Strategies_Small2.png)
 
-                <aside class="notes">
-                    One for one vs. All for One
-                    <br/><br/>Easy custom supervisory structures 
-                </aside>
+                Notes:
+                
+                One for one vs. All for One
+                
+                Easy custom supervisory structures 
+                
                 </textarea>
             </section>
             <section data-markdown data-background-image="images/mountains/michal-janek-217220.jpg" class="center">
@@ -386,11 +404,14 @@
                 #### Benefits
                 # Async by Default
 
-                <aside class="notes">
-                    Who here writes great async code always? Your async code is probably terible
-                    <br/><br/>Async without the cruft
-                    <br/><br/>Easier to reason about
-                </aside>
+                Notes:
+                
+                Who here writes great async code always? Your async code is probably terrible
+                
+                Async without the cruft
+                
+                Easier to reason about
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -398,11 +419,14 @@
                 #### Benefits
                 # Recoverability
 
-                <aside class="notes">
-                    Child actors vs character actors
-                    <br/><br/>Scale out work across many actors
-                    <br/><br/>Push dangerous work into child actors
-                </aside>
+                Notes:
+                
+                Child actors vs character actors
+                
+                Scale out work across many actors
+                
+                Push dangerous work into child actors
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -410,11 +434,14 @@
                 #### Benefits
                 # Cheap!
 
-                <aside class="notes">
-                    No CPU unless a message is actually processing
-                    <br/><br/>~2.5 million actors per GB
-                    <br/><br/>50 million messages / sec on single machine
-                </aside>
+                Notes:
+                
+                No CPU unless a message is actually processing
+                
+                ~2.5 million actors per GB
+                
+                50 million messages / sec on single machine
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -422,12 +449,16 @@
                 #### Benefits
                 # Location Transparency
 
-                <aside class="notes">
-                    Think Cell phone grid 
-                    <br/><br/>You don't need to care where the actor lives
-                    <br/><br/>Can be changed via configuration without code updates
-                    <br/><br/>Same / different process, same / different machine
-                </aside>
+                Notes:
+                
+                Think Cell phone grid 
+                
+                You don't need to care where the actor lives
+                
+                Can be changed via configuration without code updates
+                
+                Same / different process, same / different machine
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -435,10 +466,12 @@
                 #### Benefits
                 # Easy State Machines
 
-                <aside class="notes">
-                    Become / Unbecome
-                    <br/><br/>Can change how it will process next message
-                </aside>
+                Notes:
+                
+                Become / Unbecome
+                
+                Can change how it will process next message
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -446,11 +479,12 @@
                 #### Benefits
                 # Configurability
 
-                <aside class="notes">
-                    HOCON: Human-Optimized Config Object Notation
+                Notes:
+                
+                HOCON: Human-Optimized Config Object Notation
 
-                    <br/><br/>Fallback and layered configs
-                </aside>
+                Fallback and layered configs
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -460,9 +494,10 @@
 
                 ![](images/core/01.png)
 
-                <aside class="notes">
-                    Single Core at first
-                </aside>
+                Notes:
+                
+                Single Core at first
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -472,11 +507,14 @@
 
                 ![](images/core/Multi.png)
 
-                <aside class="notes">
-                    Maybe then multi-core
-                    <br/><br/>Maybe then you'd adapt to use TPL or async / await
-                    <br/><br/>What happens when it's not enough?
-                </aside>
+                Notes:
+                
+                Maybe then multi-core
+                
+                Maybe then you'd adapt to use TPL or async / await
+                
+                What happens when it's not enough?
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -486,12 +524,16 @@
 
                 ![](images/core/ScaleOut.png)
 
-                <aside class="notes">
-                    This is a key concept.
-                    <br/><br/>It's just code you write now
-                    <br/><br/>Adding more cores and more machines is the same
-                    <br/><br/>Reduce cost of change
-                </aside>
+                Notes:
+                
+                This is a key concept.
+                
+                It's just code you write now
+                
+                Adding more cores and more machines is the same
+                
+                Reduce cost of change
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -499,9 +541,6 @@
                 ## Scaling Up &amp; Out:
                 # The Same Thing
 
-                <aside class="notes">
-                    
-                </aside>
                 </textarea>
             </section>
             <section data-markdown data-background-image="images/mountains/yosh-ginsu-146166.jpg" class="center">
@@ -518,14 +557,20 @@
                 * Clustering
                 * Streaming
             
-                <aside class="notes">
-                    Persistence: Journal of events using a base class (and snapshots!)
-                    <br/><br/>Clustering: Add / remove notes without adjusting. Peer to peer, gossip/consensus, trivial scale-out
-                    <br/><br/>Also poison pills: ordinary message that stops an actor
-                    <br/><br/>Also dead letters: When an actor terminates, sends messages here for recovery
-                    <br/><br/>Also service bus interoperability
-                    <br/><br/>Also .NET Core
-                </aside>
+                Notes:
+                
+                Persistence: Journal of events using a base class (and snapshots!)
+                
+                Clustering: Add / remove notes without adjusting. Peer to peer, gossip/consensus, trivial scale-out
+                
+                Also poison pills: ordinary message that stops an actor
+                
+                Also dead letters: When an actor terminates, sends messages here for recovery
+                
+                Also service bus interoperability
+                
+                Also .NET Core
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -536,9 +581,10 @@
                 * [Petabridge.com](http://Petabridge.com) and [Nethouse.se](http://nethouse.se)
                 * <i class="fab fa-github"></i> [AkkaDotNet](http://github.com/Akkadotnet)
 
-                <aside class="notes">
-                    OSS is awesome -- get involved!
-                </aside>
+                Notes:
+                
+                OSS is awesome -- get involved!
+                
                 </textarea>
             </section>
             <section data-markdown class="center">
