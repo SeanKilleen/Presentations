@@ -20,10 +20,12 @@ ul.remove-bullets {
 
 .right-side {
     flex-grow: 12;
+    margin: auto;
 }
 
 .left-side {
     flex-shrink: 0;
+    margin: auto;
 }
 
 .fa-tint {
@@ -45,8 +47,6 @@ ul.remove-bullets {
 
 .container {
     display: flex;
-}
-
-.col {
-    flex: 1;
+    align-items: center;
+    align-content: center;
 }
