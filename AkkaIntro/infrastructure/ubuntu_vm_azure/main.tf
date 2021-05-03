@@ -81,8 +81,13 @@ resource "azurerm_network_security_group" "akka_remote_ports" {
   }
 }
 
-resource "azurerm_network_interface_security_group_association" "akkaassociation" {
+resource "azurerm_network_interface_security_group_association" "akkaassociation_internal" {
   network_interface_id      = azurerm_network_interface.internal.id
+  network_security_group_id = azurerm_network_security_group.akka_remote_ports.id
+}
+
+resource "azurerm_network_interface_security_group_association" "akkaassociation_main" {
+  network_interface_id      = azurerm_network_interface.main.id
   network_security_group_id = azurerm_network_security_group.akka_remote_ports.id
 }
 
