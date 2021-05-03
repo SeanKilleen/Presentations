@@ -62,7 +62,7 @@ resource "azurerm_network_security_group" "akka_remote_ports" {
     direction                  = "Inbound"
     name                       = "akkainbound"
     priority                   = 100
-    protocol                   = "Any"
+    protocol                   = "Tcp"
     source_port_range          = "*"
     source_address_prefix      = "*"
     destination_port_range     = "*"
@@ -73,7 +73,7 @@ resource "azurerm_network_security_group" "akka_remote_ports" {
     direction                  = "Outbound"
     name                       = "akkaoutbound"
     priority                   = 100
-    protocol                   = "Any"
+    protocol                   = "Tcp"
     source_port_range          = "*"
     destination_address_prefix = "*"
     destination_port_range     = "*"
