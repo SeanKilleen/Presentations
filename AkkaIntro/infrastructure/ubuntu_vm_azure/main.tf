@@ -53,7 +53,7 @@ resource "azurerm_network_interface" "internal" {
   }
 }
 
-resource "azurerm_network_security_group" "akka_remote_port_inbound" {
+resource "azurerm_network_security_group" "akka_remote_ports" {
   name                = "akka_remote_port"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
@@ -68,12 +68,6 @@ resource "azurerm_network_security_group" "akka_remote_port_inbound" {
     destination_port_range     = "9001"
     destination_address_prefix = azurerm_network_interface.main.private_ip_address
   }
-}
-
-resource "azurerm_network_security_group" "akka_remote_port_outbound" {
-  name                = "akka_remote_port"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
   security_rule {
     access                     = "Allow"
     direction                  = "Outbound"
@@ -87,21 +81,16 @@ resource "azurerm_network_security_group" "akka_remote_port_outbound" {
   }
 }
 
-resource "azurerm_network_interface_security_group_association" "akkainboundassociation" {
+resource "azurerm_network_interface_security_group_association" "akkaassociation" {
   network_interface_id      = azurerm_network_interface.internal.id
-  network_security_group_id = azurerm_network_security_group.akka_remote_port_inbound.id
-}
-
-resource "azurerm_network_interface_security_group_association" "akkaoutboundassociation" {
-  network_interface_id      = azurerm_network_interface.internal.id
-  network_security_group_id = azurerm_network_security_group.akka_remote_port_outbound.id
+  network_security_group_id = azurerm_network_security_group.akka_remote_ports.id
 }
 
 resource "azurerm_linux_virtual_machine" "main" {
   name                            = "${var.prefix}-vm"
   resource_group_name             = azurerm_resource_group.main.name
   location                        = azurerm_resource_group.main.location
-  size                            = "Standard_F2"
+  size                            = "Standard_A1_v2"
   admin_username                  = "adminuser"        # Yeah, this is for a demo. Don't do this in real life.
   admin_password                  = var.admin_password # Yeah, this is for a demo. Don't do this in real life.
   disable_password_authentication = false
@@ -113,7 +102,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
-    sku       = "20.04"
+    sku       = "18.04-LTS"
     version   = "latest"
   }
 
