@@ -27,6 +27,8 @@
     <!-- FontAwesome local reference -->
     <link href="../../common/font-awesome-5.3.1/css/all.min.css" rel="stylesheet">
 
+    <!-- Footer plugin -->
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="presentation-style.css">
 </head>
@@ -656,6 +658,10 @@
         // - https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
+
+            dependencies: [
+            { src: '../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); } }
+            ],
 
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
