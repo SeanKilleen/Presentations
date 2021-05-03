@@ -7,7 +7,7 @@ namespace BecomeUnbecome
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var actorSystem = ActorSystem.Create("becomeUnbecomeDemo");
             var variableWriter = actorSystem.ActorOf<VariableConsoleWriterActor>();
