@@ -19,11 +19,11 @@ ul.remove-bullets {
 }
 
 .right-side {
-    flex: 0 0 250px;
+    flex-grow: 12;
 }
 
 .left-side {
-    flex-basis: 60%;
+    flex-shrink: 0;
 }
 
 .fa-tint {
