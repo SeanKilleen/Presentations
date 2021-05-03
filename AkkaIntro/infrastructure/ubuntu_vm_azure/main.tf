@@ -62,22 +62,22 @@ resource "azurerm_network_security_group" "akka_remote_ports" {
     direction                  = "Inbound"
     name                       = "akkainbound"
     priority                   = 100
-    protocol                   = "Tcp"
+    protocol                   = "Any"
     source_port_range          = "*"
     source_address_prefix      = "*"
-    destination_port_range     = "9001"
-    destination_address_prefix = azurerm_network_interface.main.private_ip_address
+    destination_port_range     = "*"
+    destination_address_prefix = "*"
   }
   security_rule {
     access                     = "Allow"
     direction                  = "Outbound"
     name                       = "akkaoutbound"
     priority                   = 100
-    protocol                   = "Tcp"
-    source_port_range          = "9001"
+    protocol                   = "Any"
+    source_port_range          = "*"
     destination_address_prefix = "*"
     destination_port_range     = "*"
-    source_address_prefix      = azurerm_network_interface.main.private_ip_address
+    source_address_prefix      = "*"
   }
 }
 
