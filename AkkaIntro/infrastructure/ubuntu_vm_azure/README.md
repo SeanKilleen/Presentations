@@ -31,6 +31,8 @@
 
 <https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu>
 
+(you can run `sudo bash installStuff.sh` if you don't want to do these manually)
+
 * `wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
 * `sudo dpkg -i packages-microsoft-prod.deb`
 * `sudo apt-get update`
