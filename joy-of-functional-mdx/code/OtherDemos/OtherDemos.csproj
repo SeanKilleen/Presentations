@@ -9,7 +9,7 @@
     <PackageReference Include="nunit" Version="3.13.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="SpecFlow" Version="3.7.13" />
-    <PackageReference Include="SpecFlow.Nunit" Version="3.7.13" />
+    <PackageReference Include="SpecFlow.Nunit" Version="3.7.38" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.7.13" />
   </ItemGroup>
 
