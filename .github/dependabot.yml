@@ -48,3 +48,8 @@ updates:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/joy-of-functional-mdx/code"
+  schedule:
+    interval: daily
+    time: "10:00"
