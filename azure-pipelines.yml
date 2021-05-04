@@ -10,31 +10,28 @@ pr:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-18.04'
 
 variables:
-  solution: 'AkkaIntro/code/AkkaDemo.sln'
-  buildPlatform: 'Any CPU'
+  solutionDir: './AkkaIntro/code-dotnetcore'
+  solution: './AkkaIntro/code-dotnetcore/AkkaDemo.sln'
   buildConfiguration: 'Release'
 
 steps:
-- task: DotNetCoreInstaller@2
+- task: UseDotNet@2
   inputs:
-    version: '3.0.100' # replace this value with the version that you need for your project
+    version: '5.0.x' # replace this value with the version that you need for your project
+    includePreviewVersions: false
+    performMultiLevelLookup: true
 - task: NuGetToolInstaller@0
 
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
   inputs:
-    restoreSolution: '$(solution)'
+    command: 'restore'
+    restoreDirectory: '$(solutionDir)'
 
-- task: VSBuild@1
+- task: DotNetCoreCLI@2
   inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'build'
+    arguments: '$(solution) --configuration $(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration)'
