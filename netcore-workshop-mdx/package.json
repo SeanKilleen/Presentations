@@ -6,8 +6,8 @@
   "scripts": {
     "start": "mdx-deck presentation.mdx",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "static": "cp -R images ./dist",
-    "staticwin": "copy /y images dist",
+    "static": "cp -R images ./public",
+    "staticwin": "copy /y images public",
     "build": "mdx-deck build presentation.mdx && npm run static",
     "buildwin": "mdx-deck build presentation.mdx && npm run staticwin"
   },

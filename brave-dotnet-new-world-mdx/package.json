@@ -6,7 +6,7 @@
   "scripts": {
     "start": "mdx-deck presentation.mdx",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "static": "cp -R images ./dist",
+    "static": "cp -R images ./public",
     "build": "mdx-deck build presentation.mdx && npm run static"
   },
   "author": "Sean Killeen",
