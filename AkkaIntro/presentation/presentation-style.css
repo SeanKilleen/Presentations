@@ -1,17 +1,17 @@
 .highlight {
-    color:yellow;
+    color: yellow;
 }
 
 a.lightlink {
     color: white;
 }
 
-div.side-by-side{
+div.side-by-side {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    align-content:center;
+    align-content: center;
 }
 
 ul.remove-bullets {
@@ -19,19 +19,20 @@ ul.remove-bullets {
 }
 
 .right-side {
-    /* flex-basis: 40%; */
-    flex: 0 0 250px;
+    flex-grow: 12;
+    margin: auto;
 }
 
 .left-side {
-    flex-basis: 60%;
+    flex-shrink: 0;
+    margin: auto;
 }
 
 .fa-tint {
     opacity: 0.3;
 }
 
-.fa-tint + span { 
+.fa-tint+span {
     opacity: 0.3;
 }
 
@@ -40,6 +41,12 @@ ul.remove-bullets {
     color: #009fe1;
 }
 
-.fa-tint.selected + span {
+.fa-tint.selected+span {
     opacity: 1.0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
