@@ -36,6 +36,13 @@
 * `sudo apt-get update`
 * `sudo apt-get install -y apt-transport-https && sudo apt-get update && sudo apt-get install -y dotnet-sdk-5.0`
 
+## Modify the settings
+
+* `cd BlankSlate`
+* `nano Program.cs`
+* Set the public hostname to the public IP address
+* Set the private hostname to the private IP address
+
 ## Build & Run
 
 * `cd Presentations\AkkaIntro\code`
