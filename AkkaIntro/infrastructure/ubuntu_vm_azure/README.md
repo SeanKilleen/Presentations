@@ -3,9 +3,11 @@
 ## Prep
 
 * Install the azure cli: `choco install azure-cli`
-* Login `az login`
+* Install terraform: `choco install terraform`
+* Login to Azure: `az login`
 * Set your subscription: `az account set --subscription "the_subscription_guid"`
 * Set any variables in `demo.tfvars`
+* Run `terraform init` to initialize
 
 ## Planning
 
