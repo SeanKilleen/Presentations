@@ -1,0 +1,45 @@
+name: "Build / Test Presentation Code"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  akka-intro:
+    name: "Akka Intro C# Code"
+    runs-on: ubuntu-latest
+    env:
+      SOLUTION_LOCATION: "./AkkaIntro/code/AkkaIntro.Core.sln"
+    steps:
+    - uses: actions/checkout@v2
+      name: Pull the code
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore $SOLUTION_LOCATION
+    - name: Build
+      run: dotnet build --no-restore $SOLUTION_LOCATION
+    - name: Test
+      run: dotnet test --no-build --verbosity normal $SOLUTION_LOCATION
+  joy-of-functional-testing:
+    name: "Joy of Functional Testing C# Code"
+    runs-on: ubuntu-latest
+    env:
+      SOLUTION_LOCATION: "./joy-of-functional-mdx/code/JoyOfFunctionalTesting.sln"
+    steps:
+    - uses: actions/checkout@v2
+      name: Pull the code
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore $SOLUTION_LOCATION
+    - name: Build
+      run: dotnet build --no-restore $SOLUTION_LOCATION
+    - name: Test
+      run: dotnet test --no-build --verbosity normal $SOLUTION_LOCATION
