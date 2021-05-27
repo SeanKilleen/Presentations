@@ -56,14 +56,6 @@
                 This is a talk about training your brain to know when Docker might help. How to think about moving it into your state of the art
                 </textarea>
             </section>
-            <section data-markdown data-background-image='images/Unsplash-91LGCVN5SAI-Firehose.jpg'
-                data-state="no-title-footer" preload>
-                <textarea>
-                    Notes:
-
-                    Image credit: https://unsplash.com/photos/91LGCVN5SAI
-                </textarea>
-            </section>
             <section data-markdown data-background-image='images/Unsplash-wOHH-NUTvVc-dog.jpg'
                 data-state="no-title-footer" preload>
                 <textarea>
@@ -137,6 +129,8 @@
                 Premise of Agile: Smaller loops with customer
                 <br/>
                 Premise of DevOps: Smaller loops between dev and ops
+                <br/>
+                Smaller Loops == Each of these examples are less expensive
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -146,6 +140,13 @@
 
                 # The Value Stream
 
+                Notes:
+
+                Expensive: Waiting for Servers
+                <br/>
+                Expensive: Hanging off to other teams
+                <br/>
+                Better: Collaborate on containers and deploy them
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -155,6 +156,13 @@
 
                 # Story Time!
 
+                Notes:
+
+                Problem: Needed to run multiple Databases locally
+                <br/>
+                Expensive: Manually setting up DB Servers
+                <br/>
+                Better: Containers
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -164,7 +172,51 @@
 
                 # System Doubles
 
+                Notes:
+
+                SQL on Linux: https://hub.docker.com/_/microsoft-mssql-server
+                <br/>
+                Emulators
                 </textarea>
+            </section>
+            <section class="center" data-transition="none">
+                docker run --name db-sql -e 'ACCEPT_EULA=Y' -e
+                'SA_PASSWORD=YOUR_PASSWORD' -p 1433:1433 -v F:\DockerData\db-sql\data:/var/opt/mssql/data -v
+                F:\DockerData\db-sql\log:/var/opt/mssql/log -v F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets -d
+                mcr.microsoft.com/mssql/server:2019-latest
+            </section>
+            <section class="center" data-transition="none">
+                <span class="highlight">docker run --name db-sql</span> -e 'ACCEPT_EULA=Y' -e
+                'SA_PASSWORD=YOUR_PASSWORD' -p 1433:1433 -v F:\DockerData\db-sql\data:/var/opt/mssql/data -v
+                F:\DockerData\db-sql\log:/var/opt/mssql/log -v F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets -d
+                mcr.microsoft.com/mssql/server:2019-latest
+            </section>
+            <section class="center" data-transition="none">
+                docker run --name db-sql <span class="highlight">-e 'ACCEPT_EULA=Y' -e
+                    'SA_PASSWORD=YOUR_PASSWORD'</span> -p
+                1433:1433</span> -v F:\DockerData\db-sql\data:/var/opt/mssql/data -v
+                F:\DockerData\db-sql\log:/var/opt/mssql/log -v F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets
+                -d mcr.microsoft.com/mssql/server:2019-latest
+            </section>
+            <section class="center" data-transition="none">
+                docker run --name db-sql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YOUR_PASSWORD' <span class="highlight">-p
+                    1433:1433</span> -v
+                F:\DockerData\db-sql\data:/var/opt/mssql/data -v F:\DockerData\db-sql\log:/var/opt/mssql/log -v
+                F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets -d
+                mcr.microsoft.com/mssql/server:2019-latest
+            </section>
+            <section class="center" data-transition="none">
+                docker run --name db-sql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YOUR_PASSWORD' -p 1433:1433 <span
+                    class="highlight">-v F:\DockerData\db-sql\data:/var/opt/mssql/data -v
+                    F:\DockerData\db-sql\log:/var/opt/mssql/log -v
+                    F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets</span> -d
+                mcr.microsoft.com/mssql/server:2019-latest
+            </section>
+            <section class="center" data-transition="none">
+                docker run --name db-sql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YOUR_PASSWORD' -p 1433:1433 -v
+                F:\DockerData\db-sql\data:/var/opt/mssql/data -v F:\DockerData\db-sql\log:/var/opt/mssql/log -v
+                F:\DockerData\db-sql\secrets:/var/opt/mssql/secrets <span class="highlight">-d
+                    mcr.microsoft.com/mssql/server:2019-latest</span>
             </section>
             <section data-markdown class="center">
                 <textarea data-template>
@@ -175,7 +227,7 @@
 
                 Notes:
 
-                TODO: Jeykll Blog in VS Code, GitHub Actions
+                TODO: Jeykll Blog in VS Code, GitHub Codespaces
                 </textarea>
             </section>
             <section data-markdown class="center">
@@ -187,7 +239,7 @@
 
                 Notes:
 
-                Linux on Konmaripo
+                Linux on Konmaripo: https://github.com/excellalabs/konmaripo/commit/9c516c56ce7d0ba8056b0dc01ae9fdc240cd5abe#diff-fefee25bf9a9dbf03d1ac8db011a6f5a4a0c33bf9d8dec4f937ac8f85b1eea65
 
                 </textarea>
             </section>
@@ -208,7 +260,7 @@
 
                 #### Story Time
 
-                # Reproducibility
+                # Experimenting
 
                 </textarea>
             </section>
@@ -306,6 +358,14 @@
                     TODO: Generate new high fidelity meme
 
                     Image credit: https://memegenerator.net/Ridiculously-Photogenic-Corgi/caption
+                </textarea>
+            </section>
+            <section data-markdown data-background-image='images/Unsplash-91LGCVN5SAI-Firehose.jpg'
+                data-state="no-title-footer" preload>
+                <textarea>
+                    Notes:
+
+                    Image credit: https://unsplash.com/photos/91LGCVN5SAI
                 </textarea>
             </section>
         </div>
