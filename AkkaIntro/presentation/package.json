@@ -12,6 +12,6 @@
   "main": "index.js",
   "dependencies": {
     "lite-server": "^2.5.4",
-    "reveal.js": "^4.1.0"
+    "reveal.js": "^4.1.1"
   }
 }
