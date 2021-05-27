@@ -1,0 +1,937 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>An Introduction to Akka .NET - By Sean Killeen</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18306171-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-18306171-4');
+    </script>
+
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/dist/reset.css">
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/plugin/highlight/monokai.css" id="highlight-theme">
+
+    <!-- FontAwesome local reference -->
+    <link href="../../common/font-awesome-5.3.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Footer plugin -->
+    <link rel="stylesheet" href="../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="presentation-style.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown data-background-image="images/mountains/kai-oberhauser-177237.jpg"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Akka.NET
+                ## An Introduction
+
+                <a href ="http://SeanKilleen.com/Presentations/AkkaIntro/presentation" class="lightlink">https://SeanKilleen.com/Presentations</a>
+                <br/>
+                <a href ="http://SeanKilleen.com/Presentations/AkkaIntro/presentation" class="lightlink">/AkkaIntro/presentation</a>
+
+                Notes:
+
+                Note to self -- you can use 'b' to blank the presentation.
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+
+                # What We'll Cover
+
+                * Why this Matters
+                * Reactive Manifesto
+                * History / overview
+                * Concepts &amp; Benefits
+                * Demos
+
+                </textarea>
+            </section>
+            <section class="center">
+                <h4>Akka-knowledgements</h4>
+                <div class="container">
+
+                    <div class="left-side">
+                        <img src="images/thanks/roger.jpg" />
+                    </div>
+                    <div class="right-side">
+                        <h2>Roger Johansson</h2>
+                        <ul class="remove-bullets">
+                            <li> <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <a href="http://twitter.com/rogeralsing">@rogeralsing</a>
+                            </li>
+                            <li> <i class="fab fa-github" aria-hidden="true"></i>
+                                <a href="http://github.com/rogeralsing">rogeralsing</a>
+                            </li>
+                            <li> <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:roger@nethouse.se">roger@nethouse.se</a>
+                            </li>
+                            <li> <i class="fa fa-globe" aria-hidden="true"></i>
+                                <a href="http://rogeralsing.com">rogeralsing.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-background-image='images/rogerTweet.png' data-background-size='contain'></section>
+            <section class="center">
+                <h4>Akka-knowledgements</h4>
+                <div class="container">
+
+                    <div class="left-side">
+                        <img src="images/thanks/Petabridge.png" />
+                    </div>
+                    <div class="right-side">
+                        <h2>Petabridge</h2>
+                        <ul class="remove-bullets">
+                            <li> <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <a href="http://twitter.com/petabridge">@petabridge</a>
+                            </li>
+                            <li> <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <a href="http://twitter.com/aaronontheweb">@aaronontheweb</a>
+                            </li>
+                            <li> <i class="fa fa-globe" aria-hidden="true"></i>
+                                <a href="http://petabridge.com">Petabridge.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-background-image='images/dotNetFoundation.png' data-background-size='contain'></section>
+            <section class="center">
+                <h2>Hey! I'm Sean.</h2>
+                <div class="container">
+                    <div class="left-side">
+                        <img src="images/thanks/me.png" />
+                    </div>
+                    <div class="right-side">
+                        <ul class="remove-bullets">
+                            <li> <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <a href="http://twitter.com/sjkilleen">@sjkilleen</a>
+                            </li>
+                            <li> <i class="fa fa-globe" aria-hidden="true"></i>
+                                <a href="http://SeanKilleen.com">SeanKilleen.com</a>
+                            </li>
+                            <li> <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                <a href="http://captechconsulting.com">CapTech Consulting</a>
+                            </li>
+                            <li> <i class="fab fa-github" aria-hidden="true"></i>
+                                <a href="http://github.com/SeanKilleen">SeanKilleen</a>
+                            </li>
+                            <li> <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:SeanKilleen@gmail.com">SeanKilleen@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section data-markdown data-background-image="images/mountains/daniel-leone-185834.jpg"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Why This Matters
+
+                Notes:
+                
+                Previously: Old school request/response
+
+                Not good enough
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Reactive Manifesto
+
+                <http://www.reactivemanifesto.org>
+
+                ### We need to evolve with our users' expectations.
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Reactive Systems are:
+
+                * Responsive
+                * Resilient
+                * Elastic
+                * Message-Driven
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## As a result, they are:
+                
+                * Flexible
+                * Loosely-coupled 
+                * Scalable
+                * Easier to Change
+                * Fault tolerant
+                * Fast
+
+                </textarea>
+            </section>
+            <section data-markdown data-background-image="images/mountains/deniz-altindas-38121.jpg"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Overview
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Overview 
+                ## Actors: Not New
+
+                Notes:
+
+                Carl Hewitt -- 1973 white paper
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Overview
+                ## Where are the actors?
+
+
+                Notes:
+
+                Erlang 
+                Scala (Box)
+                LinkedIn (Java Akka)
+                Orleans (Xbox – Halo)
+                WhatsApp
+                Telecom etc.							
+                Finance | Data crunching | Event Streams
+                Neural networks
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Overview
+                ## Akka and Akka.NET
+
+                Notes:
+                
+                Port of Java Akka
+                
+                </textarea>
+            </section>
+            <section data-markdown data-background-image="images/mountains/m-wong-40443.jpg"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Concepts
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Concepts
+                ## Everything is an Actor
+
+                Notes:
+
+                OOP Everything is an object; AM everything is an actor
+
+                Container for State, Behavior, Mailbox, Children, Supervision
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Concepts
+                ## Encapsulation
+
+                Notes:
+                
+                ActorRef encapsulates Behavior / responsibility
+
+                Functions as one unit
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Concepts
+                ## Immutable Messages
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Concepts
+                ## Actors by Reference
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Concepts
+                ## Props
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Every Actor Has:
+                
+                * Address
+                * Context
+                * Supervision
+                * Mailbox
+                * Lifecycle
+
+                </textarea>
+            </section>
+            <section data-markdown class="center" data-transition="none-out">
+                <textarea data-template>
+                #### Addressing
+                ## Protocol
+
+                <span class="highlight">akka.tcp://</span>MySystem@localhost:8080/user/HelloWorldActor
+
+                Notes:
+                
+                Supports TCP out of the box; configurable with others
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center" data-transition="none">
+                <textarea data-template>
+                #### Addressing
+                ## System
+
+                akka.tcp://<span class="highlight">MySystem</span>@localhost:8080/user/HelloWorldActor
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center" data-transition="none">
+                <textarea data-template>
+                #### Addressing
+                ## Address
+
+                akka.tcp://MySystem@<span class="highlight">localhost:8080</span>/user/HelloWorldActor
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center" data-transition="none-in">
+                <textarea data-template>
+                #### Addressing
+                ## Path
+
+                akka.tcp://MySystem@localhost:8080/<span class="highlight">user/HelloWorldActor</span>
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Lifecycle
+
+                ![](images/Lifecycle.png)
+
+               
+                </textarea>
+            </section>
+            <section data-markdown data-background-image="images/mountains/patrick-hendry-198732.jpg"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Context
+
+                Notes:
+
+                Context.ActorOf is used to create children
+
+                Pretty subtle in that it’s not always available
+
+                However, should know that every actor has one							
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ![](images/ConceptAnimation.gif)
+
+                Notes:
+                
+                Event-driven thread; no polling
+
+                Behavior, State, Supervision
+                
+                One Message at a time from Mailbox
+                
+                Transport agnostic
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Faults
+                ## Classic .NET System
+
+                ![](images/ClassicHierarchy_small.png)
+
+                Notes:
+                
+                Think of a classic OOP System
+                
+                Exceptions may or may not bubble up
+                
+                Unclear who is responsible for handling errors
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Faults
+                ## Error Kernel
+
+                ![](images/ErrorKernel_small.png)
+
+                Notes:
+                
+                System and User actors
+
+                Parent is responsible for children
+
+                Thinking about it up front at dev time
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Faults
+                ## Strategies
+
+                ![](images/Strategies_Small2.png)
+
+                Notes:
+                
+                One for one vs. All for One
+                
+                Easy custom supervisory structures 
+                
+                </textarea>
+            </section>
+            <section data-markdown data-background-image="images/mountains/michal-janek-217220.jpg" class="center"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Benefits
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Async by Default
+
+                Notes:
+                
+                Who here writes great async code always? Your async code is probably terrible
+                
+                Async without the cruft
+                
+                Easier to reason about
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Recoverability
+
+                Notes:
+                
+                Child actors vs character actors
+                
+                Scale out work across many actors
+                
+                Push dangerous work into child actors
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Cheap!
+
+                Notes:
+                
+                No CPU unless a message is actually processing
+                
+                ~2.5 million actors per GB
+                
+                50 million messages / sec on single machine
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Location Transparency
+
+                Notes:
+                
+                Think Cell phone grid 
+                
+                You don't need to care where the actor lives
+                
+                Can be changed via configuration without code updates
+                
+                Same / different process, same / different machine
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Easy State Machines
+
+                Notes:
+                
+                Become / Unbecome
+                
+                Can change how it will process next message
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Benefits
+                # Configurability
+
+                Notes:
+                
+                HOCON: Human-Optimized Config Object Notation
+
+                Fallback and layered configs
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Scaling
+                ## Single Core
+
+                ![](images/core/01.png)
+
+                Notes:
+                
+                Single Core at first
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Scaling
+                ## Multi-threading
+
+                ![](images/core/Multi.png)
+
+                Notes:
+                
+                Maybe then multi-core
+                
+                Maybe then you'd adapt to use TPL or async / await
+                
+                What happens when it's not enough?
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                #### Scaling
+                ## Scale Out
+
+                ![](images/core/ScaleOut.png)
+
+                Notes:
+                
+                This is a key concept.
+                
+                It's just code you write now
+                
+                Adding more cores and more machines is the same
+                
+                Reduce cost of change
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Scaling Up &amp; Out:
+                # The Same Thing
+
+                </textarea>
+            </section>
+            <section data-markdown data-background-image="images/mountains/yosh-ginsu-146166.jpg" class="center"
+                data-state="no-title-footer">
+                <textarea data-template>
+                # Demos!
+
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## <i class="fa fa-music"></i> We've Only Just Begun <i class="fa fa-music"></i> 
+
+                * Persistence
+                * Clustering
+                * Streaming
+            
+                Notes:
+                
+                Persistence: Journal of events using a base class (and snapshots!)
+                
+                Clustering: Add / remove notes without adjusting. Peer to peer, gossip/consensus, trivial scale-out
+                
+                Also poison pills: ordinary message that stops an actor
+                
+                Also dead letters: When an actor terminates, sends messages here for recovery
+                
+                Also service bus interoperability
+                
+                Also .NET Core
+                
+                </textarea>
+            </section>
+            <section data-markdown class="center">
+                <textarea data-template>
+                ## Want More?
+
+                * [GetAkka.net](http://GetAkka.net)
+                * [Petabridge.com](http://Petabridge.com) and [Nethouse.se](http://nethouse.se)
+                * <i class="fab fa-github"></i> [AkkaDotNet](http://github.com/Akkadotnet)
+
+                Notes:
+                
+                OSS is awesome -- get involved!
+                
+                </textarea>
+            </section>
+            <section class="center">
+                <h2>Thanks!</h2>
+                <div class="container">
+                    <div class="left-side">
+                        <img src="images/thanks/me.png" size="50%" />
+                    </div>
+                    <div class="right-side">
+                        <ul class="remove-bullets">
+                            <li> <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <a href="http://twitter.com/sjkilleen">@sjkilleen</a>
+                            </li>
+                            <li> <i class="fa fa-globe" aria-hidden="true"></i>
+                                <a href="http://SeanKilleen.com">SeanKilleen.com</a>
+                            </li>
+                            <li> <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                <a href="http://captechconsulting.com">CapTech Consulting</a>
+                            </li>
+                            <li> <i class="fab fa-github" aria-hidden="true"></i>
+                                <a href="http://github.com/SeanKilleen">SeanKilleen</a>
+                            </li>
+                            <li> <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:SeanKilleen@gmail.com">SeanKilleen@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <http://SeanKilleen.com/Presentations/AkkaIntro/feedback> -->
+            </section>
+        </div>
+    </div>
+
+    <script src="../../common/reveal.js-4.1.0/dist/reveal.js"></script>
+    <script src="../../common/reveal.js-4.1.0/plugin/notes/notes.js"></script>
+    <script src="../../common/reveal.js-4.1.0/plugin/markdown/markdown.js"></script>
+    <script src="../../common/reveal.js-4.1.0/plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            dependencies: [
+                {
+                    src: '../../common/reveal.js-4.1.0/plugin/title-footer/title-footer.js', async: true, callback: function () {
+                        title_footer.initialize("Akka .NET Introduction · SeanKilleen.com · @sjkilleen");
+                    }
+                }
+            ],
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+
+            // Display presentation control arrows
+            controls: false,
+
+            // Help the user learn the controls by providing hints, for example by
+            // bouncing the down arrow when they first encounter a vertical slide
+            controlsTutorial: true,
+
+            // Determines where controls appear, "edges" or "bottom-right"
+            controlsLayout: 'bottom-right',
+
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'faded',
+
+            // Display a presentation progress bar
+            progress: false,
+
+            // Display the page number of the current slide
+            // - true:    Show slide number
+            // - false:   Hide slide number
+            //
+            // Can optionally be set as a string that specifies the number formatting:
+            // - "h.v":   Horizontal . vertical slide number (default)
+            // - "h/v":   Horizontal / vertical slide number
+            // - "c":   Flattened slide number
+            // - "c/t":   Flattened slide number / total slides
+            //
+            // Alternatively, you can provide a function that returns the slide
+            // number for the current slide. The function should take in a slide
+            // object and return an array with one string [slideNumber] or
+            // three strings [n1,delimiter,n2]. See #formatSlideNumber().
+            slideNumber: false,
+
+            // Can be used to limit the contexts in which the slide number appears
+            // - "all":      Always show the slide number
+            // - "print":    Only when printing to PDF
+            // - "speaker":  Only in the speaker view
+            showSlideNumber: 'all',
+
+            // Use 1 based indexing for # links to match slide number (default is zero
+            // based)
+            hashOneBasedIndex: true,
+
+            // Add the current slide number to the URL hash so that reloading the
+            // page/copying the URL will return you to the same slide
+            hash: true,
+
+            // Flags if we should monitor the hash and change slides accordingly
+            respondToHashChanges: true,
+
+            // Push each slide change to the browser history.  Implies `hash: true`
+            history: false,
+
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
+
+            // Optional function that blocks keyboard events when retuning false
+            //
+            // If you set this to 'focused', we will only capture keyboard events
+            // for embedded decks when they are in focus
+            keyboardCondition: null,
+
+            // Disables the default reveal.js slide layout (scaling and centering)
+            // so that you can use custom CSS layout
+            disableLayout: false,
+
+            // Enable the slide overview mode
+            overview: true,
+
+            // Vertical centering of slides
+            center: false,
+
+            // Enables touch navigation on devices with touch input
+            touch: true,
+
+            // Loop the presentation
+            loop: false,
+
+            // Change the presentation direction to be RTL
+            rtl: false,
+
+            // Changes the behavior of our navigation directions.
+            //
+            // "default"
+            // Left/right arrow keys step between horizontal slides, up/down
+            // arrow keys step between vertical slides. Space key steps through
+            // all slides (both horizontal and vertical).
+            //
+            // "linear"
+            // Removes the up/down arrows. Left/right arrows step through all
+            // slides (both horizontal and vertical).
+            //
+            // "grid"
+            // When this is enabled, stepping left/right from a vertical stack
+            // to an adjacent vertical stack will land you at the same vertical
+            // index.
+            //
+            // Consider a deck with six slides ordered in two vertical stacks:
+            // 1.1    2.1
+            // 1.2    2.2
+            // 1.3    2.3
+            //
+            // If you're on slide 1.3 and navigate right, you will normally move
+            // from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
+            // from 1.3 -> 2.3.
+            navigationMode: 'linear',
+
+            // Randomizes the order of slides each time the presentation loads
+            shuffle: false,
+
+            // Turns fragments on and off globally
+            fragments: true,
+
+            // Flags whether to include the current fragment in the URL,
+            // so that reloading brings you to the same fragment position
+            fragmentInURL: true,
+
+            // Flags if the presentation is running in an embedded mode,
+            // i.e. contained within a limited portion of the screen
+            embedded: false,
+
+            // Flags if we should show a help overlay when the question-mark
+            // key is pressed
+            help: true,
+
+            // Flags if it should be possible to pause the presentation (blackout)
+            pause: true,
+
+            // Flags if speaker notes should be visible to all viewers
+            showNotes: false,
+
+            // Global override for auto-playing embedded media (video/audio/iframe)
+            // - null:   Media will only autoplay if data-autoplay is present
+            // - true:   All media will autoplay, regardless of individual setting
+            // - false:  No media will autoplay, regardless of individual setting
+            autoPlayMedia: null,
+
+            // Global override for preloading lazy-loaded iframes
+            // - null:   Iframes with data-src AND data-preload will be loaded when within
+            //           the viewDistance, iframes with only data-src will be loaded when visible
+            // - true:   All iframes with data-src will be loaded when within the viewDistance
+            // - false:  All iframes with data-src will be loaded only when visible
+            preloadIframes: null,
+
+            // Can be used to globally disable auto-animation
+            autoAnimate: true,
+
+            // Optionally provide a custom element matcher that will be
+            // used to dictate which elements we can animate between.
+            autoAnimateMatcher: null,
+
+            // Default settings for our auto-animate transitions, can be
+            // overridden per-slide or per-element via data arguments
+            autoAnimateEasing: 'ease',
+            autoAnimateDuration: 1.0,
+            autoAnimateUnmatched: true,
+
+            // CSS properties that can be auto-animated. Position & scale
+            // is matched separately so there's no need to include styles
+            // like top/right/bottom/left, width/height or margin.
+            autoAnimateStyles: [
+                'opacity',
+                'color',
+                'background-color',
+                'padding',
+                'font-size',
+                'line-height',
+                'letter-spacing',
+                'border-width',
+                'border-color',
+                'border-radius',
+                'outline',
+                'outline-offset'
+            ],
+
+            // Controls automatic progression to the next slide
+            // - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
+            //           is present on the current slide or fragment
+            // - 1+:     All slides will progress automatically at the given interval
+            // - false:  No auto-sliding, even if data-autoslide is present
+            autoSlide: 0,
+
+            // Stop auto-sliding after user input
+            autoSlideStoppable: true,
+
+            // Use this method for navigation when auto-sliding (defaults to navigateNext)
+            autoSlideMethod: null,
+
+            // Specify the average time in seconds that you think you will spend
+            // presenting each slide. This is used to show a pacing timer in the
+            // speaker view
+            defaultTiming: null,
+
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
+
+            // Opens links in an iframe preview overlay
+            // Add `data-preview-link` and `data-preview-link="false"` to customize each link
+            // individually
+            previewLinks: false,
+
+            // Exposes the reveal.js API through window.postMessage
+            postMessage: true,
+
+            // Dispatches all reveal.js events to the parent window through postMessage
+            postMessageEvents: false,
+
+            // Focuses body when page changes visibility to ensure keyboard shortcuts work
+            focusBodyOnPageVisibilityChange: true,
+
+            // Transition style
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
+
+            // Transition style for full page slide backgrounds
+            backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+            // The maximum number of pages a single slide can expand onto when printing
+            // to PDF, unlimited by default
+            pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+
+            // Prints each fragment on a separate slide
+            pdfSeparateFragments: true,
+
+            // Offset used to reduce the height of content within exported PDF pages.
+            // This exists to account for environment differences based on how you
+            // print to PDF. CLI printing options, like phantomjs and wkpdf, can end
+            // on precisely the total height of the document whereas in-browser
+            // printing has to end one pixel before.
+            pdfPageHeightOffset: -1,
+
+            // Number of slides away from the current that are visible
+            viewDistance: 3,
+
+            // Number of slides away from the current that are visible on mobile
+            // devices. It is advisable to set this to a lower number than
+            // viewDistance in order to save resources.
+            mobileViewDistance: 2,
+
+            // The display mode that will be used to show slides
+            display: 'block',
+
+            // Hide cursor if inactive
+            hideInactiveCursor: true,
+
+            // Time before the cursor is hidden (in ms)
+            hideCursorTime: 2000
+
+        });
+    </script>
+</body>
+
+</html>
