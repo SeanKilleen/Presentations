@@ -18,7 +18,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5.0.x
+          dotnet-version: 6.x
       - name: Restore dependencies
         run: dotnet restore $SOLUTION_LOCATION
       - name: Build
@@ -36,7 +36,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5.0.x
+          dotnet-version: 6.x
       - name: Restore dependencies
         run: dotnet restore $SOLUTION_LOCATION
       - name: Build
@@ -49,7 +49,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 15.x]
+        node-version: [18.x]
         build-location:
           [
             "./joy-of-functional-mdx/presentation",
