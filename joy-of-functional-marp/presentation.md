@@ -25,21 +25,16 @@ An Introduction with SpecFlow
 
 ---
 
-<!-- <Split>
+![bg left 60%](./images/me.png)
 
-![](images/me.png)
+# Hi! I'm Sean
 
-<h3 class="less-bottom-margin"> Hi! I'm Sean.</h3>
-<ul class="fa-ul">
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faTwitter} listItem /> @sjkilleen</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGithub} listItem />SeanKilleen</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGlobe} listItem />SeanKilleen.com</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faBriefcase} listItem />CapTechConsulting.com</li>
-</ul>
+* Twitter: @sjkileen
+* GitHub: SeanKilleen
+* Web: SeanKilleen.com
+* Work: Excella
 
-</Split>
-
---- -->
+---
 
 ## Let's Do this
 
@@ -207,16 +202,13 @@ Then I should be redirected to my profile page
 
 ![bg](./images/ship-launch-fail.gif)
 
-<!-- <Split>
+---
 
-![](images/me.png)
+![bg left 60%](./images/me.png)
 
-<h3 class="less-bottom-margin">Thanks!</h3>
-<ul class="fa-ul">
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faTwitter} listItem /> @sjkilleen</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGithub} listItem />SeanKilleen</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGlobe} listItem />SeanKilleen.com</li>
-    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faBriefcase} listItem />CapTechConsulting.com</li>
-</ul>
+# Thanks
 
-</Split> -->
+* Twitter: @sjkileen
+* GitHub: SeanKilleen
+* Web: SeanKilleen.com
+* Work: Excella
