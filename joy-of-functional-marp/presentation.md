@@ -17,11 +17,11 @@ An Introduction with SpecFlow
 ---
 
 <!-- TODO: Change -->
-![bg](./images/CapTech_Logo_Tagline-White.png)
+![bg contain](./images/CapTech_Logo_Tagline-White.png)
 
 ---
 
-![bg](./images/dotNetFoundation.png)
+![bg contain](./images/dotNetFoundation.png)
 
 ---
 
@@ -56,7 +56,7 @@ An Introduction with SpecFlow
 
 ---
 
-![bg](./images/move-fast-break.png)
+![bg contain](./images/move-fast-break.png)
 
 ---
 
@@ -78,15 +78,15 @@ An Introduction with SpecFlow
 
 ---
 
-![bg](./images/roxbury.jpg)
+![bg contain](./images/roxbury.jpg)
 
 ---
 
-![bg](./images/safety-harness.jpg)
+![bg cover](./images/safety-harness.jpg)
 
 ---
 
-![bg](./images/specbyexample-cover.jpg)
+![bg contain](./images/specbyexample-cover.jpg)
 
 ---
 
@@ -96,27 +96,27 @@ An Introduction with SpecFlow
 
 ---
 
-![bg](./images/quadrants-before.png)
+![bg contain](./images/quadrants-before.png)
 
 ---
 
-![bg](./images/quadrants-selection.png)
+![bg contain](./images/quadrants-selection.png)
 
 ---
 
-![bg](./images/unit-vs-int-1.gif)
+![bg contain](./images/unit-vs-int-1.gif)
 
 ---
 
-![bg](./images/unit-vs-int-2.gif)
+![bg contain](./images/unit-vs-int-2.gif)
 
 ---
 
-![bg](./images/unit-vs-int-3.gif)
+![bg contain](./images/unit-vs-int-3.gif)
 
 ---
 
-![bg](./images/unit-vs-int-4.jpg)
+![bg contain](./images/unit-vs-int-4.jpg)
 
 ---
 
@@ -157,7 +157,7 @@ Then I should be redirected to my profile page
 
 ---
 
-![bg](./images/gherkin-shoppingcart.png)
+![bg contain](./images/gherkin-shoppingcart.png)
 
 ---
 
@@ -165,11 +165,11 @@ Then I should be redirected to my profile page
 
 ---
 
-![bg](./images/examples-tests-requirements.png)
+![bg contain](./images/examples-tests-requirements.png)
 
 ---
 
-![bg](./images/atdd.png)
+![bg contain](./images/atdd.png)
 
 ---
 
@@ -201,7 +201,7 @@ Then I should be redirected to my profile page
 
 ---
 
-![bg](./images/glue-diagram.png)
+![bg contain](./images/glue-diagram.png)
 
 ---
 
