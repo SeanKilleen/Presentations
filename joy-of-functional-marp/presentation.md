@@ -1,27 +1,13 @@
-import { Image } from 'mdx-deck'
-import { Head } from 'mdx-deck'
-import { Notes } from 'mdx-deck'
-import { themes } from 'mdx-deck'
-import { Split } from 'mdx-deck'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import './presentation-style.css'
+---
+marp: true
+title: The Joy of Functional Testing with SpecFlow
+theme: uncover
+paginate: true
+_paginate: false
+---
 
-export const theme = themes.condensed
+## The Joy
 
-<Head>
-  <title>The Joy of Functional Testing with SpecFlow</title>
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@sjkilleen" />
-  <meta name="twitter:title" content="The Joy of Functional Testing with SpecFlow" />
-  <meta name="twitter:description" content="An introduction to functional testing in .NET using the SpecFlow tools, by Sean Killeen" />
-  <meta name="twitter:image" content="https://example.com/card.png" />
-</Head>
-
-## The Joy 
 ## of Functional Testing
 
 An Introduction with SpecFlow
@@ -54,7 +40,7 @@ An Introduction with SpecFlow
 
 ---
 
-## Let's Do this.
+## Let's Do this
 
 * Why this matters
 * Specification by example
@@ -104,6 +90,7 @@ An Introduction with SpecFlow
 ---
 
 ## Functional &amp;
+
 ## Acceptance Tests
 
 ---
@@ -146,7 +133,7 @@ An Introduction with SpecFlow
 
 #### Gherkin Syntax
 
-Old and busted: 
+Old and busted:
 
 ```
 A system shall allow login access 
@@ -209,19 +196,17 @@ Then I should be redirected to my profile page
 
 ---
 
-
 # SpecFlow
 
 ---
 
 <Image src='images/glue-diagram.png' size="contain"/>
 
-
 ---
 
 <Image src='images/ship-launch-fail.gif'/>
 
---- 
+---
 
 <Split>
 
