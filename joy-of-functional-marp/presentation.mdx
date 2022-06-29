@@ -1,0 +1,238 @@
+import { Image } from 'mdx-deck'
+import { Head } from 'mdx-deck'
+import { Notes } from 'mdx-deck'
+import { themes } from 'mdx-deck'
+import { Split } from 'mdx-deck'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import './presentation-style.css'
+
+export const theme = themes.condensed
+
+<Head>
+  <title>The Joy of Functional Testing with SpecFlow</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sjkilleen" />
+  <meta name="twitter:title" content="The Joy of Functional Testing with SpecFlow" />
+  <meta name="twitter:description" content="An introduction to functional testing in .NET using the SpecFlow tools, by Sean Killeen" />
+  <meta name="twitter:image" content="https://example.com/card.png" />
+</Head>
+
+## The Joy 
+## of Functional Testing
+
+An Introduction with SpecFlow
+
+[https://JoyOfFunctionalTesting.seankilleen.com/](https://JoyOfFunctionalTesting.seankilleen.com/)
+
+---
+
+<Image src='images/CapTech_Logo_Tagline-White.png' size='contain' />
+
+---
+
+<Image src='images/dotNetFoundation.png' size='contain' />
+
+---
+
+<Split>
+
+![](images/me.png)
+
+<h3 class="less-bottom-margin"> Hi! I'm Sean.</h3>
+<ul class="fa-ul">
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faTwitter} listItem /> @sjkilleen</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGithub} listItem />SeanKilleen</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGlobe} listItem />SeanKilleen.com</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faBriefcase} listItem />CapTechConsulting.com</li>
+</ul>
+
+</Split>
+
+---
+
+## Let's Do this.
+
+* Why this matters
+* Specification by example
+* Functional / Acceptance Testing
+* Gherkin syntax
+* Benefits
+* SpecFlow demos
+
+---
+
+# Why this matters
+
+---
+
+<Image src="images/move-fast-break.png" size="contain" />
+
+---
+
+#### Why this matters
+
+# Confusion
+
+---
+
+#### Why this matters
+
+# Trust
+
+---
+
+#### Why this matters
+
+# Feature Fighting
+
+---
+
+<Image src="images/roxbury.jpg" size="contain"/>
+
+---
+
+<Image src="images/safety-harness.jpg" size="cover"/>
+
+---
+
+<Image src='images/specbyexample-cover.jpg' size="contain"/>
+
+---
+
+## Functional &amp;
+## Acceptance Tests
+
+---
+
+<Image src='images/quadrants-before.png' size="contain"/>
+
+---
+
+<Image src='images/quadrants-selection.png' size="contain"/>
+
+---
+
+<Image src='images/unit-vs-int-1.gif' size="contain"/>
+
+---
+
+<Image src='images/unit-vs-int-2.gif' size="contain"/>
+
+---
+
+<Image src='images/unit-vs-int-3.gif' size="contain"/>
+
+---
+
+<Image src='images/unit-vs-int-4.jpg' size="contain"/>
+
+---
+
+# Gherkin Syntax
+
+---
+
+#### Gherkin Syntax
+
+* Given
+* When
+* Then
+
+---
+
+#### Gherkin Syntax
+
+Old and busted: 
+
+```
+A system shall allow login access 
+```
+
+---
+
+#### Gherkin Syntax
+
+New hotness:
+
+```
+Given I am on the home page
+  And I have clicked the login button
+When I enter a valid username
+  And I enter a valid password
+  And I login
+Then I should be redirected to my profile page
+```
+
+---
+
+<Image src='images/gherkin-shoppingcart.png' size="contain"/>
+
+---
+
+# Benefits
+
+---
+
+<Image src='images/examples-tests-requirements.png' size="contain"/>
+
+---
+
+<Image src='images/atdd.png' size="contain"/>
+
+---
+
+#### Benefits
+
+# Consensus
+
+---
+
+#### Benefits
+
+# Shift to the Left
+
+---
+
+#### Benefits
+
+# Sign-Off
+
+---
+
+#### Benefits
+
+# Missed Requirements
+
+---
+
+
+# SpecFlow
+
+---
+
+<Image src='images/glue-diagram.png' size="contain"/>
+
+
+---
+
+<Image src='images/ship-launch-fail.gif'/>
+
+--- 
+
+<Split>
+
+![](images/me.png)
+
+<h3 class="less-bottom-margin">Thanks!</h3>
+<ul class="fa-ul">
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faTwitter} listItem /> @sjkilleen</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGithub} listItem />SeanKilleen</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faGlobe} listItem />SeanKilleen.com</li>
+    <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faBriefcase} listItem />CapTechConsulting.com</li>
+</ul>
+
+</Split>
