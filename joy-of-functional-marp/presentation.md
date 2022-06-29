@@ -16,15 +16,15 @@ An Introduction with SpecFlow
 
 ---
 
-<Image src='images/CapTech_Logo_Tagline-White.png' size='contain' />
+![bg](./images/CapTech_Logo_Tagline-White.png)
 
 ---
 
-<Image src='images/dotNetFoundation.png' size='contain' />
+![bg](./images/dotNetFoundation.png)
 
 ---
 
-<Split>
+<!-- <Split>
 
 ![](images/me.png)
 
@@ -38,7 +38,7 @@ An Introduction with SpecFlow
 
 </Split>
 
----
+--- -->
 
 ## Let's Do this
 
@@ -55,7 +55,7 @@ An Introduction with SpecFlow
 
 ---
 
-<Image src="images/move-fast-break.png" size="contain" />
+![bg](./images/move-fast-break.png)
 
 ---
 
@@ -77,15 +77,15 @@ An Introduction with SpecFlow
 
 ---
 
-<Image src="images/roxbury.jpg" size="contain"/>
+![bg](./images/roxbury.jpg)
 
 ---
 
-<Image src="images/safety-harness.jpg" size="cover"/>
+![bg](./images/safety-harness.jpg)
 
 ---
 
-<Image src='images/specbyexample-cover.jpg' size="contain"/>
+![bg](./images/specbyexample-cover.jpg)
 
 ---
 
@@ -95,27 +95,27 @@ An Introduction with SpecFlow
 
 ---
 
-<Image src='images/quadrants-before.png' size="contain"/>
+![bg](./images/quadrants-before.png)
 
 ---
 
-<Image src='images/quadrants-selection.png' size="contain"/>
+![bg](./images/quadrants-selection.png)
 
 ---
 
-<Image src='images/unit-vs-int-1.gif' size="contain"/>
+![bg](./images/unit-vs-int-1.gif)
 
 ---
 
-<Image src='images/unit-vs-int-2.gif' size="contain"/>
+![bg](./images/unit-vs-int-2.gif)
 
 ---
 
-<Image src='images/unit-vs-int-3.gif' size="contain"/>
+![bg](./images/unit-vs-int-3.gif)
 
 ---
 
-<Image src='images/unit-vs-int-4.jpg' size="contain"/>
+![bg](./images/unit-vs-int-4.jpg)
 
 ---
 
@@ -156,7 +156,7 @@ Then I should be redirected to my profile page
 
 ---
 
-<Image src='images/gherkin-shoppingcart.png' size="contain"/>
+![bg](./images/gherkin-shoppingcart.png)
 
 ---
 
@@ -164,11 +164,11 @@ Then I should be redirected to my profile page
 
 ---
 
-<Image src='images/examples-tests-requirements.png' size="contain"/>
+![bg](./images/examples-tests-requirements.png)
 
 ---
 
-<Image src='images/atdd.png' size="contain"/>
+![bg](./images/atdd.png)
 
 ---
 
@@ -200,15 +200,13 @@ Then I should be redirected to my profile page
 
 ---
 
-<Image src='images/glue-diagram.png' size="contain"/>
+![bg](./images/glue-diagram.png)
 
 ---
 
-<Image src='images/ship-launch-fail.gif'/>
+![bg](./images/ship-launch-fail.gif)
 
----
-
-<Split>
+<!-- <Split>
 
 ![](images/me.png)
 
@@ -220,4 +218,4 @@ Then I should be redirected to my profile page
     <li class="fa-li"><FontAwesomeIcon size="xs" icon ={faBriefcase} listItem />CapTechConsulting.com</li>
 </ul>
 
-</Split>
+</Split> -->
