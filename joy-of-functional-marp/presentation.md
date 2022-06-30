@@ -16,8 +16,7 @@ An Introduction with SpecFlow
 
 ---
 
-<!-- TODO: Change -->
-![bg contain](./images/CapTech_Logo_Tagline-White.png)
+![bg contain](./images/excella2.jpg)
 
 ---
 
