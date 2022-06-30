@@ -26,8 +26,14 @@ An Introduction with SpecFlow
 
 ---
 
+<style scoped>
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+</style>
 <!-- _footer: "" -->
-![bg left 75%](./assets/images/me.png)
+![bg left 60%](./assets/images/me.png)
 
 # <!--fit--> Hi! :wave: I'm Sean.
 
@@ -216,9 +222,15 @@ Then I should be redirected to my profile page
 ![bg](./assets/images/ship-launch-fail.gif)
 
 ---
+<style scoped>
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+</style>
 <!-- _footer: "" -->
 
-![bg left 75%](./assets/images/me.png)
+![bg left 60%](./assets/images/me.png)
 
 # Thanks!
 
