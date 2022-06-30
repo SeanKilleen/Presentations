@@ -26,6 +26,10 @@
         "yosh",
         "autoslide",
         "oberhauser"
-    ]
-    
+    ],
+    "markdownlint.config": {
+        "default": true,
+        "MD026": false,
+        "MD004": false
+    }    
 }
