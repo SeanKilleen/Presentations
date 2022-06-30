@@ -3,6 +3,7 @@ marp: true
 title: The Joy of Functional Testing with SpecFlow
 theme: uncover
 paginate: false
+footer: "Joy of Functional Testing w/SpecFlow | :earth_americas: [SeanKilleen.com](https://SeanKilleen.com) | :bird: [@sjkilleen](https://twitter.com/sjkilleen)"
 ---
 
 # The Joy
@@ -19,9 +20,13 @@ An Introduction with SpecFlow
 
 ---
 
+<!-- _footer: "" -->
+
 ![bg contain](./images/dotNetFoundation.png)
 
 ---
+
+<!-- _footer: "" -->
 
 ![bg left 60%](./images/me.png)
 
@@ -48,6 +53,7 @@ An Introduction with SpecFlow
 
 ---
 
+<!-- _footer: "" -->
 ![bg contain](./images/move-fast-break.png)
 
 ---
@@ -70,14 +76,17 @@ An Introduction with SpecFlow
 
 ---
 
+<!-- _footer: "" -->
 ![bg contain](./images/roxbury.jpg)
 
 ---
 
+<!-- _footer: "" -->
 ![bg cover](./images/safety-harness.jpg)
 
 ---
 
+<!-- _footer: "" -->
 ![bg contain](./images/specbyexample-cover.jpg)
 
 ---
@@ -87,26 +96,32 @@ An Introduction with SpecFlow
 ## Acceptance Tests
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/quadrants-before.png)
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/quadrants-selection.png)
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/unit-vs-int-1.gif)
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/unit-vs-int-2.gif)
 
 ---
 
+<!-- _footer: "" -->
 ![bg contain](./images/unit-vs-int-3.gif)
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/unit-vs-int-4.jpg)
 
@@ -148,6 +163,7 @@ Then I should be redirected to my profile page
 ```
 
 ---
+<!-- _footer: "" -->
 
 ![bg contain](./images/gherkin-shoppingcart.png)
 
@@ -196,10 +212,12 @@ Then I should be redirected to my profile page
 ![bg contain](./images/glue-diagram.png)
 
 ---
+<!-- _footer: "" -->
 
 ![bg](./images/ship-launch-fail.gif)
 
 ---
+<!-- _footer: "" -->
 
 ![bg left 60%](./images/me.png)
 
