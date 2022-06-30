@@ -11,7 +11,7 @@ paginate: false
 
 An Introduction with SpecFlow
 
-[https://JoyOfFunctionalTesting.seankilleen.com/](https://JoyOfFunctionalTesting.seankilleen.com/)
+[JoyOfFunctionalTesting.seankilleen.com](https://JoyOfFunctionalTesting.seankilleen.com/)
 
 ---
 
