@@ -26,12 +26,11 @@ An Introduction with SpecFlow
 
 ![bg left 60%](./images/me.png)
 
-# <!--fit--> Hi! 👋 I'm Sean.
+# <!--fit--> Hi! :wave: I'm Sean.
 
-* Twitter: @sjkileen
-* GitHub: SeanKilleen
-* Web: SeanKilleen.com
-* Work: Excella
+* :bird: sjkileen
+* :earth_americas: SeanKilleen.com
+* :briefcase: Excella
 
 ---
 
@@ -205,9 +204,8 @@ Then I should be redirected to my profile page
 
 ![bg left 60%](./images/me.png)
 
-# Thanks
+# Thanks!
 
-* Twitter: @sjkileen
-* GitHub: SeanKilleen
-* Web: SeanKilleen.com
-* Work: Excella
+* :bird: sjkileen
+* :earth_americas: SeanKilleen.com
+* :briefcase: Excella
