@@ -1,3 +1,0 @@
-[build]
-  publish = "public"
-  command = "npm i puppeteer && CHROME_PATH=$(node -e \"console.log(require('puppeteer').executablePath())\") npm run build"
