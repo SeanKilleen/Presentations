@@ -16,18 +16,18 @@ An Introduction with SpecFlow
 
 ---
 
-![bg contain](./images/excella2.jpg)
+![bg contain](./assets/images/excella2.jpg)
 
 ---
 
 <!-- _footer: "" -->
 
-![bg contain](./images/dotNetFoundation.png)
+![bg contain](./assets/images/dotNetFoundation.png)
 
 ---
 
 <!-- _footer: "" -->
-![bg left 75%](./images/me.png)
+![bg left 75%](./assets/images/me.png)
 
 # <!--fit--> Hi! :wave: I'm Sean.
 
@@ -53,7 +53,7 @@ An Introduction with SpecFlow
 ---
 
 <!-- _footer: "" -->
-![bg contain](./images/move-fast-break.png)
+![bg contain](./assets/images/move-fast-break.png)
 
 ---
 
@@ -76,17 +76,17 @@ An Introduction with SpecFlow
 ---
 
 <!-- _footer: "" -->
-![bg contain](./images/roxbury.jpg)
+![bg contain](./assets/images/roxbury.jpg)
 
 ---
 
 <!-- _footer: "" -->
-![bg cover](./images/safety-harness.jpg)
+![bg cover](./assets/images/safety-harness.jpg)
 
 ---
 
 <!-- _footer: "" -->
-![bg contain](./images/specbyexample-cover.jpg)
+![bg contain](./assets/images/specbyexample-cover.jpg)
 
 ---
 
@@ -97,32 +97,32 @@ An Introduction with SpecFlow
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/quadrants-before.png)
+![bg contain](./assets/images/quadrants-before.png)
 
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/quadrants-selection.png)
+![bg contain](./assets/images/quadrants-selection.png)
 
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/unit-vs-int-1.gif)
+![bg contain](./assets/images/unit-vs-int-1.gif)
 
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/unit-vs-int-2.gif)
+![bg contain](./assets/images/unit-vs-int-2.gif)
 
 ---
 
 <!-- _footer: "" -->
-![bg contain](./images/unit-vs-int-3.gif)
+![bg contain](./assets/images/unit-vs-int-3.gif)
 
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/unit-vs-int-4.jpg)
+![bg contain](./assets/images/unit-vs-int-4.jpg)
 
 ---
 
@@ -164,7 +164,7 @@ Then I should be redirected to my profile page
 ---
 <!-- _footer: "" -->
 
-![bg contain](./images/gherkin-shoppingcart.png)
+![bg contain](./assets/images/gherkin-shoppingcart.png)
 
 ---
 
@@ -172,11 +172,11 @@ Then I should be redirected to my profile page
 
 ---
 
-![bg contain](./images/examples-tests-requirements.png)
+![bg contain](./assets/images/examples-tests-requirements.png)
 
 ---
 
-![bg contain](./images/atdd.png)
+![bg contain](./assets/images/atdd.png)
 
 ---
 
@@ -208,17 +208,17 @@ Then I should be redirected to my profile page
 
 ---
 
-![bg contain](./images/glue-diagram.png)
+![bg contain](./assets/images/glue-diagram.png)
 
 ---
 <!-- _footer: "" -->
 
-![bg](./images/ship-launch-fail.gif)
+![bg](./assets/images/ship-launch-fail.gif)
 
 ---
 <!-- _footer: "" -->
 
-![bg left 75%](./images/me.png)
+![bg left 75%](./assets/images/me.png)
 
 # Thanks!
 
