@@ -2,8 +2,7 @@
 marp: true
 title: The Joy of Functional Testing with SpecFlow
 theme: uncover
-paginate: true
-_paginate: false
+paginate: false
 ---
 
 ## The Joy
