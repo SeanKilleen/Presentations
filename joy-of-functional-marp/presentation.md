@@ -27,8 +27,7 @@ An Introduction with SpecFlow
 ---
 
 <!-- _footer: "" -->
-
-![bg left 60%](./images/me.png)
+![bg left 75%](./images/me.png)
 
 # <!--fit--> Hi! :wave: I'm Sean.
 
@@ -219,7 +218,7 @@ Then I should be redirected to my profile page
 ---
 <!-- _footer: "" -->
 
-![bg left 60%](./images/me.png)
+![bg left 75%](./images/me.png)
 
 # Thanks!
 
