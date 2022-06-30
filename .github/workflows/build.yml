@@ -50,12 +50,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 15.x]
-        build-location:
-          [
-            "./joy-of-functional-mdx/presentation",
-            "./netcore-workshop-mdx",
-            "./ServerlessIsMore-mdx",
-          ]
+        build-location: ["./netcore-workshop-mdx", "./ServerlessIsMore-mdx"]
 
     steps:
       - uses: actions/checkout@v2
