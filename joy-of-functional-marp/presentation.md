@@ -5,9 +5,9 @@ theme: uncover
 paginate: false
 ---
 
-## The Joy
+# The Joy
 
-## of Functional Testing
+# of Functional Testing
 
 An Introduction with SpecFlow
 
