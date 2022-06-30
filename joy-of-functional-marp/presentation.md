@@ -27,7 +27,7 @@ An Introduction with SpecFlow
 
 ![bg left 60%](./images/me.png)
 
-# Hi! I'm Sean
+# <!--fit--> Hi! 👋 I'm Sean.
 
 * Twitter: @sjkileen
 * GitHub: SeanKilleen
