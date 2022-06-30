@@ -31,9 +31,9 @@ An Introduction with SpecFlow
 
 # <!--fit--> Hi! :wave: I'm Sean.
 
-* :bird: [sjkileen](https://twitter.com/sjkilleen)
-* :earth_americas: [SeanKilleen.com](https://seankilleen.com)
-* :briefcase: [Excella](https://excella.com)
+- :bird: [sjkileen](https://twitter.com/sjkilleen)
+- :earth_americas: [SeanKilleen.com](https://seankilleen.com)
+- :briefcase: [Excella](https://excella.com)
 
 ---
 
@@ -222,6 +222,6 @@ Then I should be redirected to my profile page
 
 # Thanks!
 
-* :bird: [sjkileen](https://twitter.com/sjkilleen)
-* :earth_americas: [SeanKilleen.com](https://seankilleen.com)
-* :briefcase: [Excella](https://excella.com)
+- :bird: [sjkileen](https://twitter.com/sjkilleen)
+- :earth_americas: [SeanKilleen.com](https://seankilleen.com)
+- :briefcase: [Excella](https://excella.com)
