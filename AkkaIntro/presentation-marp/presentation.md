@@ -258,8 +258,7 @@ Functions as one unit
 #### <!--fit--> akka.tcp://MySystem@localhost:8080<mark>/user/HelloWorldActor</mark>
 
 ---
-<!-- _footer: "" -->
-![bg contain](./assets/images/Lifecycle.png)
+![bg contain 70%](./assets/images/Lifecycle.png)
 
 ---
 
@@ -291,12 +290,11 @@ Transport agnostic
 
 ---
 
-<!-- _footer: "" -->
 #### FAULTS
 
 ## Classic .NET System
 
-![auto](./assets/images/ClassicHierarchy_small.png)
+![width:500px](./assets/images/ClassicHierarchy_small.png)
 
 <!--
 Think of a classic OOP System
@@ -323,13 +321,12 @@ Thinking about it up front at dev time
 -->
 
 ---
-<!-- _footer: "" -->
 
 #### FAULTS
 
 ## Strategies
 
-![](./assets/images/Strategies_Small2.png)
+![width:700px](./assets/images/Strategies_Small2.png)
 
 <!--
 One for one vs. All for One
