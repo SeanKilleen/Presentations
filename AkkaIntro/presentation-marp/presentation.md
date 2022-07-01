@@ -37,7 +37,7 @@ class: invert
 
 ![bg left 60%](./assets/images/thanks/roger.jpg)
 
-#### <!--fit--> Akka-knowledgements
+#### <!--fit--> AKKA-KNOWLEDGEMENTS
 
 ## <!--fit-->Roger Johansson
 
@@ -60,7 +60,7 @@ class: invert
 
 ![bg left 60%](./assets/images/thanks/Petabridge.png)
 
-#### <!--fit--> Akka-knowledgements
+#### <!--fit--> AKKA-KNOWLEDGEMENTS
 
 ## <!--fit-->Petabridge
 
@@ -94,7 +94,7 @@ class: invert
 
 ![bg opacity:.4](./assets/images/mountains/daniel-leone-185834.jpg)
 
-# Why This Matters
+# WHY THIS MATTERS
 
 <!-- Previously: Old school request/response. 
 
@@ -132,11 +132,11 @@ We need to evolve with our users' expectations.
 
 ![bg opacity:.4](./assets/images/mountains/deniz-altindas-38121.jpg)
 
-# Overview
+# OVERVIEW
 
 ---
 
-#### Overview
+#### OVERVIEW
 
 ## Actors: Not New
 
@@ -144,7 +144,7 @@ We need to evolve with our users' expectations.
 
 ---
 
-#### Overview
+#### OVERVIEW
 
 ## Where are the actors?
 
@@ -161,7 +161,7 @@ Neural networks
 
 ---
 
-#### Overview
+#### OVERVIEW
 
 ## Akka and Akka.NET
 
@@ -171,11 +171,11 @@ Neural networks
 
 ![bg opacity:.4](./assets/images/mountains/m-wong-40443.jpg)
 
-# Concepts
+# CONCEPTS
 
 ---
 
-#### Concepts
+#### CONCEPTS
 
 ## Everything is an Actor
 
@@ -187,7 +187,7 @@ Container for State, Behavior, Mailbox, Children, Supervision
 
 ---
 
-#### Concepts
+#### CONCEPTS
 
 ## Encapsulation
 
@@ -199,19 +199,19 @@ Functions as one unit
 
 ---
 
-#### Concepts
+#### CONCEPTS
 
 ## Immutable Messages
 
 ---
 
-#### Concepts
+#### CONCEPTS
 
 ## Actors by Reference
 
 ---
 
-#### Concepts
+#### CONCEPTS
 
 ## Props
 
@@ -227,7 +227,7 @@ Functions as one unit
 
 ---
 
-#### Addressing
+#### ADDRESSING
 
 ## Protocol
 
@@ -235,7 +235,7 @@ Functions as one unit
 
 ---
 
-#### Addressing
+#### ADDRESSING
 
 ## System
 
@@ -243,7 +243,7 @@ Functions as one unit
 
 ---
 
-#### Addressing
+#### ADDRESSING
 
 ## Address
 
@@ -251,7 +251,7 @@ Functions as one unit
 
 ---
 
-#### Addressing
+#### ADDRESSING
 
 ## Path
 
@@ -265,7 +265,7 @@ Functions as one unit
 
 ![bg opacity:.4](./assets/images/mountains/patrick-hendry-198732.jpg)
 
-# Context
+# CONTEXT
 
 <!-- 
 Context.ActorOf is used to create children
@@ -292,7 +292,7 @@ Transport agnostic
 ---
 
 <!-- _footer: "" -->
-#### Faults
+#### FAULTS
 
 ## Classic .NET System
 
@@ -308,7 +308,7 @@ Unclear who is responsible for handling errors
 
 ---
 
-#### Faults
+#### FAULTS
 
 ## Error Kernel
 
@@ -325,7 +325,7 @@ Thinking about it up front at dev time
 ---
 <!-- _footer: "" -->
 
-#### Faults
+#### FAULTS
 
 ## Strategies
 
@@ -341,11 +341,11 @@ Easy custom supervisory structures
 
 ![bg opacity:.4](./assets/images/mountains/michal-janek-217220.jpg)
 
-# Benefits
+# BENEFITS
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Async by Default
 
@@ -359,7 +359,7 @@ Easier to reason about
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Recoverability
 
@@ -373,7 +373,7 @@ Push dangerous work into child actors
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Cheap!
 
@@ -387,7 +387,7 @@ No CPU unless a message is actually processing
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Location Transparency
 
@@ -403,7 +403,7 @@ Same / different process, same / different machine
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Easy State Machines
 
@@ -416,7 +416,7 @@ Can change how it will process next message
 
 ---
 
-#### Benefits
+#### BENEFITS
 
 # Configurability
 
@@ -470,7 +470,7 @@ Reduce cost of change
 
 ![bg opacity:.3](./assets/images/mountains/yosh-ginsu-146166.jpg)
 
-# Demos!
+# DEMOS!
 
 ---
 
