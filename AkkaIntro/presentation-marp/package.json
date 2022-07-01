@@ -6,9 +6,9 @@
     "private": false,
     "scripts": {
       "build": "rimraf public && npm run -s og-image && npm run -s deck",
-      "deck": "marp --allow-local-files --no-stdin presentation.md -o public/index.html && ncp assets public/assets",
-      "og-image": "marp --allow-local-files --no-stdin presentation.md -o public/og-image.jpg",
-      "start": "marp --allow-local-files -ps .",
+      "deck": "marp --html --allow-local-files --no-stdin presentation.md -o public/index.html && ncp assets public/assets",
+      "og-image": "marp --html --allow-local-files --no-stdin presentation.md -o public/og-image.jpg",
+      "start": "marp --html --allow-local-files -ps .",
       "vercel-build": "npm i puppeteer && MARP_USER=root CHROME_PATH=$(node -e \"console.log(require('puppeteer').executablePath())\") npm run build"
     },
     "devDependencies": {
