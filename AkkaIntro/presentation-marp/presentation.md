@@ -262,7 +262,7 @@ Functions as one unit
 #### <!--fit--> akka.tcp://MySystem@localhost:8080/user/HelloWorldActor
 
 ---
-
+<!-- _footer: "" -->
 <!-- TODO: Invert colors, get text to show up -->
 ![bg contain](./assets/images/Lifecycle.png)
 
@@ -302,7 +302,7 @@ Transport agnostic
 ## Classic .NET System
 
 <!-- TODO: Image text -->
-![](./assets/images/ClassicHierarchy_small.png)
+![auto](./assets/images/ClassicHierarchy_small.png)
 
 <!--
 Think of a classic OOP System
@@ -435,24 +435,15 @@ Fallback and layered configs
 -->
 
 ---
+<!-- _footer: "" -->
 
-#### Scaling
-
-## Single Core
-
-<!-- TODO: Fix image size -->
-![](./assets/images/core/01.png)
-
+![bg contain](./assets/images/core/01.png)
 <!--Single Core at first -->
 
 ---
+<!-- _footer: "" -->
 
-#### Scaling
-
-## Multi-threading
-
-<!-- TODO: Fix image size -->
-![](./assets/images/core/Multi.png)
+![bg contain](./assets/images/core/Multi.png)
 
 <!-- 
 Maybe then multi-core
@@ -462,13 +453,9 @@ Maybe then you'd adapt to use TPL or async / await
 What happens when it's not enough?
 -->
 ---
+<!-- _footer: "" -->
 
-#### Scaling
-
-## Scale Out
-<!-- TODO: Fix image size -->
-
-![](./assets/images/core/ScaleOut.png)
+![bg contain](./assets/images/core/ScaleOut.png)
 
 <!--
 This is a key concept.
