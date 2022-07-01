@@ -263,7 +263,6 @@ Functions as one unit
 
 ---
 <!-- _footer: "" -->
-<!-- TODO: Invert colors, get text to show up -->
 ![bg contain](./assets/images/Lifecycle.png)
 
 ---
@@ -301,7 +300,6 @@ Transport agnostic
 
 ## Classic .NET System
 
-<!-- TODO: Image text -->
 ![auto](./assets/images/ClassicHierarchy_small.png)
 
 <!--
@@ -318,7 +316,6 @@ Unclear who is responsible for handling errors
 
 ## Error Kernel
 
-<!-- TODO: Image clarity -->
 ![](./assets/images/ErrorKernel_small.png)
 
 <!--
