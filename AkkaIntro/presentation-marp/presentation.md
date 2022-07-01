@@ -425,13 +425,11 @@ Fallback and layered configs
 -->
 
 ---
-<!-- _footer: "" -->
 
-![bg contain](./assets/images/core/01.png)
+![bg contain 90%](./assets/images/core/01.png)
 <!--Single Core at first -->
 
 ---
-<!-- _footer: "" -->
 
 ![bg contain](./assets/images/core/Multi.png)
 
@@ -443,7 +441,6 @@ Maybe then you'd adapt to use TPL or async / await
 What happens when it's not enough?
 -->
 ---
-<!-- _footer: "" -->
 
 ![bg contain](./assets/images/core/ScaleOut.png)
 
