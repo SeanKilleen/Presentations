@@ -1,0 +1,20 @@
+{
+    "name": "akka-intro-marp",
+    "version": "1.0.0",
+    "author": "Sean Killeen <SeanKilleen@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+      "build": "rimraf public && npm run -s og-image && npm run -s deck",
+      "deck": "marp --html --allow-local-files --no-stdin presentation.md -o public/index.html && ncp assets public/assets",
+      "og-image": "marp --html --allow-local-files --no-stdin presentation.md -o public/og-image.jpg",
+      "start": "marp --html --allow-local-files -ps .",
+      "vercel-build": "npm i puppeteer && MARP_USER=root CHROME_PATH=$(node -e \"console.log(require('puppeteer').executablePath())\") npm run build"
+    },
+    "devDependencies": {
+      "@marp-team/marp-cli": "^2.0.4",
+      "ncp": "^2.0.0",
+      "rimraf": "^3.0.2"
+    }
+  }
+  
