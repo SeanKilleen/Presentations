@@ -14,7 +14,7 @@ class: invert
 
 # AN INTRODUCTION
 
-<https://akkaintro.seankilleen.com>
+:link: [AkkaIntro.SeanKilleen.com](https://akkaintro.seankilleen.com)
 
 ---
 
