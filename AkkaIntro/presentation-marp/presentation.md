@@ -231,8 +231,7 @@ Functions as one unit
 
 ## Protocol
 
-<!-- TODO: Highlight -->
-#### <!--fit--> akka.tcp://MySystem@localhost:8080/user/HelloWorldActor
+#### <!--fit--> <mark>akka.tcp://</mark>MySystem@localhost:8080/user/HelloWorldActor
 
 ---
 
@@ -240,8 +239,7 @@ Functions as one unit
 
 ## System
 
-<!-- TODO: Highlight -->
-#### <!--fit--> akka.tcp://MySystem@localhost:8080/user/HelloWorldActor
+#### <!--fit--> akka.tcp://<mark>MySystem</mark>@localhost:8080/user/HelloWorldActor
 
 ---
 
@@ -249,8 +247,7 @@ Functions as one unit
 
 ## Address
 
-<!-- TODO: Highlight -->
-#### <!--fit--> akka.tcp://MySystem@localhost:8080/user/HelloWorldActor
+#### <!--fit--> akka.tcp://MySystem<mark>@localhost:8080</mark>/user/HelloWorldActor
 
 ---
 
@@ -258,8 +255,7 @@ Functions as one unit
 
 ## Path
 
-<!-- TODO: Highlight -->
-#### <!--fit--> akka.tcp://MySystem@localhost:8080/user/HelloWorldActor
+#### <!--fit--> akka.tcp://MySystem@localhost:8080<mark>/user/HelloWorldActor</mark>
 
 ---
 <!-- _footer: "" -->
