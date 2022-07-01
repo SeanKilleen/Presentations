@@ -8,7 +8,7 @@ class: invert
 ---
 
 <!-- _footer: "" -->
-![bg](./assets/images/mountains/kai-oberhauser-177237.jpg)
+![bg opacity:.4](./assets/images/mountains/kai-oberhauser-177237.jpg)
 
 # AKKA.NET
 
@@ -92,7 +92,7 @@ class: invert
 
 ---
 
-![bg](./assets/images/mountains/daniel-leone-185834.jpg)
+![bg opacity:.4](./assets/images/mountains/daniel-leone-185834.jpg)
 
 # Why This Matters
 
@@ -130,7 +130,7 @@ We need to evolve with our users' expectations.
 
 ---
 
-![bg](./assets/images/mountains/deniz-altindas-38121.jpg)
+![bg opacity:.4](./assets/images/mountains/deniz-altindas-38121.jpg)
 
 # Overview
 
@@ -169,7 +169,7 @@ Neural networks
 
 ---
 
-![bg](./assets/images/mountains/m-wong-40443.jpg)
+![bg opacity:.4](./assets/images/mountains/m-wong-40443.jpg)
 
 # Concepts
 
@@ -268,7 +268,7 @@ Functions as one unit
 
 ---
 
-![bg](./assets/images/mountains/patrick-hendry-198732.jpg)
+![bg opacity:.4](./assets/images/mountains/patrick-hendry-198732.jpg)
 
 # Context
 
@@ -346,7 +346,7 @@ Easy custom supervisory structures
 
 ---
 
-![bg](./assets/images/mountains/michal-janek-217220.jpg)
+![bg opacity:.4](./assets/images/mountains/michal-janek-217220.jpg)
 
 # Benefits
 
@@ -475,7 +475,7 @@ Reduce cost of change
 
 ---
 
-![bg](./assets/images/mountains/yosh-ginsu-146166.jpg)
+![bg opacity:.3](./assets/images/mountains/yosh-ginsu-146166.jpg)
 
 # Demos!
 
