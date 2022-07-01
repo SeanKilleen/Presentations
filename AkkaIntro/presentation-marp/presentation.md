@@ -27,6 +27,12 @@ footer: "An Introduction to Akka .NET | :earth_americas: [SeanKilleen.com](https
 
 ---
 <!-- _footer: "" -->
+<style scoped>
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+</style>
 
 ![bg left 60%](./assets/images/thanks/roger.jpg)
 
@@ -44,6 +50,12 @@ footer: "An Introduction to Akka .NET | :earth_americas: [SeanKilleen.com](https
 
 ---
 <!-- _footer: "" -->
+<style scoped>
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+</style>
 
 ![bg left 60%](./assets/images/thanks/Petabridge.png)
 
