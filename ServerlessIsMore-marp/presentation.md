@@ -7,9 +7,9 @@ footer: "Serverless Is More | :earth_americas: [SeanKilleen.com](https://SeanKil
 class: invert
 ---
 
-# (Server)Less
+# (SERVER)LESS
 
-# is More
+# IS MORE
 
 #### An Introduction to Azure Functions
 
@@ -42,7 +42,7 @@ class: invert
 
 ---
 
-## Let's Do this.
+## LET'S DO THIS.
 
 - What is serverless?
 - Pros / Cons
@@ -50,11 +50,11 @@ class: invert
 
 ---
 
-# What is Serverless?
+# WHAT IS SERVERLESS?
 
 ---
 
-#### What is Serverless?
+#### WHAT IS SERVERLESS?
 
 # The Car Analogy
 
@@ -106,29 +106,29 @@ Car Sharing
 -->
 ---
 
-# Pros
+# PROS
 
 ---
 
-#### Pros
+#### PROS
 
 # Cost-Effective
 
 ---
 
-#### Pros
+#### PROS
 
 # Less Plumbing; More Value
 
 ---
 
-#### Pros
+#### PROS
 
 # Easy Integration
 
 ---
 
-# Cons
+# CONS
 
 ---
 <!-- _footer: "" -->
@@ -137,31 +137,31 @@ Car Sharing
 
 ---
 
-#### Cons
+#### CONS
 
 # Cold Starts
 
 ---
 
-#### Cons
+#### CONS
 
 # Vendor Lock-in
 
 ---
 
-#### Cons
+#### CONS
 
 # Less Control
 
 ---
 
-#### Cons
+#### CONS
 
 # Cognitive Overhead
 
 ---
 
-#### Cons
+#### CONS
 
 # Long-Running Tasks
 
@@ -185,7 +185,7 @@ This is to see how far we'll get
 
 ---
 
-# But at what cost?!
+# <!--fit--> :money_with_wings: But at what cost?! :money_with_wings:
 
 ---
 
