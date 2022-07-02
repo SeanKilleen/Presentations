@@ -1,12 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/ElasticSearch"
-    schedule:
-      interval: daily
-      time: "10:00"
-    open-pull-requests-limit: 10
-  - package-ecosystem: npm
     directory: "/Fragile"
     schedule:
       interval: daily
