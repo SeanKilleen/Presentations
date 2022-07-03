@@ -22,3 +22,6 @@ Docker for Smaller Feedback Loops | [Link](https://github.com/SeanKilleen/Presen
 | (Fr)agile: How Agile Falls Apart, and What you Can do to Hold it All Together | [Link](https://github.com/SeanKilleen/Presentation_Fragile) | [Link](https://fragile.seankilleen.com) |
 | Brave `dotnet new` World: An Introduction to .NET Core Templating | [Link](https://github.com/SeanKilleen/Presentation_BraveDotnetNewWorld) | [Link](https://brave-dotnet-new-world.seankilleen.com) |
 | In Action: Contributing to OSS | [Link](https://github.com/SeanKilleen/Presentation_IntroToOSS) | [Link](https://ossintro.seankilleen.com) |
+| An Introduction to the Actor Model with Akka .NET | [Link](https://github.com/SeanKilleen/Presentation_AkkaIntro) | [Link](https://akkaintro.seankilleen.com) | 
+| The Joy of Functional Testing With SpecFlow | [Link](https://github.com/SeanKilleen/Presentation_JoyOfFunctionalTestingWithSpecFlow) | [Link](https://joyoffunctionaltesting.seankilleen.com) |
+| How I Learned to Stop Worrying and Love Feedback Loops | [Link](https://github.com/SeanKilleen/Presentation_FeedbackLoops) | [Link](https://feedbackloops.seankilleen.com)
