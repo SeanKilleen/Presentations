@@ -18,4 +18,7 @@ Let me know [via e-mail](mailto:SeanKilleen@gmail.com) or by [submitting an issu
 Docker for Smaller Feedback Loops | [Link](https://github.com/SeanKilleen/Presentation_DockerForSmallerFeedbackLoops) | [Link](https://dockerloops.seankilleen.com/) |
 | (Server)less is more: An Introduction to Azure Functions | [Link](https://github.com/SeanKilleen/Presentation_ServerlessIsMore) | [Link](https://serverlessismore.seankilleen.com) |
 | .NET Core Modernization Workshop | [Link](https://github.com/SeanKilleen/Presentation_NetCoreWorkshop) | [Link](https://netcore-workshop.seankilleen.com)
-| Stretching .NET: An Introduction to ElasticSearch | [Link](https://github.com/SeanKilleen/Presentation_ElasticSearch) | [Link](https://elasticsearch.seankilleen.com/)
+| Stretching .NET: An Introduction to ElasticSearch | [Link](https://github.com/SeanKilleen/Presentation_ElasticSearch) | [Link](https://elasticsearch.seankilleen.com/) | 
+| (Fr)agile: How Agile Falls Apart, and What you Can do to Hold it All Together | [Link](https://github.com/SeanKilleen/Presentation_Fragile) | [Link](https://fragile.seankilleen.com) |
+| Brave `dotnet new` World: An Introduction to .NET Core Templating | [Link](https://github.com/SeanKilleen/Presentation_BraveDotnetNewWorld) | [Link](https://brave-dotnet-new-world.seankilleen.com) |
+| In Action: Contributing to OSS | [Link](https://github.com/SeanKilleen/Presentation_IntroToOSS) | [Link](https://ossintro.seankilleen.com) |
